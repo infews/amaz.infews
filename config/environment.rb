@@ -41,6 +41,8 @@ Rails::Initializer.run do |config|
     :secret      => 'ae4bb2a8be16259678a0926fdd4d6c668ac16727d54b715e7d07326c5c22f2eed22104986d99ac5acd81e0ccb9576e9c9f55595564389d891eed2d2cddfe709f'
   }
 
+  config.load_paths << "#{RAILS_ROOT}/../amazon_ecs/lib"
+
   # Use the database for sessions instead of the cookie-based default,
   # which shouldn't be used to store highly confidential information
   # (create the session table with 'rake db:sessions:create')
