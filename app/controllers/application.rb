@@ -1,10 +1,8 @@
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
-require 'amazon_ecs'
-require 'amazon_ecs_us'
 
 class ApplicationController < ActionController::Base
-  include AmazonECS
+  include AmazonAWS
   helper :all # include all helpers, all the time
 
   # See ActionController::RequestForgeryProtection for details
