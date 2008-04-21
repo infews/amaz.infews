@@ -1,0 +1,37 @@
+#item
+  .summary
+    %span.title= link_to_unless_current @item.title, item_url
+    %span.edition= [@item.binding, @item.edition].compact.join(', ')
+    .authors= @item.authors.to_sentence
+  #pricing_top
+    .list_price
+      %span.label List Price:
+      %span.price= @item.list_price.formatted_price
+    .amazon_price
+      %span.label Amazon Price:
+      %span.price
+        = @item.offers[0].price.formatted_price + link_to('*', :href => '#disclaimer')
+  #top_box /{:style => @presenter.image_height_style}
+    /#image= image_tag(@item.image_url, :alt => @item.title)
+    #rating
+      #stars= "#{@item.customer_reviews.average_rating} out of 5 stars"
+        .count= "(#{pluralize_with_delimiter(@item.customer_reviews.number_of_reviews, 'customer review') })"
+    #rank
+      %span.label Amazon Sales Rank:
+      %span.rank= number_with_delimiter @item.sales_rank
+  #description
+    /= #TODO: there's a bug in Rails where an array of hashes doesn't play well with render collection
+    /- @presenter.description.each do |description|
+      /= render :partial => 'description', :locals => { :source  => description[:source],   |
+                                                       /:content => description[:content] } |
+  #pricing_bottom
+    .list_price
+      %span.label List Price:
+      %span.price= @item.list_price_formatted
+    .amazon_price
+      %span.label Amazon Price:
+      %span.price
+        = @item.amazon_price_formatted + link_to('*', :href => '#disclaimer')
+#disclaimer
+  %a{:name => 'disclaimer'} 
+  %em AmazonECS::DISCLAIMER
