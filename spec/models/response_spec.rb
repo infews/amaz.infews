@@ -1,14 +1,7 @@
 require 'rubygems'
-
-gem 'rspec'
-require 'spec'
-#require File.dirname(__FILE__) + '/../spec_helper'
+##require File.dirname(__FILE__) + '/../spec_helper'
 
 require 'lib/amazon_aws'
-
-class Dummy
-  include AmazonAWS
-end
 
 describe AmazonAWS::Response do
   

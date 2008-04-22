@@ -351,3 +351,332 @@ Processing ItemController#index (for 0.0.0.0 at 2008-04-21 08:27:17) [GET]
   Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
 Rendering item/index
 Completed in 0.00441 (226 reqs/sec) | Rendering: 0.00068 (15%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 08:31:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00380 (263 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 08:32:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00390 (256 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:11:24) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00535 (186 reqs/sec) | Rendering: 0.00210 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:27:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00387 (258 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:27:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00432 (231 reqs/sec) | Rendering: 0.00071 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:28:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00401 (249 reqs/sec) | Rendering: 0.00073 (18%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:28:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00381 (262 reqs/sec) | Rendering: 0.00066 (17%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:29:23) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00385 (259 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:29:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00381 (262 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:30:05) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00400 (249 reqs/sec) | Rendering: 0.00081 (20%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:31:41) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00390 (256 reqs/sec) | Rendering: 0.00070 (18%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:32:18) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00388 (257 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:32:49) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00392 (255 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:33:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00392 (255 reqs/sec) | Rendering: 0.00072 (18%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:33:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.08490 (11 reqs/sec) | Rendering: 0.01379 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 18:34:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00377 (265 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:15:33) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00389 (257 reqs/sec) | Rendering: 0.00066 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:16:04) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00388 (257 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:18:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00389 (257 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:19:18) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00430 (232 reqs/sec) | Rendering: 0.00066 (15%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:24:30) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00399 (250 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:24:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00391 (255 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:27:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00430 (232 reqs/sec) | Rendering: 0.00065 (15%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:27:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00393 (254 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:34:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00398 (251 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:36:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00440 (227 reqs/sec) | Rendering: 0.00072 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:37:21) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00461 (217 reqs/sec) | Rendering: 0.00124 (26%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:37:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00399 (250 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:39:11) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00448 (223 reqs/sec) | Rendering: 0.00071 (15%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:40:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00384 (260 reqs/sec) | Rendering: 0.00063 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:42:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00415 (240 reqs/sec) | Rendering: 0.00064 (15%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:43:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00399 (250 reqs/sec) | Rendering: 0.00081 (20%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:44:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00387 (258 reqs/sec) | Rendering: 0.00063 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:46:21) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00751 (133 reqs/sec) | Rendering: 0.00084 (11%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:50:00) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00388 (257 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 21:50:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00391 (255 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 22:06:46) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.01465 (68 reqs/sec) | Rendering: 0.00069 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 22:13:11) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00405 (246 reqs/sec) | Rendering: 0.00065 (15%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 22:17:00) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00398 (251 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 22:17:23) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00388 (257 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 22:20:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00388 (257 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 22:30:47) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00383 (260 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 22:51:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00513 (195 reqs/sec) | Rendering: 0.00068 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 23:10:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00397 (251 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 23:11:11) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00504 (198 reqs/sec) | Rendering: 0.00067 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 23:13:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00431 (231 reqs/sec) | Rendering: 0.00102 (23%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-21 23:14:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00387 (258 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]

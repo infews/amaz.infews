@@ -5,8 +5,8 @@ module AmazonAWS
   class Response
     attr_reader :doc
     
-    def initialize(doc)
-      @doc = doc
+    def initialize(xml)
+      @doc = Hpricot.parse xml
     end
     
   end

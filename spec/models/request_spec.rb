@@ -1,12 +1,8 @@
 require 'rubygems'
 
-gem 'rspec'
-require 'spec'
-#require File.dirname(__FILE__) + '/../spec_helper'
-
 require 'lib/amazon_aws'
 
-# dummy ECSClient class, just for testing
+#dummy AWSClient class, just for testing
 class AWSClient
   include AmazonAWS
   
