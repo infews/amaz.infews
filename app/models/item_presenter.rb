@@ -6,12 +6,8 @@ class ItemPresenter
   end
   
   def amazon_price
-    # TODO: protect against no amazon? offer?
-    @amazon_price_node ||= @doc%'//offers/offer/offerlisting/price'
-    return nil if @amazon_price_node.nil?
-    
-    @amazon_price ||= {:amount    => (@amazon_price_node/'amount').innerHTML.to_i,
-                       :formatted => (@amazon_price_node/'/formattedprice').innerHTML}
+    # TODO: better protect against no amazon? offer?    
+    @amazon_price ||= get_price '//offers/offer/offerlisting/price'
   end
   
   def asin
@@ -20,7 +16,7 @@ class ItemPresenter
   
   def authors
     @authors_node ||= @doc/'//itemattributes/author'
-    return nil if @authors_node.nil?
+    return nil if @authors_node.empty?
     
     @authors ||= @authors_node.inject([]) do |authors, author_node|
                    authors << author_node.innerHTML
@@ -53,9 +49,8 @@ class ItemPresenter
                 :width  => (@image_node%'width').innerHTML}
   end
   
-  def list_price
-    @list_price ||= {:amount    => get('//itemattributes/listprice/amount').to_i,
-                     :formatted => get('//itemattributes/listprice/formattedprice')}
+  def list_price    
+    @list_price ||= get_price '//itemattributes/listprice'
   end
   
   def number_of_reviews
@@ -76,4 +71,13 @@ class ItemPresenter
     node = @doc%xpath
     node.nil? ? nil : node.innerHTML
   end
+  
+  def get_price(xpath)
+    doc_node = @doc%xpath
+    return nil if doc_node.nil?
+    
+    {:amount    => (doc_node/'amount').innerHTML.to_i,
+     :formatted => (doc_node/'/formattedprice').innerHTML}
+  end
+    
 end
