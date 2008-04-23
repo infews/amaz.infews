@@ -14,7 +14,7 @@ describe ItemController do
                                                  :asin => '123456'}
   end
 
-  it 'should call the Amazon library properly when an asin is requested' do
+  it 'should call Amazon with an ItemLookup properly when an asin is requested' do
     controller.should_receive(:ecs_item_lookup).with(:asin => '123456').and_return('foo')
     
     get 'index', :asin => '123456'

@@ -14,9 +14,8 @@ module AmazonAWS
     @aws_request ||= Request.new(amazon_associates_id, amazon_access_key)
   end
 
-  # Request wraps all calls to the AmazonECS API.  Make calls through your class's <tt>ecs</tt>
+  # Request wraps all calls to the AmazonAWS API.  Make calls through your class's <tt>ecs</tt>
   # attribute reader.
-  # TODO: Put some usage examples here
   class Request
     def initialize(amazon_associates_id, amazon_access_key)
       @url_base = "#{AWS_URL}&AWSAccessKeyId=#{amazon_access_key}&AssociateTag=#{amazon_associates_id}"
