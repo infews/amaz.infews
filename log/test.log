@@ -792,3 +792,45 @@ Processing ItemController#index (for 0.0.0.0 at 2008-04-22 08:32:53) [GET]
   Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
 Rendering item/index
 Completed in 0.00383 (261 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-22 18:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00390 (256 reqs/sec) | Rendering: 0.00066 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-22 18:13:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00383 (261 reqs/sec) | Rendering: 0.00064 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-22 18:14:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00413 (241 reqs/sec) | Rendering: 0.00094 (22%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-22 18:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00389 (256 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-22 18:18:03) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00397 (251 reqs/sec) | Rendering: 0.00067 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-22 18:18:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"123456", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00390 (256 reqs/sec) | Rendering: 0.00065 (16%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/123456]
