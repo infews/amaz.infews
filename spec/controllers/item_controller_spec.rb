@@ -9,13 +9,13 @@ describe ItemController do
 
   it 'should route to /item/123456' do 
     route_for(:controller => 'item', 
-              :action => 'index',
+              :action => 'show',
               :asin => '123456').should == '/item/123456'
   end
 
   it 'should get routed from /item/123456' do
     params_from(:get, '/item/123456').should == {:controller => 'item',
-                                                 :action     => 'index',
+                                                 :action     => 'show',
                                                  :asin       => '123456'}
   end
 

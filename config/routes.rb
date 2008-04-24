@@ -30,7 +30,7 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
 
   # Route for item/asin
-  map.item 'item/:asin', :controller => 'item', :action => 'index'
+  map.item 'item/:asin', :controller => 'item', :action => 'show'
   
   # Install the default routes as the lowest priority.
   map.connect ':controller/:action/:id'

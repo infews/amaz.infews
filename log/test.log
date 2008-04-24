@@ -1129,3 +1129,17 @@ Processing ItemController#index (for 0.0.0.0 at 2008-04-23 22:55:21) [GET]
   Parameters: {"action"=>"index", "asin"=>"0143112562", "controller"=>"item"}
 Rendering item/index
 Completed in 0.02233 (44 reqs/sec) | Rendering: 0.00044 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-23 23:07:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/index
+Completed in 0.00645 (155 reqs/sec) | Rendering: 0.00070 (10%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item?asin=fffffffff]
+
+
+Processing ItemController#index (for 0.0.0.0 at 2008-04-23 23:07:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/index
+Completed in 0.02254 (44 reqs/sec) | Rendering: 0.00063 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item?asin=0143112562]
