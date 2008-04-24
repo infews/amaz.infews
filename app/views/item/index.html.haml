@@ -10,7 +10,7 @@
     .amazon_price
       %span.label Amazon Price:
       %span.price
-        = @item.amazon_price[:formatted] + link_to('*', :href => '#disclaimer')
+        = @item.amazon_price[:formatted] + link_to('*', :anchor => 'disclaimer')
   #top_box
     #rating
       #stars
@@ -26,7 +26,7 @@
       %span.price= @item.list_price[:formatted]
     .amazon_price
       %span.label Amazon Price:
-      %span.price= @item.amazon_price[:formatted] + link_to('*', :href => '#disclaimer')
+      %span.price= @item.amazon_price[:formatted] + link_to('*', :anchor => 'disclaimer')
 #disclaimer
   %a{:name => 'disclaimer'} 
   %em=AmazonAWS::DISCLAIMER

@@ -3910,3 +3910,17 @@ Completed in 0.71522 (1 reqs/sec) | Rendering: 0.11909 (16%) | DB: 0.00000 (0%) 
   [4;36;1mSQL (0.003039)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
   [4;35;1mSQL (0.002234)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
   [4;36;1mSQL (0.002220)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2008-04-23 23:04:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--c80d619fb75383ea94eca9461059bbc1699db16b
+  Parameters: {"action"=>"index", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/index
+Completed in 0.66533 (1 reqs/sec) | Rendering: 0.08867 (13%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/0143112562]
+
+
+Processing ItemController#index (for 127.0.0.1 at 2008-04-23 23:04:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--c80d619fb75383ea94eca9461059bbc1699db16b
+  Parameters: {"action"=>"index", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/index
+Completed in 0.60685 (1 reqs/sec) | Rendering: 0.06249 (10%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/0143112562]
