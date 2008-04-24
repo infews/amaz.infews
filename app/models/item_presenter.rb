@@ -1,4 +1,5 @@
 class ItemPresenter
+  
   attr_reader :doc
   
   def initialize(doc)
@@ -27,6 +28,10 @@ class ItemPresenter
     @average_rating ||= get '//customerreviews/averagerating'
   end
   
+  def binding
+    @binding ||= get '//itemattributes/binding'
+  end
+  
   def description
     # TODO: this will need to expand to an array as we support other types of
     # =>    'descriptions', Amazon's review, publisher's info, etc.
@@ -38,6 +43,10 @@ class ItemPresenter
    
     @description ||= {:source  => (@description_node%'source').innerHTML,
                       :content => (@description_node%'content').innerHTML}
+  end
+  
+  def edition
+    @edition ||= get '//itemattributes/edition'
   end
   
   def image

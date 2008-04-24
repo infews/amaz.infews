@@ -7,12 +7,12 @@ require 'uri'
 # your class will gain an reader <tt>ecs</tt> that can be used to call the 
 # Amazon REST API.
 module AmazonAWS
-    
-  private
 
   def aws_request
     @aws_request ||= Request.new(amazon_associates_id, amazon_access_key)
   end
+    
+  protected
 
   # Request wraps all calls to the AmazonAWS API.  Make calls through your class's <tt>ecs</tt>
   # attribute reader.

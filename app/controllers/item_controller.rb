@@ -1,10 +1,11 @@
 class ItemController < ApplicationController
-  # GET /item/ABCDEFG
+  
   def index
-    @item = ecs_item_lookup(:asin => params[:asin])
+    item_doc_node = aws_item_lookup(:asin => params[:asin]).items.first
+    @item = ItemPresenter.new(item_doc_node) unless item_doc_node.nil?
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # index.html.erb
     end
   end
 
