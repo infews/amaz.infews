@@ -2065,3 +2065,228 @@ Rendering /item/show
 Rendering /item/show
 Rendering /item/show
 Rendering /item/show
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:18:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00638 (156 reqs/sec) | Rendering: 0.00051 (7%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:18:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02182 (45 reqs/sec) | Rendering: 0.00045 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:26:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00644 (155 reqs/sec) | Rendering: 0.00041 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:26:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02154 (46 reqs/sec) | Rendering: 0.00057 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:27:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00576 (173 reqs/sec) | Rendering: 0.00038 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:27:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02641 (37 reqs/sec) | Rendering: 0.00043 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:29:26) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00576 (173 reqs/sec) | Rendering: 0.00038 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:29:26) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02184 (45 reqs/sec) | Rendering: 0.00043 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:35:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00575 (173 reqs/sec) | Rendering: 0.00038 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:35:40) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02188 (45 reqs/sec) | Rendering: 0.00043 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:36:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00628 (159 reqs/sec) | Rendering: 0.00040 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:36:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02199 (45 reqs/sec) | Rendering: 0.00045 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:36:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00596 (167 reqs/sec) | Rendering: 0.00039 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:36:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02221 (45 reqs/sec) | Rendering: 0.00052 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-25 18:40:31) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:40:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00298 (336 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:40:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02245 (44 reqs/sec) | Rendering: 0.00043 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-25 18:43:57) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:43:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00299 (334 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 18:43:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02223 (44 reqs/sec) | Rendering: 0.00043 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-25 19:48:44) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 19:48:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00299 (334 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-25 19:48:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02093 (47 reqs/sec) | Rendering: 0.00042 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]

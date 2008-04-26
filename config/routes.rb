@@ -31,7 +31,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Route for item/asin
   map.item 'item/:asin', :controller => 'item', :action => 'show'
-  
+  map.search 'item/search/:search/:keywords', :controller => 'item', :action => 'search'
   # Install the default routes as the lowest priority.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

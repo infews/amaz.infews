@@ -81,11 +81,15 @@ describe '/item/show' do
   end
 
   # TODO: implement these!  
+  
+  # TODO: this is next
+  it 'should show the description if a valid one is found'
+  
+  # TODO: logic in view?  logic in presenter?
+  it 'should not show a description if a valid one is not found'
   it 'should have each author linked to a search'
   it 'should not show an image if one is not present'
   it 'should show the list price if it is more than the amazon price'
   it 'should not show the amazon price it is not less than the list price' 
-  it 'should show the description if a valid one is found'
-  it 'should not show a description if a valid one is not found'
   it 'should show the price a 2nd time if there is a description'
 end

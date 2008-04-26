@@ -6,7 +6,7 @@ describe ItemController do
       public(:aws_request)
     end
   end
-
+   
   it 'should route to /item/123456' do 
     route_for(:controller => 'item', 
               :action => 'show',
@@ -17,6 +17,20 @@ describe ItemController do
     params_from(:get, '/item/123456').should == {:controller => 'item',
                                                  :action     => 'show',
                                                  :asin       => '123456'}
+  end
+
+  it "should route to /item/search?search_type=book&keywords=foo" do 
+    route_for(:controller => 'item', 
+              :action => 'search',
+              :search => 'book',
+              :keywords => 'foo').should == '/item/search/book/foo'
+  end
+
+  it 'should get routed from /item/search?keywords=foo&search=book' do
+    params_from(:get, '/item/search/book/foo').should == {:controller => 'item', 
+                                                          :action => 'search',
+                                                          :search => 'book',
+                                                          :keywords => 'foo'}
   end
 
   it 'should call Amazon with an ItemLookup properly when an asin is requested and instantiate an ItemPresenter' do
@@ -41,4 +55,13 @@ describe ItemController do
     
   it 'should redirect to an empty search page when an item is not found'
   
+  it 'should call Amazon with a book keyword search' do
+    response_xml = File.read('spec/response_xml/item_search_book_keyword.xml')
+    controller.aws_request.stub!(:fetch).and_return(response_xml)
+    
+    get 'search', :search => 'book', :keywords => 'Against the day'
+    
+    assigns[:items].should_not be_nil   
+    assings[:items].size.should == 10
+  end
 end
