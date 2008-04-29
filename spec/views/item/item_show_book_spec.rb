@@ -47,7 +47,7 @@ describe '/item/show' do
  
     render '/item/show'
       
-    response.should have_tag('div#top_box') do
+    response.should have_tag('div#rating_and_rank') do
       with_tag('div#rating') do
         with_tag('div#stars', '4.5 out of 5 stars')
       end
@@ -61,7 +61,7 @@ describe '/item/show' do
  
     render '/item/show'
       
-    response.should have_tag('div#top_box') do
+    response.should have_tag('div#rating_and_rank') do
       with_tag('div#rating') do
         with_tag('div.count', '(55 customer reviews)')
       end
@@ -75,7 +75,7 @@ describe '/item/show' do
  
     render '/item/show'
       
-    response.should have_tag('div#top_box') do
+    response.should have_tag('div#rating_and_rank') do
       with_tag('div#rank') do
         with_tag('span.label', 'Amazon Sales Rank:')
         with_tag('span.rank', '26,771')

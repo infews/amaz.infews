@@ -4,7 +4,7 @@
     %span.edition= "(#{[@item.binding, @item.edition].compact.join(', ')})"
     .authors= "by #{@item.authors.to_sentence}" unless @item.authors.nil?
   = render :partial => 'pricing', :locals => {:location => 'top'}
-  #top_box
+  #rating_and_rank
     #rating
       #stars
         = "#{@item.average_rating} out of 5 stars"
