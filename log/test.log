@@ -5341,3 +5341,158 @@ Rendered /item/_pricing (0.00699)
 Rendered /item/_image (0.00039)
 Rendered /item/_description (0.00098)
 Rendered /item/_pricing (0.00046)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-29 08:02:49) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.23703 (4 reqs/sec) | Rendering: 0.00075 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-29 08:02:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00300 (333 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-29 08:02:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02560 (39 reqs/sec) | Rendering: 0.00044 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00937)
+Rendered /item/_description (0.00226)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00777)
+Rendered /item/_image (0.00136)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00056)
+Rendering /item/show
+Rendered /item/_pricing (0.00752)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00781)
+Rendered /item/_image (0.00050)
+Rendering /item/show
+Rendered /item/_pricing (0.00732)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00709)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00696)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00746)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00128)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.01245)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00114)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00789)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00751)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00111)
+Rendering /item/show
+Rendered /item/_pricing (0.00713)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00097)
+Rendered /item/_pricing (0.00045)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-29 08:09:45) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.21779 (4 reqs/sec) | Rendering: 0.00082 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-29 08:09:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00297 (336 reqs/sec) | Rendering: 0.00041 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-29 08:09:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02640 (37 reqs/sec) | Rendering: 0.00050 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00922)
+Rendered /item/_description (0.00354)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_pricing (0.00720)
+Rendered /item/_image (0.00113)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00745)
+Rendered /item/_image (0.00057)
+Rendering /item/show
+Rendered /item/_pricing (0.00745)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_pricing (0.00730)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00727)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00081)
+Rendering /item/show
+Rendered /item/_pricing (0.00707)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_pricing (0.00743)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00822)
+Rendered /item/_image (0.00045)
+Rendered /item/_description (0.00152)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_pricing (0.00746)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00126)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_pricing (0.00745)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00110)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00843)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00047)

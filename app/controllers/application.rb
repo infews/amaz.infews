@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => 'd49d941c59fe933cf1635c3e2200feb4'
 
+  layout 'application'
+  
   def amazon_associates_id
     'infews-20'
   end
