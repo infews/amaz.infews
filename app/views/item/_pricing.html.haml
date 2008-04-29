@@ -1,0 +1,8 @@
+%div{:class => "pricing #{location}"}
+  .list_price
+    %span.label List Price:
+    %span.price= @item.list_price[:formatted]
+  .amazon_price
+    Foo
+    %span.label Amazon Price:
+    %span.price= @item.amazon_price[:formatted] + link_to('*', :anchor => 'disclaimer')

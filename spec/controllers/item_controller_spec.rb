@@ -62,6 +62,6 @@ describe ItemController do
     get 'search', :search => 'book', :keywords => 'Against the day'
     
     assigns[:items].should_not be_nil   
-    assings[:items].size.should == 10
+    assigns[:items].size.should == 10
   end
 end

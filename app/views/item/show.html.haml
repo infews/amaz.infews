@@ -2,15 +2,8 @@
   .summary
     %span.title= @item.title
     %span.edition= "(#{[@item.binding, @item.edition].compact.join(', ')})"
-    .authors= "by #{@item.authors.to_sentence}"
-  #pricing_top
-    .list_price
-      %span.label List Price:
-      %span.price= @item.list_price[:formatted]
-    .amazon_price
-      %span.label Amazon Price:
-      %span.price
-        = @item.amazon_price[:formatted] + link_to('*', :anchor => 'disclaimer')
+    .authors= "by #{@item.authors.to_sentence}" unless @item.authors.nil?
+  = render :partial => 'pricing', :locals => {:location => 'top'}
   #top_box
     #rating
       #stars
@@ -19,14 +12,9 @@
     #rank
       %span.label Amazon Sales Rank:
       %span.rank= number_with_delimiter @item.sales_rank
-  #image= image_tag @item.image[:url], :alt => @item.title
-  #pricing_bottom
-    .list_price
-      %span.label List Price:
-      %span.price= @item.list_price[:formatted]
-    .amazon_price
-      %span.label Amazon Price:
-      %span.price= @item.amazon_price[:formatted] + link_to('*', :anchor => 'disclaimer')
+  = render :partial => 'image' unless @item.image.nil?
+  = render :partial => 'description' unless @item.description.nil?
+  = render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?
 #disclaimer
   %a{:name => 'disclaimer'} 
   %em=AmazonAWS::DISCLAIMER

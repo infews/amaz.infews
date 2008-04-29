@@ -2290,3 +2290,2750 @@ Processing ItemController#show (for 0.0.0.0 at 2008-04-25 19:48:44) [GET]
   Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
 Rendering item/show
 Completed in 0.02093 (47 reqs/sec) | Rendering: 0.00042 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-26 16:52:48) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 16:52:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00302 (331 reqs/sec) | Rendering: 0.00039 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 16:52:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02673 (37 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-26 17:21:08) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 17:21:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00303 (329 reqs/sec) | Rendering: 0.00039 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 17:21:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02638 (37 reqs/sec) | Rendering: 0.00086 (3%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-26 17:22:30) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 17:22:30) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 17:22:30) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02572 (38 reqs/sec) | Rendering: 0.00563 (21%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-26 17:24:19) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22374 (4 reqs/sec) | Rendering: 0.00088 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 17:24:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00310 (322 reqs/sec) | Rendering: 0.00039 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 17:24:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02528 (39 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-26 17:24:45) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21381 (4 reqs/sec) | Rendering: 0.00067 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 17:24:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00294 (340 reqs/sec) | Rendering: 0.00039 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 17:24:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02763 (36 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-26 22:24:29) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21360 (4 reqs/sec) | Rendering: 0.00068 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 22:24:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-26 22:24:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02593 (38 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:07:59) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.24551 (4 reqs/sec) | Rendering: 0.00087 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:07:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:07:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02524 (39 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:09:03) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21665 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:09:03) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00297 (336 reqs/sec) | Rendering: 0.00040 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:09:03) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02509 (39 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:13:07) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21689 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:13:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00297 (336 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:13:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02508 (39 reqs/sec) | Rendering: 0.00048 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:14:49) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21766 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:14:49) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00324 (308 reqs/sec) | Rendering: 0.00040 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:14:49) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02520 (39 reqs/sec) | Rendering: 0.00047 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:15:52) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21407 (4 reqs/sec) | Rendering: 0.00074 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:15:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00293 (340 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:15:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02522 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:17:52) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21333 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:17:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00297 (336 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:17:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02527 (39 reqs/sec) | Rendering: 0.00047 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:19:46) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21783 (4 reqs/sec) | Rendering: 0.00074 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:19:46) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00293 (340 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:19:46) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02516 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:20:36) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21390 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:20:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00295 (338 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:20:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02512 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendered /item/_description (0.00164)
+Rendering /item/show
+Rendered /item/_description (0.00070)
+Rendering /item/show
+Rendered /item/_description (0.00080)
+Rendering /item/show
+Rendered /item/_description (0.00077)
+Rendering /item/show
+Rendered /item/_description (0.00073)
+Rendering /item/show
+Rendered /item/_description (0.00071)
+Rendering /item/show
+Rendered /item/_description (0.00072)
+Rendering /item/show
+Rendered /item/_description (0.00071)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:21:45) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21686 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:21:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00304 (328 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:21:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02516 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendered /item/_description (0.00161)
+Rendering /item/show
+Rendered /item/_description (0.00071)
+Rendering /item/show
+Rendered /item/_description (0.00079)
+Rendering /item/show
+Rendered /item/_description (0.00076)
+Rendering /item/show
+Rendered /item/_description (0.00076)
+Rendering /item/show
+Rendered /item/_description (0.00070)
+Rendering /item/show
+Rendered /item/_description (0.00071)
+Rendering /item/show
+Rendered /item/_description (0.00072)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:22:24) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22029 (4 reqs/sec) | Rendering: 0.00075 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:22:24) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00295 (338 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:22:24) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02497 (40 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendered /item/_description (0.00711)
+Rendering /item/show
+Rendered /item/_description (0.00742)
+Rendering /item/show
+Rendered /item/_description (0.00682)
+Rendering /item/show
+Rendered /item/_description (0.00637)
+Rendering /item/show
+Rendered /item/_description (0.00622)
+Rendering /item/show
+Rendered /item/_description (0.00621)
+Rendering /item/show
+Rendered /item/_description (0.04233)
+Rendering /item/show
+Rendered /item/_description (0.00736)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:25:28) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21347 (4 reqs/sec) | Rendering: 0.00077 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:25:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00293 (341 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:25:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02501 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendered /item/_description (0.00197)
+Rendering /item/show
+Rendered /item/_description (0.00104)
+Rendering /item/show
+Rendered /item/_description (0.00112)
+Rendering /item/show
+Rendered /item/_description (0.00114)
+Rendering /item/show
+Rendered /item/_description (0.00113)
+Rendering /item/show
+Rendered /item/_description (0.00105)
+Rendering /item/show
+Rendered /item/_description (0.00103)
+Rendering /item/show
+Rendered /item/_description (0.00105)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:26:41) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21411 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:26:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00301 (332 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:26:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02529 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendered /item/_description (0.00199)
+Rendering /item/show
+Rendered /item/_description (0.00108)
+Rendering /item/show
+Rendered /item/_description (0.00123)
+Rendering /item/show
+Rendered /item/_description (0.00116)
+Rendering /item/show
+Rendered /item/_description (0.00126)
+Rendering /item/show
+Rendered /item/_description (0.00105)
+Rendering /item/show
+Rendered /item/_description (0.00106)
+Rendering /item/show
+Rendered /item/_description (0.00107)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:29:23) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21812 (4 reqs/sec) | Rendering: 0.00144 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:29:23) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00301 (332 reqs/sec) | Rendering: 0.00043 (14%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:29:23) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02519 (39 reqs/sec) | Rendering: 0.00044 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00861)
+Rendering /item/show
+Rendered /item/_pricing (0.00681)
+Rendering /item/show
+Rendered /item/_pricing (0.00697)
+Rendered /item/_description (0.00205)
+Rendered /item/_pricing (0.00081)
+Rendering /item/show
+Rendered /item/_pricing (0.00699)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00042)
+Rendering /item/show
+Rendered /item/_pricing (0.00747)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00734)
+Rendered /item/_description (0.00110)
+Rendered /item/_pricing (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00697)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00688)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00040)
+Rendering /item/show
+Rendered /item/_pricing (0.00690)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00705)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00043)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:29:54) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21272 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:29:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00301 (332 reqs/sec) | Rendering: 0.00044 (14%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:29:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02520 (39 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.01355)
+Rendering /item/show
+Rendered /item/_pricing (0.00682)
+Rendering /item/show
+Rendered /item/_pricing (0.00694)
+Rendered /item/_description (0.00194)
+Rendered /item/_pricing (0.00052)
+Rendering /item/show
+Rendered /item/_pricing (0.00696)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00055)
+Rendering /item/show
+Rendered /item/_pricing (0.00746)
+Rendered /item/_description (0.00119)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00732)
+Rendered /item/_description (0.00110)
+Rendered /item/_pricing (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00698)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00040)
+Rendering /item/show
+Rendered /item/_pricing (0.00685)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00039)
+Rendering /item/show
+Rendered /item/_pricing (0.00684)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00704)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00041)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:34:10) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21616 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:34:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (338 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:34:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02526 (39 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:34:48) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21912 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:34:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00297 (337 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:34:48) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02606 (38 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 08:35:28) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21388 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:35:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00305 (327 reqs/sec) | Rendering: 0.00039 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 08:35:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02681 (37 reqs/sec) | Rendering: 0.00545 (20%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:16:37) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21992 (4 reqs/sec) | Rendering: 0.00086 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:16:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00297 (336 reqs/sec) | Rendering: 0.00039 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:16:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02594 (38 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:17:24) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22598 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:17:24) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:17:24) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02577 (38 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:18:09) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21863 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:18:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00299 (334 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:18:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02586 (38 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:129
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:119
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:105
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:92
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:76
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:62
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:48
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:36
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:26
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+Rendering /item/show
+ERROR: compiling _run_template_47app47views47item47show46html46haml RAISED compile error
+/home/dwf/workspace/amaz/app/views//item/show.html.haml:23: syntax error, unexpected kEND, expecting $end
+Function body: def _run_template_47app47views47item47show46html46haml(local_assigns)
+extend Haml::Helpers;@haml_stack ||= Array.new;@haml_stack.push(Haml::Buffer.new({:attr_wrapper=>"'"}));@haml_is_haml = true;_hamlout = @haml_stack[-1];_erbout = _hamlout.buffer;;
+
+
+_hamlout.push_text("<div id='item'>\n  <div class='summary'>\n    <span class='title'>", 3);haml_temp = @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <span class='edition'>", 1);haml_temp = "(#{[@item.binding, @item.edition].compact.join(', ')})";
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("    <div class='authors'>", 1);haml_temp = "by #{@item.authors.to_sentence}" unless @item.authors.nil?;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");_hamlout.push_text("  </div>\n</div>\n", -2);haml_temp =  render :partial => 'pricing', :locals => {:location => 'top'};
+
+
+
+_hamlout.push_text("<div id='top_box'>\n  <div id='rating'>\n    <div id='stars'>\n", 3);haml_temp =  "#{@item.average_rating} out of 5 stars";
+haml_temp = _hamlout.push_script(haml_temp, false, nil);_hamlout.push_text("    </div>\n    <div class='count'>", 0);haml_temp = "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })";
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");
+
+_hamlout.push_text("  </div>\n  <div id='rank'>\n    <span class='label'>Amazon Sales Rank:</span>\n    <span class='rank'>", 1);haml_temp = number_with_delimiter @item.sales_rank;
+haml_temp = _hamlout.push_script(haml_temp, nil, "span");_hamlout.push_text("  </div>\n</div>\n<div id='image'>", -1);haml_temp = image_tag @item.image[:url], :alt => @item.title;
+haml_temp = _hamlout.push_script(haml_temp, nil, "div");haml_temp =  render :partial => 'description' unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);haml_temp =  render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?;
+haml_temp = _hamlout.push_script(haml_temp, false, nil);end;haml_temp = _hamlout.push_script(haml_temp, false, nil);
+
+_hamlout.push_text("<div id='disclaimer'>\n  <a name='disclaimer'>\n  </a>\n  <em>", 2);haml_temp = AmazonAWS::DISCLAIMER;
+haml_temp = _hamlout.push_script(haml_temp, nil, "em");
+_hamlout.push_text("</div>\n", -1);@haml_is_haml = false;@haml_stack.pop.buffer;
+end
+Backtrace: /home/dwf/workspace/amaz/app/views//item/show.html.haml:23:in `compile_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:630:in `compile_and_render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/base.rb:861:in `render_with_no_layout'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `send'
+/home/dwf/workspace/amaz/vendor/plugins/rspec_on_rails/lib/spec/rails/example/view_example_group.rb:130:in `render'
+./spec/views/item/item_show_book_spec.rb:10
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `instance_eval'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:82:in `run_with_description_capturing'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:301:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:300:in `execute_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:130:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/options.rb:90:in `run_examples'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/home/dwf/workspace/amaz/vendor/plugins/rspec/bin/spec:4
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:18:37) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21328 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:18:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00307 (325 reqs/sec) | Rendering: 0.00045 (14%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:18:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02505 (39 reqs/sec) | Rendering: 0.00517 (20%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:19:03) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21884 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:19:04) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00301 (332 reqs/sec) | Rendering: 0.00044 (14%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:19:04) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02555 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendered /item/_description (0.02839)
+Rendering /item/show
+Rendered /item/_description (0.00106)
+Rendering /item/show
+Rendered /item/_description (0.00105)
+Rendering /item/show
+Rendered /item/_description (0.00119)
+Rendering /item/show
+Rendered /item/_description (0.00118)
+Rendering /item/show
+Rendered /item/_description (0.00110)
+Rendering /item/show
+Rendered /item/_description (0.00105)
+Rendering /item/show
+Rendered /item/_description (0.00104)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:19:27) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21527 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:19:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (338 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:19:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02588 (38 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:20:09) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22184 (4 reqs/sec) | Rendering: 0.00071 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:20:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00295 (338 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:20:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02527 (39 reqs/sec) | Rendering: 0.00527 (20%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:20:45) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21417 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:20:46) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00300 (332 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:20:46) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02532 (39 reqs/sec) | Rendering: 0.00535 (21%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:21:01) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21974 (4 reqs/sec) | Rendering: 0.00075 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00295 (338 reqs/sec) | Rendering: 0.00039 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02535 (39 reqs/sec) | Rendering: 0.00048 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00108)
+Rendering /item/show
+Rendered /item/_pricing (0.00033)
+Rendering /item/show
+Rendered /item/_pricing (0.00025)
+Rendered /item/_description (0.00196)
+Rendering /item/show
+Rendered /item/_pricing (0.00029)
+Rendered /item/_description (0.00108)
+Rendering /item/show
+Rendered /item/_pricing (0.00027)
+Rendered /item/_description (0.10520)
+Rendering /item/show
+Rendered /item/_pricing (0.00029)
+Rendered /item/_description (0.00111)
+Rendering /item/show
+Rendered /item/_pricing (0.00029)
+Rendered /item/_description (0.00112)
+Rendering /item/show
+Rendered /item/_pricing (0.00029)
+Rendered /item/_description (0.00103)
+Rendering /item/show
+Rendered /item/_pricing (0.00026)
+Rendered /item/_description (0.00103)
+Rendering /item/show
+Rendered /item/_pricing (0.00029)
+Rendered /item/_description (0.00103)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:21:22) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22413 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:21:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00308 (324 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:21:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02550 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:21:40) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22167 (4 reqs/sec) | Rendering: 0.00074 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:21:41) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00304 (329 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:21:41) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02558 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:22:32) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21447 (4 reqs/sec) | Rendering: 0.00079 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:22:32) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00308 (324 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:22:32) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02540 (39 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:23:13) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22255 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:23:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:23:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02543 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:24:16) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21571 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:24:16) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00320 (312 reqs/sec) | Rendering: 0.00038 (11%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:24:16) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02554 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.01399)
+Rendering /item/show
+Rendered /item/_pricing (0.00686)
+Rendering /item/show
+Rendered /item/_pricing (0.00715)
+Rendered /item/_description (0.00197)
+Rendering /item/show
+Rendered /item/_pricing (0.00799)
+Rendered /item/_description (0.00104)
+Rendering /item/show
+Rendered /item/_pricing (0.00797)
+Rendered /item/_description (0.00121)
+Rendering /item/show
+Rendered /item/_pricing (0.00750)
+Rendered /item/_description (0.00113)
+Rendering /item/show
+Rendered /item/_pricing (0.00720)
+Rendered /item/_description (0.00103)
+Rendering /item/show
+Rendered /item/_pricing (0.00692)
+Rendered /item/_description (0.00101)
+Rendering /item/show
+Rendered /item/_pricing (0.00694)
+Rendered /item/_description (0.00101)
+Rendering /item/show
+Rendered /item/_pricing (0.00723)
+Rendered /item/_description (0.00104)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:24:36) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21785 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:24:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (338 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:24:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02577 (38 reqs/sec) | Rendering: 0.00046 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.01416)
+Rendering /item/show
+Rendered /item/_pricing (0.00698)
+Rendering /item/show
+Rendered /item/_pricing (0.00701)
+Rendered /item/_description (0.00196)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00726)
+Rendered /item/_description (0.00284)
+Rendered /item/_pricing (0.00052)
+Rendering /item/show
+Rendered /item/_pricing (0.00760)
+Rendered /item/_description (0.00121)
+Rendered /item/_pricing (0.00067)
+Rendering /item/show
+Rendered /item/_pricing (0.00741)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00723)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00058)
+Rendering /item/show
+Rendered /item/_pricing (0.00727)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00693)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00710)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00047)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:26:02) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22073 (4 reqs/sec) | Rendering: 0.00550 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:26:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00401 (249 reqs/sec) | Rendering: 0.00041 (10%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:26:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02603 (38 reqs/sec) | Rendering: 0.00052 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00897)
+Rendering /item/show
+Rendered /item/_pricing (0.00699)
+Rendering /item/show
+Rendered /item/_pricing (0.00696)
+Rendered /item/_description (0.00202)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00792)
+Rendered /item/_description (0.00112)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00762)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_pricing (0.00759)
+Rendered /item/_description (0.00110)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00704)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00700)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00700)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00718)
+Rendered /item/_description (0.00109)
+Rendered /item/_pricing (0.00051)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:28:42) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21588 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:28:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00299 (334 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:28:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02528 (39 reqs/sec) | Rendering: 0.00047 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00892)
+Rendered /item/_description (0.00185)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00708)
+Rendering /item/show
+Rendered /item/_pricing (0.00735)
+Rendering /item/show
+Rendered /item/_pricing (0.00708)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00759)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00747)
+Rendered /item/_description (0.00119)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00702)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00770)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00707)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00717)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00784)
+Rendered /item/_description (0.00119)
+Rendered /item/_pricing (0.00048)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:29:28) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22800 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:29:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00297 (337 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:29:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02522 (39 reqs/sec) | Rendering: 0.00054 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00879)
+Rendered /item/_description (0.00191)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00685)
+Rendering /item/show
+Rendered /item/_pricing (0.00692)
+Rendering /item/show
+Rendered /item/_pricing (0.00709)
+Rendered /item/_description (0.00114)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00777)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_pricing (0.01107)
+Rendered /item/_description (0.00111)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00705)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00705)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00696)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00734)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00785)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00049)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:33:56) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21805 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:33:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00295 (338 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:33:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02574 (38 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00947)
+Rendering /item/show
+Rendered /item/_pricing (0.00696)
+Rendered /item/_description (0.00668)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_pricing (0.00683)
+Rendering /item/show
+Rendered /item/_pricing (0.00772)
+Rendering /item/show
+Rendered /item/_pricing (0.00748)
+Rendered /item/_description (0.00114)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_pricing (0.00712)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00701)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00802)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00701)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00519)
+Rendering /item/show
+Rendered /item/_pricing (0.00782)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_pricing (0.00753)
+Rendered /item/_description (0.00114)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00722)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00045)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:35:45) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21586 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:35:46) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:35:46) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02520 (39 reqs/sec) | Rendering: 0.00050 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00857)
+Rendering /item/show
+Rendered /item/_pricing (0.00703)
+Rendering /item/show
+Rendered /item/_pricing (0.00967)
+Rendering /item/show
+Rendered /item/_pricing (0.00729)
+Rendering /item/show
+Rendered /item/_pricing (0.00700)
+Rendering /item/show
+Rendered /item/_pricing (0.00693)
+Rendering /item/show
+Rendered /item/_pricing (0.00701)
+Rendering /item/show
+Rendered /item/_pricing (0.00757)
+Rendering /item/show
+Rendered /item/_pricing (0.00705)
+Rendering /item/show
+Rendered /item/_pricing (0.00696)
+Rendering /item/show
+Rendered /item/_pricing (0.00703)
+Rendering /item/show
+Rendered /item/_pricing (0.00756)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:36:16) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22342 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:36:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00297 (336 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:36:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02584 (38 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00864)
+Rendered /item/_description (0.00191)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00693)
+Rendered /item/_image (0.00117)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00703)
+Rendered /item/_image (0.00038)
+Rendering /item/show
+Rendered /item/_pricing (0.00702)
+Rendered /item/_image (0.00039)
+Rendering /item/show
+Rendered /item/_pricing (0.01117)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00114)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_pricing (0.00738)
+Rendered /item/_image (0.00038)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00707)
+Rendered /item/_image (0.00045)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00695)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00693)
+Rendered /item/_image (0.00038)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00712)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00056)
+Rendering /item/show
+Rendered /item/_pricing (0.00789)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00741)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00047)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:39:11) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21563 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:39:11) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:39:11) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02598 (38 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00867)
+Rendered /item/_description (0.00191)
+Rendered /item/_pricing (0.00053)
+Rendering /item/show
+Rendered /item/_pricing (0.00699)
+Rendered /item/_image (0.00108)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00698)
+Rendered /item/_image (0.00039)
+Rendering /item/show
+Rendered /item/_pricing (0.00703)
+Rendered /item/_image (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00775)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_pricing (0.00746)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00709)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00697)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00701)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00719)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00579)
+Rendered /item/_pricing (0.00052)
+Rendering /item/show
+Rendered /item/_pricing (0.00803)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_pricing (0.00756)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00109)
+Rendered /item/_pricing (0.00047)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 18:39:34) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22056 (4 reqs/sec) | Rendering: 0.00076 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:39:34) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00369 (271 reqs/sec) | Rendering: 0.00041 (11%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 18:39:34) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02540 (39 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00873)
+Rendered /item/_description (0.00191)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00693)
+Rendered /item/_image (0.00106)
+Rendered /item/_description (0.00097)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00687)
+Rendered /item/_image (0.00039)
+Rendering /item/show
+Rendered /item/_pricing (0.00701)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_pricing (0.00756)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00114)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00736)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00787)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00689)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00096)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00696)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00722)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00791)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00052)
+Rendering /item/show
+Rendered /item/_pricing (0.00749)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00047)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 21:21:47) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.21874 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:21:47) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00298 (336 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:21:47) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02656 (37 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00900)
+Rendered /item/_description (0.00221)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00761)
+Rendered /item/_image (0.00136)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00767)
+Rendered /item/_image (0.00039)
+Rendering /item/show
+Rendered /item/_pricing (0.00724)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_pricing (0.00757)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.01226)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00720)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00701)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00096)
+Rendered /item/_pricing (0.00054)
+Rendering /item/show
+Rendered /item/_pricing (0.00699)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00717)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_pricing (0.00822)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00806)
+Rendered /item/_image (0.00054)
+Rendered /item/_description (0.00109)
+Rendered /item/_pricing (0.00047)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 21:27:57) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22009 (4 reqs/sec) | Rendering: 0.00090 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:27:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00298 (335 reqs/sec) | Rendering: 0.00037 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:27:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02649 (37 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00881)
+Rendered /item/_description (0.00188)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00780)
+Rendered /item/_image (0.00107)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00735)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00707)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00953)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00766)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00759)
+Rendered /item/_image (0.00038)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00714)
+Rendered /item/_image (0.00037)
+Rendered /item/_description (0.00096)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00761)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00057)
+Rendering /item/show
+Rendered /item/_pricing (0.00747)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00844)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00119)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00749)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00046)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 21:28:55) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22022 (4 reqs/sec) | Rendering: 0.00090 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:28:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00300 (333 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:28:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02131 (46 reqs/sec) | Rendering: 0.00044 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00910)
+Rendered /item/_description (0.00189)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00691)
+Rendered /item/_image (0.00117)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00697)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_pricing (0.00698)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00795)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00126)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_pricing (0.00744)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00122)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_pricing (0.00700)
+Rendered /item/_image (0.00076)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00062)
+Rendering /item/show
+Rendered /item/_pricing (0.00750)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00699)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00731)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00823)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00263)
+Rendered /item/_pricing (0.00053)
+Rendering /item/show
+Rendered /item/_pricing (0.00745)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00112)
+Rendered /item/_pricing (0.00046)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 21:31:04) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22073 (4 reqs/sec) | Rendering: 0.00073 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:31:04) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00339 (295 reqs/sec) | Rendering: 0.00039 (11%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:31:04) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02685 (37 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00883)
+Rendered /item/_description (0.00190)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00760)
+Rendered /item/_image (0.00107)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00961)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00738)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00818)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00055)
+Rendering /item/show
+Rendered /item/_pricing (0.00743)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00711)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00706)
+Rendered /item/_image (0.00038)
+Rendered /item/_description (0.00110)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00768)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00729)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00837)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00174)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00805)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00108)
+Rendered /item/_pricing (0.00055)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-04-28 21:33:22) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering item/search
+Completed in 0.22165 (4 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:33:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering item/show
+Completed in 0.00310 (322 reqs/sec) | Rendering: 0.00038 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-04-28 21:33:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering item/show
+Completed in 0.02644 (37 reqs/sec) | Rendering: 0.00045 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering /item/show
+Rendered /item/_pricing (0.00875)
+Rendered /item/_description (0.00218)
+Rendered /item/_pricing (0.00056)
+Rendering /item/show
+Rendered /item/_pricing (0.00718)
+Rendered /item/_image (0.00106)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.04165)
+Rendered /item/_image (0.00042)
+Rendering /item/show
+Rendered /item/_pricing (0.00721)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_pricing (0.00772)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00125)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_pricing (0.00778)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00119)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00948)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00044)
+Rendering /item/show
+Rendered /item/_pricing (0.00744)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00820)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_pricing (0.00793)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_pricing (0.00818)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_pricing (0.00790)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00122)
+Rendered /item/_pricing (0.00046)

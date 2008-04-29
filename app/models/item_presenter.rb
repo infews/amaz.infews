@@ -36,8 +36,10 @@ class ItemPresenter
     # TODO: this will need to expand to an array as we support other types of
     # =>    'descriptions', Amazon's review, publisher's info, etc.
     @description_node ||= @doc/'//editorialreviews/editorialreview'
-
-    if (@description_node%'source').innerHTML != 'Product Description'
+    return nil if @description_node.nil?
+    
+    if (@description_node%'source').nil? || 
+       (@description_node%'source').innerHTML != 'Product Description'
       return nil
     end
    

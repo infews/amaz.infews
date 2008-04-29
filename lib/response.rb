@@ -6,7 +6,7 @@ module AmazonAWS
     attr_reader :doc
     
     def initialize(xml)
-      @doc = Hpricot.parse xml
+      @doc = Hpricot.parse(xml)
     end
     
     def items
