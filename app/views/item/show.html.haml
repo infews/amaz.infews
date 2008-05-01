@@ -1,8 +1,5 @@
 #item
-  .summary
-    %span.title= @item.title
-    %span.edition= "(#{[@item.binding, @item.edition].compact.join(', ')})"
-    .authors= "by #{@item.authors.to_sentence}" unless @item.authors.nil?
+  = render :partial => 'summary', :locals => {:item => @item}
   = render :partial => 'pricing', :locals => {:location => 'top'}
   #rating_and_rank
     #rating

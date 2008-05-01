@@ -6720,3 +6720,695 @@ Rendered item/_image (0.00108)
 Rendered item/_description (0.00186)
 Rendered item/_pricing (0.00053)
 Completed in 0.10997 (9 reqs/sec) | Rendering: 0.04698 (42%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item_test]
+  [4;36;1mSQL (0.000821)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000590)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000708)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000486)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.008579)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.027432)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002759)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002819)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000400)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000294)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000306)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000255)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007047)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002857)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002228)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002165)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000400)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000319)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000258)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007492)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002685)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.003900)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002347)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-04-29 22:20:40) [GET]
+  Session ID: 3e2feba79d20ddd836f00ca9e085c807
+  Parameters: {"action"=>"show", "asin"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.title) on line #2 of item/_summary.html.haml:
+1: .summary
+2:   %span.title= item.title
+3:   %span.edition= "(#{[item.binding, item.edition].compact.join(', ')})"
+4:   .authors= "by #{item.authors.to_sentence}" unless item.authors.nil?
+
+    app/views/item/_summary.html.haml:2:in `_run_template_47app47views47item47_summary46html46haml'
+    vendor/rails/actionpack/lib/action_view/base.rb:637:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:637:in `compile_and_render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+    vendor/rails/actionpack/lib/action_view/base.rb:331:in `render_without_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:7:in `render'
+    vendor/rails/actionpack/lib/action_view/partials.rb:117:in `render_partial'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partials.rb:116:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:352:in `render_without_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:7:in `render'
+    app/views/item/show.html.haml:2:in `_run_template_47app47views47item47show46html46haml'
+    vendor/rails/actionpack/lib/action_view/base.rb:637:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:637:in `compile_and_render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:156:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:156:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:150:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:150:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/item_controller.rb:8:in `show'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1158:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:697:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching.rb:678:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching.rb:677:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:388:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+
+Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-04-29 22:20:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--c80d619fb75383ea94eca9461059bbc1699db16b
+  Parameters: {"action"=>"show", "asin"=>"test_show", "controller"=>"item"}
+
+
+NameError (undefined local variable or method `aws_request' for #<ItemController:0xb69ef564>):
+    /lib/amazon_aws.rb:23:in `aws_item_lookup'
+    /app/controllers/item_controller.rb:4:in `show'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1158:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:697:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:678:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:677:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:388:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+
+Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-04-29 22:23:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--c80d619fb75383ea94eca9461059bbc1699db16b
+  Parameters: {"action"=>"show", "asin"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.title) on line #2 of item/_summary.html.haml:
+1: .summary
+2:   %span.title= item.title
+3:   %span.edition= "(#{[item.binding, item.edition].compact.join(', ')})"
+4:   .authors= "by #{item.authors.to_sentence}" unless item.authors.nil?
+
+    app/views/item/_summary.html.haml:2:in `_run_template_47app47views47item47_summary46html46haml'
+    vendor/rails/actionpack/lib/action_view/base.rb:637:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:637:in `compile_and_render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+    vendor/rails/actionpack/lib/action_view/base.rb:331:in `render_without_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:7:in `render'
+    vendor/rails/actionpack/lib/action_view/partials.rb:117:in `render_partial'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partials.rb:116:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:352:in `render_without_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/haml/helpers/action_view_mods.rb:7:in `render'
+    app/views/item/show.html.haml:2:in `_run_template_47app47views47item47show46html46haml'
+    vendor/rails/actionpack/lib/action_view/base.rb:637:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:637:in `compile_and_render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:365:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:316:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1100:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:156:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:156:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:150:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:150:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/item_controller.rb:8:in `show'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1158:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:697:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching.rb:678:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching.rb:677:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:388:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.000408)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000301)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.004033)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006020)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002274)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001822)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003651)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000541)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000359)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000432)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000333)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007447)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003640)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002808)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.021030)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000393)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000258)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.005602)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002577)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.004047)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002260)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000305)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000261)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007088)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002563)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001956)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003879)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000303)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000254)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.021681)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003151)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002329)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002421)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000396)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000303)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000256)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006278)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002677)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.004139)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002488)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000393)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000299)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000258)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.011386)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002903)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002219)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003149)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000393)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000309)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000261)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007046)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002604)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.004015)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002343)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000386)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000258)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.025358)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002876)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002174)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002135)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000319)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000256)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.033017)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003258)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002362)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002318)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000191)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000494)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.008237)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003816)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.032134)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002827)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000407)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000299)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000259)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.046382)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003033)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002417)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002470)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000394)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000301)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000277)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.008801)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002830)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002322)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002293)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000400)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000322)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000260)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007445)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002540)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001758)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003257)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000387)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000302)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000255)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.004550)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002600)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.003995)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002447)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000266)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000299)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000255)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.045433)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003168)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002409)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002285)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000386)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000295)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000267)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.004678)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002699)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.003876)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002471)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000278)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000297)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000260)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006923)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002446)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001769)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.004932)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000306)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000274)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.035393)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003074)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002654)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002529)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000385)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000297)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000265)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007067)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002517)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001850)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003490)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000385)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000296)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000306)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000257)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.008511)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003126)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002283)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003162)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000388)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000308)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000304)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000271)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007068)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003109)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002398)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002311)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.003928)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006448)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002495)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001971)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003801)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000422)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000291)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000307)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000268)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006032)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002945)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002143)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003052)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000388)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000303)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000263)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007891)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002900)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002397)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002329)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000549)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000366)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000429)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000189)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000343)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.010412)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003416)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.033341)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003796)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000384)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000264)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000265)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007988)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002826)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.004181)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002765)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000438)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000302)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000262)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006328)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002560)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001851)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.004124)[0m   [0;1mUPDATE schema_info SET version = 1[0m

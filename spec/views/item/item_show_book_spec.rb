@@ -1,11 +1,11 @@
 require File.dirname(__FILE__) + '/../../spec_helper'
 
 describe '/item/show' do
-
+  before :all do
+    @lookup_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml')) 
+  end
   it 'should have the title summary at the top of the page' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
     
     render '/item/show'
       
@@ -17,21 +17,21 @@ describe '/item/show' do
       with_tag('div.authors', 'by Thomas Pynchon')
     end
   end
-  
-  it 'should not hyperlink the title' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
 
-    render '/item/show'
-      
-    response.should_not have_tag('a', 'Against the Day')
-  end
+# TODO: is this testable with rspec?  should it even be tested?
+#   
+#  it 'should not hyperlink the title' do
+#    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
+#    @item = ItemPresenter.new(aws_response.items.first)
+#    assigns[:item] = @item    
+#
+#    render '/item/show'
+#      
+#    response.should_not have_tag('a', 'Against the Day')
+#  end
   
   it 'should show the image if one is present' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
  
     render '/item/show'
       
@@ -41,10 +41,8 @@ describe '/item/show' do
   end
   
   it 'should show the average rating' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
- 
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
+    
     render '/item/show'
       
     response.should have_tag('div#rating_and_rank') do
@@ -55,10 +53,8 @@ describe '/item/show' do
   end
   
   it 'should show the number of customer reviews' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
- 
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
+    
     render '/item/show'
       
     response.should have_tag('div#rating_and_rank') do
@@ -69,10 +65,8 @@ describe '/item/show' do
   end
   
   it 'should show the sales rank' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
- 
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
+    
     render '/item/show'
       
     response.should have_tag('div#rating_and_rank') do
@@ -85,10 +79,8 @@ describe '/item/show' do
   end
   
   it 'should show the disclaimer at the bottom of the page' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
- 
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
+    
     render '/item/show'
       
     response.should have_tag('div#disclaimer') do
@@ -98,10 +90,8 @@ describe '/item/show' do
   end
 
   it 'should show the description if a valid one is found' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
- 
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
+    
     render '/item/show'
       
     response.should have_tag('div#description') do
@@ -112,8 +102,7 @@ describe '/item/show' do
     
   it 'should not show a description if a valid one is not found' do
     aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book_no_description.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
+    assigns[:item] = ItemPresenter.new(aws_response.items.first)
  
     render '/item/show'
 
@@ -122,8 +111,7 @@ describe '/item/show' do
 
   it 'should not show the 2nd pricing box if no description is shown' do
     aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book_no_description.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
+    assigns[:item] = ItemPresenter.new(aws_response.items.first)
  
     render '/item/show'
     
@@ -133,10 +121,8 @@ describe '/item/show' do
   end
   
   it 'should show the price a 2nd time if there is a description' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
- 
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
+    
     render '/item/show'
 
     response.should have_tag('div[class=pricing bottom]')
@@ -144,8 +130,7 @@ describe '/item/show' do
   
   it 'should not show an image if one is not present' do
     aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book_missing_image.xml'))
-    @item = ItemPresenter.new(aws_response.items.first)
-    assigns[:item] = @item    
+    assigns[:item] = ItemPresenter.new(aws_response.items.first)
  
     render '/item/show'
     response.should have_tag('#item') do
