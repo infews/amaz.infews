@@ -4,7 +4,8 @@ describe '/item/show' do
   before :all do
     @lookup_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml')) 
   end
-  it 'should have the title summary at the top of the page' do
+  
+  it 'should have the item summary at the top of the page' do
     assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
     
     render '/item/show'
@@ -15,6 +16,17 @@ describe '/item/show' do
         with_tag('span.edition', '(Paperback, Reprint)')
       end
       with_tag('div.authors', 'by Thomas Pynchon')
+    end
+  end
+  
+  it 'should not show the edition info there is no binding and no edition present' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_missing_tags.xml'))
+    assigns[:item] = ItemPresenter.new(aws_response.items.first)
+    
+    render '/item/show'
+    
+    response.should have_tag('div#item') do
+      with_tag('span.edition', '')
     end
   end
 
@@ -139,6 +151,19 @@ describe '/item/show' do
   end
   
   it 'should show the list price if it is more than the amazon price'
-  it 'should not show the amazon price it is not less than the list price' 
-  it 'should have each author linked to a search'
+  it 'should not show the amazon price it is not less than the list price'
+  
+  it 'should have each author linked to a search' do
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
+    
+    render '/item/show'
+
+    # TODO: once the url for search is settled, match the <A>'s href
+    response.should have_tag('.summary') do
+      with_tag('.authors') do
+        with_tag('a','Thomas Pynchon')
+      end
+    end    
+  end
+  
 end

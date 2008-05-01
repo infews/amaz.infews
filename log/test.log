@@ -9878,3 +9878,1640 @@ Rendered /item/_pricing (0.01214)
 Rendered /item/_image (0.00040)
 Rendered /item/_description (0.00155)
 Rendered /item/_pricing (0.00050)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:12:53) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.27295 (3 reqs/sec) | Rendering: 0.00062 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:12:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00303 (330 reqs/sec) | Rendering: 0.00043 (14%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:12:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02691 (37 reqs/sec) | Rendering: 0.00050 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01386)
+Rendered /item/_item (0.03044)
+Rendered /item/_summary (0.01481)
+Rendered /item/_item (0.01540)
+Rendered /item/_summary (0.01275)
+Rendered /item/_item (0.01343)
+Rendered /item/_summary (0.01221)
+Rendered /item/_item (0.01277)
+Rendered /item/_summary (0.01815)
+Rendered /item/_item (0.01872)
+Rendered /item/_summary (0.01840)
+Rendered /item/_item (0.01900)
+Rendered /item/_summary (0.01225)
+Rendered /item/_item (0.01283)
+Rendered /item/_summary (0.01547)
+Rendered /item/_item (0.01604)
+Rendered /item/_summary (0.01592)
+Rendered /item/_item (0.01650)
+Rendered /item/_summary (0.01593)
+Rendered /item/_item (0.01650)
+Rendering item/search
+Rendered /item/_summary (0.01200)
+Rendered /item/_item (0.01248)
+Rendered /item/_summary (0.01586)
+Rendered /item/_item (0.01640)
+Rendered /item/_summary (0.12681)
+Rendered /item/_item (0.12741)
+Rendered /item/_summary (0.01492)
+Rendered /item/_item (0.01557)
+Rendered /item/_summary (0.02011)
+Rendered /item/_item (0.02072)
+Rendered /item/_summary (0.02099)
+Rendered /item/_item (0.02162)
+Rendered /item/_summary (0.01390)
+Rendered /item/_item (0.01450)
+Rendered /item/_summary (0.01435)
+Rendered /item/_item (0.01495)
+Rendered /item/_summary (0.01515)
+Rendered /item/_item (0.01571)
+Rendered /item/_summary (0.01655)
+Rendered /item/_item (0.02304)
+Rendering item/search
+Rendered /item/_summary (0.01233)
+Rendered /item/_item (0.01284)
+Rendered /item/_summary (0.02061)
+Rendered /item/_item (0.02117)
+Rendered /item/_summary (0.01269)
+Rendered /item/_item (0.01325)
+Rendered /item/_summary (0.01214)
+Rendered /item/_item (0.01269)
+Rendered /item/_summary (0.01781)
+Rendered /item/_item (0.01835)
+Rendered /item/_summary (0.01948)
+Rendered /item/_item (0.02006)
+Rendered /item/_summary (0.01243)
+Rendered /item/_item (0.01297)
+Rendered /item/_summary (0.01406)
+Rendered /item/_item (0.01459)
+Rendered /item/_summary (0.01596)
+Rendered /item/_item (0.01649)
+Rendered /item/_summary (0.13411)
+Rendered /item/_item (0.13467)
+Rendering item/search
+Rendered /item/_summary (0.01327)
+Rendered /item/_item (0.01381)
+Rendered /item/_summary (0.01532)
+Rendered /item/_item (0.01590)
+Rendered /item/_summary (0.01415)
+Rendered /item/_item (0.01473)
+Rendered /item/_summary (0.01318)
+Rendered /item/_item (0.01375)
+Rendered /item/_summary (0.01860)
+Rendered /item/_item (0.01969)
+Rendered /item/_summary (0.01742)
+Rendered /item/_item (0.01799)
+Rendered /item/_summary (0.01269)
+Rendered /item/_item (0.01326)
+Rendered /item/_summary (0.01445)
+Rendered /item/_item (0.01503)
+Rendered /item/_summary (0.01606)
+Rendered /item/_item (0.01662)
+Rendered /item/_summary (0.01677)
+Rendered /item/_item (0.01733)
+Rendering /item/show
+Rendered /item/_summary (0.01312)
+Rendered /item/_pricing (0.00951)
+Rendered /item/_image (0.00130)
+Rendered /item/_description (0.00209)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01821)
+Rendered /item/_pricing (0.12341)
+Rendered /item/_description (0.00229)
+Rendered /item/_pricing (0.00052)
+Rendering /item/show
+Rendered /item/_summary (0.01381)
+Rendered /item/_pricing (0.01259)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00113)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01446)
+Rendered /item/_pricing (0.00833)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_summary (0.01239)
+Rendered /item/_pricing (0.00733)
+Rendered /item/_image (0.00039)
+Rendering /item/show
+Rendered /item/_summary (0.01254)
+Rendered /item/_pricing (0.00696)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01710)
+Rendered /item/_pricing (0.00828)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00152)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01264)
+Rendered /item/_pricing (0.14141)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01420)
+Rendered /item/_pricing (0.01263)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01588)
+Rendered /item/_pricing (0.00786)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00111)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01289)
+Rendered /item/_pricing (0.01204)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01704)
+Rendered /item/_pricing (0.00780)
+Rendered /item/_image (0.00038)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00046)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:18:28) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.25243 (3 reqs/sec) | Rendering: 0.00059 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:18:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00304 (329 reqs/sec) | Rendering: 0.00043 (14%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:18:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02327 (42 reqs/sec) | Rendering: 0.00050 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendering item/search
+Rendering item/search
+Rendering item/search
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+Rendering /item/show
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:19:31) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.24250 (4 reqs/sec) | Rendering: 0.00061 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:19:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00300 (333 reqs/sec) | Rendering: 0.00042 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:19:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02829 (35 reqs/sec) | Rendering: 0.00050 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01408)
+Rendered /item/_item (0.01526)
+Rendered /item/_summary (0.01494)
+Rendered /item/_item (0.01560)
+Rendered /item/_summary (0.01310)
+Rendered /item/_item (0.01364)
+Rendered /item/_summary (0.01252)
+Rendered /item/_item (0.01304)
+Rendered /item/_summary (0.01845)
+Rendered /item/_item (0.01962)
+Rendered /item/_summary (0.01866)
+Rendered /item/_item (0.01957)
+Rendered /item/_summary (0.01217)
+Rendered /item/_item (0.01272)
+Rendered /item/_summary (0.01476)
+Rendered /item/_item (0.01530)
+Rendered /item/_summary (0.01612)
+Rendered /item/_item (0.01666)
+Rendered /item/_summary (0.01610)
+Rendered /item/_item (0.01674)
+Rendering item/search
+Rendered /item/_summary (0.01251)
+Rendered /item/_item (0.01298)
+Rendered /item/_summary (0.01633)
+Rendered /item/_item (0.01684)
+Rendered /item/_summary (0.13965)
+Rendered /item/_item (0.14019)
+Rendered /item/_summary (0.01413)
+Rendered /item/_item (0.01473)
+Rendered /item/_summary (0.02022)
+Rendered /item/_item (0.02082)
+Rendered /item/_summary (0.01884)
+Rendered /item/_item (0.01942)
+Rendered /item/_summary (0.01284)
+Rendered /item/_item (0.01340)
+Rendered /item/_summary (0.01491)
+Rendered /item/_item (0.01550)
+Rendered /item/_summary (0.01568)
+Rendered /item/_item (0.01627)
+Rendered /item/_summary (0.01635)
+Rendered /item/_item (0.01690)
+Rendering item/search
+Rendered /item/_summary (0.01258)
+Rendered /item/_item (0.01309)
+Rendered /item/_summary (0.01501)
+Rendered /item/_item (0.01555)
+Rendered /item/_summary (0.01330)
+Rendered /item/_item (0.01383)
+Rendered /item/_summary (0.01241)
+Rendered /item/_item (0.01301)
+Rendered /item/_summary (0.01791)
+Rendered /item/_item (0.01844)
+Rendered /item/_summary (0.02002)
+Rendered /item/_item (0.02057)
+Rendered /item/_summary (0.01207)
+Rendered /item/_item (0.01259)
+Rendered /item/_summary (0.01429)
+Rendered /item/_item (0.01478)
+Rendered /item/_summary (0.12998)
+Rendered /item/_item (0.13147)
+Rendered /item/_summary (0.01698)
+Rendered /item/_item (0.01761)
+Rendering item/search
+Rendered /item/_summary (0.01335)
+Rendered /item/_item (0.01394)
+Rendered /item/_summary (0.02013)
+Rendered /item/_item (0.02068)
+Rendered /item/_summary (0.01243)
+Rendered /item/_item (0.01300)
+Rendered /item/_summary (0.01351)
+Rendered /item/_item (0.01407)
+Rendered /item/_summary (0.01869)
+Rendered /item/_item (0.01925)
+Rendered /item/_summary (0.01892)
+Rendered /item/_item (0.01948)
+Rendered /item/_summary (0.01282)
+Rendered /item/_item (0.01338)
+Rendered /item/_summary (0.01485)
+Rendered /item/_item (0.01540)
+Rendered /item/_summary (0.01514)
+Rendered /item/_item (0.01566)
+Rendered /item/_summary (0.01616)
+Rendered /item/_item (0.01669)
+Rendering /item/show
+Rendered /item/_summary (0.01286)
+Rendered /item/_pricing (0.00933)
+Rendered /item/_image (0.00103)
+Rendered /item/_description (0.00195)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.14231)
+Rendered /item/_pricing (0.00796)
+Rendered /item/_description (0.00125)
+Rendered /item/_pricing (0.00065)
+Rendering /item/show
+Rendered /item/_summary (0.01388)
+Rendered /item/_pricing (0.00740)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00111)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01476)
+Rendered /item/_pricing (0.00741)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_summary (0.01798)
+Rendered /item/_pricing (0.00732)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_summary (0.01310)
+Rendered /item/_pricing (0.00721)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00097)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01873)
+Rendered /item/_pricing (0.00764)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.14042)
+Rendered /item/_pricing (0.00831)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00072)
+Rendering /item/show
+Rendered /item/_summary (0.01399)
+Rendered /item/_pricing (0.00793)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00113)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01320)
+Rendered /item/_pricing (0.00819)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00112)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01351)
+Rendered /item/_pricing (0.01310)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00125)
+Rendering /item/show
+Rendered /item/_summary (0.01318)
+Rendered /item/_pricing (0.00715)
+Rendered /item/_image (0.00038)
+Rendered /item/_description (0.00097)
+Rendered /item/_pricing (0.00054)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:27:24) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.24823 (4 reqs/sec) | Rendering: 0.00059 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:27:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00306 (327 reqs/sec) | Rendering: 0.00042 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:27:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02579 (38 reqs/sec) | Rendering: 0.00049 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01548)
+Rendered /item/_item (0.01665)
+Rendered /item/_summary (0.01657)
+Rendered /item/_item (0.01720)
+Rendered /item/_summary (0.01214)
+Rendered /item/_item (0.01269)
+Rendered /item/_summary (0.01497)
+Rendered /item/_item (0.01551)
+Rendered /item/_summary (0.01886)
+Rendered /item/_item (0.01943)
+Rendered /item/_summary (0.01748)
+Rendered /item/_item (0.01806)
+Rendered /item/_summary (0.01286)
+Rendered /item/_item (0.01345)
+Rendered /item/_summary (0.01511)
+Rendered /item/_item (0.01567)
+Rendered /item/_summary (0.01522)
+Rendered /item/_item (0.01614)
+Rendered /item/_summary (0.02356)
+Rendered /item/_item (0.02412)
+Rendering item/search
+Rendered /item/_summary (0.01243)
+Rendered /item/_item (0.01291)
+Rendered /item/_summary (0.01478)
+Rendered /item/_item (0.01528)
+Rendered /item/_summary (0.12913)
+Rendered /item/_item (0.12967)
+Rendered /item/_summary (0.01331)
+Rendered /item/_item (0.01391)
+Rendered /item/_summary (0.02161)
+Rendered /item/_item (0.02220)
+Rendered /item/_summary (0.01904)
+Rendered /item/_item (0.01962)
+Rendered /item/_summary (0.01212)
+Rendered /item/_item (0.01267)
+Rendered /item/_summary (0.01560)
+Rendered /item/_item (0.01616)
+Rendered /item/_summary (0.01521)
+Rendered /item/_item (0.01577)
+Rendered /item/_summary (0.01598)
+Rendered /item/_item (0.01654)
+Rendering item/search
+Rendered /item/_summary (0.01288)
+Rendered /item/_item (0.01349)
+Rendered /item/_summary (0.02050)
+Rendered /item/_item (0.02108)
+Rendered /item/_summary (0.01203)
+Rendered /item/_item (0.01256)
+Rendered /item/_summary (0.01316)
+Rendered /item/_item (0.01368)
+Rendered /item/_summary (0.01829)
+Rendered /item/_item (0.01888)
+Rendered /item/_summary (0.01743)
+Rendered /item/_item (0.01796)
+Rendered /item/_summary (0.01449)
+Rendered /item/_item (0.01503)
+Rendered /item/_summary (0.01445)
+Rendered /item/_item (0.01501)
+Rendered /item/_summary (0.12960)
+Rendered /item/_item (0.13013)
+Rendered /item/_summary (0.01684)
+Rendered /item/_item (0.01744)
+Rendering item/search
+Rendered /item/_summary (0.01356)
+Rendered /item/_item (0.01409)
+Rendered /item/_summary (0.01567)
+Rendered /item/_item (0.01623)
+Rendered /item/_summary (0.01235)
+Rendered /item/_item (0.01304)
+Rendered /item/_summary (0.01253)
+Rendered /item/_item (0.01309)
+Rendered /item/_summary (0.01969)
+Rendered /item/_item (0.02026)
+Rendered /item/_summary (0.01747)
+Rendered /item/_item (0.01804)
+Rendered /item/_summary (0.01205)
+Rendered /item/_item (0.01261)
+Rendered /item/_summary (0.01509)
+Rendered /item/_item (0.01564)
+Rendered /item/_summary (0.01528)
+Rendered /item/_item (0.01582)
+Rendered /item/_summary (0.01799)
+Rendered /item/_item (0.01854)
+Rendering /item/show
+Rendered /item/_summary (0.01796)
+Rendered /item/_pricing (0.00989)
+Rendered /item/_image (0.00108)
+Rendered /item/_description (0.00187)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.13163)
+Rendered /item/_pricing (0.00845)
+Rendered /item/_description (0.00122)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01407)
+Rendered /item/_pricing (0.01244)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01291)
+Rendered /item/_pricing (0.00750)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01822)
+Rendered /item/_pricing (0.00728)
+Rendered /item/_image (0.00039)
+Rendering /item/show
+Rendered /item/_summary (0.01283)
+Rendered /item/_pricing (0.01217)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_summary (0.01855)
+Rendered /item/_pricing (0.00857)
+Rendered /item/_image (0.00103)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.14380)
+Rendered /item/_pricing (0.00882)
+Rendered /item/_image (0.00063)
+Rendered /item/_description (0.00119)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01396)
+Rendered /item/_pricing (0.01268)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01307)
+Rendered /item/_pricing (0.00746)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00112)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01287)
+Rendered /item/_pricing (0.01221)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01190)
+Rendered /item/_pricing (0.00735)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00059)
+Rendering /item/show
+Rendered /item/_summary (0.01393)
+Rendered /item/_pricing (0.01291)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00047)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:28:24) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.24683 (4 reqs/sec) | Rendering: 0.00061 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:28:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00310 (322 reqs/sec) | Rendering: 0.00043 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:28:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02580 (38 reqs/sec) | Rendering: 0.00050 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01469)
+Rendered /item/_item (0.01584)
+Rendered /item/_summary (0.01503)
+Rendered /item/_item (0.01560)
+Rendered /item/_summary (0.01215)
+Rendered /item/_item (0.01269)
+Rendered /item/_summary (0.01242)
+Rendered /item/_item (0.01313)
+Rendered /item/_summary (0.01981)
+Rendered /item/_item (0.02036)
+Rendered /item/_summary (0.01758)
+Rendered /item/_item (0.01815)
+Rendered /item/_summary (0.01306)
+Rendered /item/_item (0.01364)
+Rendered /item/_summary (0.01505)
+Rendered /item/_item (0.01562)
+Rendered /item/_summary (0.01512)
+Rendered /item/_item (0.01567)
+Rendered /item/_summary (0.01556)
+Rendered /item/_item (0.01611)
+Rendering item/search
+Rendered /item/_summary (0.01233)
+Rendered /item/_item (0.01282)
+Rendered /item/_summary (0.01448)
+Rendered /item/_item (0.01511)
+Rendered /item/_summary (0.13748)
+Rendered /item/_item (0.13803)
+Rendered /item/_summary (0.01336)
+Rendered /item/_item (0.01396)
+Rendered /item/_summary (0.02167)
+Rendered /item/_item (0.02227)
+Rendered /item/_summary (0.01797)
+Rendered /item/_item (0.01855)
+Rendered /item/_summary (0.01213)
+Rendered /item/_item (0.01268)
+Rendered /item/_summary (0.01525)
+Rendered /item/_item (0.01579)
+Rendered /item/_summary (0.01534)
+Rendered /item/_item (0.01589)
+Rendered /item/_summary (0.01563)
+Rendered /item/_item (0.01618)
+Rendering item/search
+Rendered /item/_summary (0.01340)
+Rendered /item/_item (0.01393)
+Rendered /item/_summary (0.01454)
+Rendered /item/_item (0.01508)
+Rendered /item/_summary (0.01267)
+Rendered /item/_item (0.01319)
+Rendered /item/_summary (0.01276)
+Rendered /item/_item (0.01331)
+Rendered /item/_summary (0.01877)
+Rendered /item/_item (0.01931)
+Rendered /item/_summary (0.01763)
+Rendered /item/_item (0.01816)
+Rendered /item/_summary (0.01239)
+Rendered /item/_item (0.01294)
+Rendered /item/_summary (0.01484)
+Rendered /item/_item (0.01537)
+Rendered /item/_summary (0.12918)
+Rendered /item/_item (0.12973)
+Rendered /item/_summary (0.01930)
+Rendered /item/_item (0.01994)
+Rendering item/search
+Rendered /item/_summary (0.01258)
+Rendered /item/_item (0.01311)
+Rendered /item/_summary (0.01485)
+Rendered /item/_item (0.01540)
+Rendered /item/_summary (0.01265)
+Rendered /item/_item (0.01323)
+Rendered /item/_summary (0.01263)
+Rendered /item/_item (0.01319)
+Rendered /item/_summary (0.02002)
+Rendered /item/_item (0.02059)
+Rendered /item/_summary (0.01844)
+Rendered /item/_item (0.01901)
+Rendered /item/_summary (0.01720)
+Rendered /item/_item (0.01777)
+Rendered /item/_summary (0.01577)
+Rendered /item/_item (0.01634)
+Rendered /item/_summary (0.01551)
+Rendered /item/_item (0.01606)
+Rendered /item/_summary (0.01529)
+Rendered /item/_item (0.01583)
+Rendering /item/show
+Rendered /item/_summary (0.01757)
+Rendered /item/_pricing (0.00963)
+Rendered /item/_image (0.00107)
+Rendered /item/_description (0.00186)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.14272)
+Rendered /item/_pricing (0.01090)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01380)
+Rendered /item/_pricing (0.01303)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01288)
+Rendered /item/_pricing (0.00748)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01808)
+Rendered /item/_pricing (0.00751)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01244)
+Rendered /item/_pricing (0.00765)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00097)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01892)
+Rendered /item/_pricing (0.00713)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.13963)
+Rendered /item/_pricing (0.00823)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01328)
+Rendered /item/_pricing (0.01329)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00126)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01442)
+Rendered /item/_pricing (0.00737)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00111)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01357)
+Rendered /item/_pricing (0.01295)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00109)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01234)
+Rendered /item/_pricing (0.00689)
+Rendered /item/_image (0.00038)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00046)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:29:00) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.25213 (3 reqs/sec) | Rendering: 0.00059 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:29:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00311 (321 reqs/sec) | Rendering: 0.00041 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:29:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02576 (38 reqs/sec) | Rendering: 0.00050 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01423)
+Rendered /item/_item (0.01539)
+Rendered /item/_summary (0.01565)
+Rendered /item/_item (0.01625)
+Rendered /item/_summary (0.01222)
+Rendered /item/_item (0.01277)
+Rendered /item/_summary (0.01244)
+Rendered /item/_item (0.01297)
+Rendered /item/_summary (0.01995)
+Rendered /item/_item (0.02052)
+Rendered /item/_summary (0.01757)
+Rendered /item/_item (0.01816)
+Rendered /item/_summary (0.01211)
+Rendered /item/_item (0.01268)
+Rendered /item/_summary (0.01530)
+Rendered /item/_item (0.01587)
+Rendered /item/_summary (0.01630)
+Rendered /item/_item (0.01687)
+Rendered /item/_summary (0.01539)
+Rendered /item/_item (0.01596)
+Rendering item/search
+Rendered /item/_summary (0.01390)
+Rendered /item/_item (0.01439)
+Rendered /item/_summary (0.01464)
+Rendered /item/_item (0.01518)
+Rendered /item/_summary (0.13790)
+Rendered /item/_item (0.13845)
+Rendered /item/_summary (0.01336)
+Rendered /item/_item (0.01397)
+Rendered /item/_summary (0.01996)
+Rendered /item/_item (0.02056)
+Rendered /item/_summary (0.01928)
+Rendered /item/_item (0.01988)
+Rendered /item/_summary (0.01211)
+Rendered /item/_item (0.01270)
+Rendered /item/_summary (0.01446)
+Rendered /item/_item (0.01501)
+Rendered /item/_summary (0.01593)
+Rendered /item/_item (0.01650)
+Rendered /item/_summary (0.02072)
+Rendered /item/_item (0.02130)
+Rendering item/search
+Rendered /item/_summary (0.01299)
+Rendered /item/_item (0.01383)
+Rendered /item/_summary (0.01486)
+Rendered /item/_item (0.01541)
+Rendered /item/_summary (0.01309)
+Rendered /item/_item (0.01363)
+Rendered /item/_summary (0.01268)
+Rendered /item/_item (0.01322)
+Rendered /item/_summary (0.01918)
+Rendered /item/_item (0.01974)
+Rendered /item/_summary (0.01734)
+Rendered /item/_item (0.01789)
+Rendered /item/_summary (0.01203)
+Rendered /item/_item (0.01269)
+Rendered /item/_summary (0.01512)
+Rendered /item/_item (0.01565)
+Rendered /item/_summary (0.12848)
+Rendered /item/_item (0.12905)
+Rendered /item/_summary (0.01758)
+Rendered /item/_item (0.01830)
+Rendering item/search
+Rendered /item/_summary (0.01361)
+Rendered /item/_item (0.01430)
+Rendered /item/_summary (0.01487)
+Rendered /item/_item (0.01545)
+Rendered /item/_summary (0.01299)
+Rendered /item/_item (0.01357)
+Rendered /item/_summary (0.01255)
+Rendered /item/_item (0.01312)
+Rendered /item/_summary (0.01923)
+Rendered /item/_item (0.01981)
+Rendered /item/_summary (0.01844)
+Rendered /item/_item (0.01902)
+Rendered /item/_summary (0.01206)
+Rendered /item/_item (0.01262)
+Rendered /item/_summary (0.01429)
+Rendered /item/_item (0.01484)
+Rendered /item/_summary (0.01575)
+Rendered /item/_item (0.01630)
+Rendered /item/_summary (0.01537)
+Rendered /item/_item (0.01592)
+Rendering /item/show
+Rendered /item/_summary (0.01764)
+Rendered /item/_pricing (0.01004)
+Rendered /item/_image (0.00108)
+Rendered /item/_description (0.00183)
+Rendered /item/_pricing (0.00065)
+Rendering /item/show
+Rendered /item/_summary (0.13827)
+Rendered /item/_pricing (0.00779)
+Rendered /item/_description (0.00136)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01330)
+Rendered /item/_pricing (0.01309)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01282)
+Rendered /item/_pricing (0.00746)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01901)
+Rendered /item/_pricing (0.00718)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01242)
+Rendered /item/_pricing (0.00695)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01797)
+Rendered /item/_pricing (0.00789)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.14292)
+Rendered /item/_pricing (0.00812)
+Rendered /item/_image (0.00044)
+Rendered /item/_description (0.00129)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01502)
+Rendered /item/_pricing (0.01301)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00127)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01406)
+Rendered /item/_pricing (0.00759)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00117)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01345)
+Rendered /item/_pricing (0.00724)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01021)
+Rendering /item/show
+Rendered /item/_summary (0.01383)
+Rendered /item/_pricing (0.01241)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00048)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:31:15) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.24813 (4 reqs/sec) | Rendering: 0.00059 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:31:15) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00312 (320 reqs/sec) | Rendering: 0.00042 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:31:15) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02662 (37 reqs/sec) | Rendering: 0.00050 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01478)
+Rendered /item/_item (0.01598)
+Rendered /item/_summary (0.01498)
+Rendered /item/_item (0.01556)
+Rendered /item/_summary (0.01221)
+Rendered /item/_item (0.01276)
+Rendered /item/_summary (0.01244)
+Rendered /item/_item (0.01299)
+Rendered /item/_summary (0.01970)
+Rendered /item/_item (0.02028)
+Rendered /item/_summary (0.01873)
+Rendered /item/_item (0.01932)
+Rendered /item/_summary (0.01274)
+Rendered /item/_item (0.01331)
+Rendered /item/_summary (0.01455)
+Rendered /item/_item (0.01513)
+Rendered /item/_summary (0.01517)
+Rendered /item/_item (0.01572)
+Rendered /item/_summary (0.01541)
+Rendered /item/_item (0.01599)
+Rendering item/search
+Rendered /item/_summary (0.01289)
+Rendered /item/_item (0.01339)
+Rendered /item/_summary (0.01562)
+Rendered /item/_item (0.01616)
+Rendered /item/_summary (0.12949)
+Rendered /item/_item (0.13003)
+Rendered /item/_summary (0.01437)
+Rendered /item/_item (0.01498)
+Rendered /item/_summary (0.02082)
+Rendered /item/_item (0.02143)
+Rendered /item/_summary (0.02330)
+Rendered /item/_item (0.02389)
+Rendered /item/_summary (0.01209)
+Rendered /item/_item (0.01266)
+Rendered /item/_summary (0.01507)
+Rendered /item/_item (0.01563)
+Rendered /item/_summary (0.01539)
+Rendered /item/_item (0.01596)
+Rendered /item/_summary (0.01745)
+Rendered /item/_item (0.01801)
+Rendering item/search
+Rendered /item/_summary (0.01308)
+Rendered /item/_item (0.01360)
+Rendered /item/_summary (0.01531)
+Rendered /item/_item (0.01586)
+Rendered /item/_summary (0.01218)
+Rendered /item/_item (0.01272)
+Rendered /item/_summary (0.01290)
+Rendered /item/_item (0.01343)
+Rendered /item/_summary (0.01845)
+Rendered /item/_item (0.01900)
+Rendered /item/_summary (0.01731)
+Rendered /item/_item (0.01786)
+Rendered /item/_summary (0.01270)
+Rendered /item/_item (0.01324)
+Rendered /item/_summary (0.01452)
+Rendered /item/_item (0.01505)
+Rendered /item/_summary (0.12843)
+Rendered /item/_item (0.12898)
+Rendered /item/_summary (0.01735)
+Rendered /item/_item (0.01799)
+Rendering item/search
+Rendered /item/_summary (0.01261)
+Rendered /item/_item (0.01316)
+Rendered /item/_summary (0.01478)
+Rendered /item/_item (0.01533)
+Rendered /item/_summary (0.01248)
+Rendered /item/_item (0.01362)
+Rendered /item/_summary (0.01257)
+Rendered /item/_item (0.01313)
+Rendered /item/_summary (0.01978)
+Rendered /item/_item (0.02035)
+Rendered /item/_summary (0.01810)
+Rendered /item/_item (0.01868)
+Rendered /item/_summary (0.01300)
+Rendered /item/_item (0.01358)
+Rendered /item/_summary (0.01732)
+Rendered /item/_item (0.01789)
+Rendered /item/_summary (0.01577)
+Rendered /item/_item (0.01634)
+Rendered /item/_summary (0.02035)
+Rendered /item/_item (0.02091)
+Rendering /item/show
+Rendered /item/_summary (0.01766)
+Rendered /item/_pricing (0.00976)
+Rendered /item/_image (0.00106)
+Rendered /item/_description (0.00189)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.13890)
+Rendered /item/_pricing (0.00810)
+Rendered /item/_description (0.00123)
+Rendered /item/_pricing (0.00054)
+Rendering /item/show
+Rendered /item/_summary (0.01353)
+Rendered /item/_pricing (0.00808)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00189)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01358)
+Rendered /item/_pricing (0.00808)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01837)
+Rendered /item/_pricing (0.00891)
+Rendered /item/_image (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01243)
+Rendered /item/_pricing (0.00756)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01829)
+Rendered /item/_pricing (0.00734)
+Rendered /item/_image (0.00053)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.13893)
+Rendered /item/_pricing (0.00816)
+Rendered /item/_image (0.00044)
+Rendered /item/_description (0.00120)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01336)
+Rendered /item/_pricing (0.01328)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01368)
+Rendered /item/_pricing (0.00739)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00111)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01351)
+Rendered /item/_pricing (0.01225)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00112)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01080)
+Rendering /item/show
+Rendered /item/_summary (0.01288)
+Rendered /item/_pricing (0.00806)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00113)
+Rendered /item/_pricing (0.00048)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:31:52) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.24997 (4 reqs/sec) | Rendering: 0.00088 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:31:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00341 (292 reqs/sec) | Rendering: 0.00043 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:31:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02570 (38 reqs/sec) | Rendering: 0.00049 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01471)
+Rendered /item/_item (0.01587)
+Rendered /item/_summary (0.01517)
+Rendered /item/_item (0.01576)
+Rendered /item/_summary (0.01225)
+Rendered /item/_item (0.01282)
+Rendered /item/_summary (0.01354)
+Rendered /item/_item (0.01409)
+Rendered /item/_summary (0.01939)
+Rendered /item/_item (0.01996)
+Rendered /item/_summary (0.01781)
+Rendered /item/_item (0.01839)
+Rendered /item/_summary (0.01249)
+Rendered /item/_item (0.01307)
+Rendered /item/_summary (0.01480)
+Rendered /item/_item (0.01537)
+Rendered /item/_summary (0.01525)
+Rendered /item/_item (0.01582)
+Rendered /item/_summary (0.01585)
+Rendered /item/_item (0.01640)
+Rendering item/search
+Rendered /item/_summary (0.01239)
+Rendered /item/_item (0.01288)
+Rendered /item/_summary (0.02040)
+Rendered /item/_item (0.02096)
+Rendered /item/_summary (0.12948)
+Rendered /item/_item (0.13002)
+Rendered /item/_summary (0.01333)
+Rendered /item/_item (0.01394)
+Rendered /item/_summary (0.02249)
+Rendered /item/_item (0.02309)
+Rendered /item/_summary (0.01809)
+Rendered /item/_item (0.01867)
+Rendered /item/_summary (0.01214)
+Rendered /item/_item (0.01271)
+Rendered /item/_summary (0.01533)
+Rendered /item/_item (0.01588)
+Rendered /item/_summary (0.01535)
+Rendered /item/_item (0.01591)
+Rendered /item/_summary (0.01553)
+Rendered /item/_item (0.01609)
+Rendering item/search
+Rendered /item/_summary (0.01288)
+Rendered /item/_item (0.01341)
+Rendered /item/_summary (0.01454)
+Rendered /item/_item (0.01544)
+Rendered /item/_summary (0.01204)
+Rendered /item/_item (0.01257)
+Rendered /item/_summary (0.01226)
+Rendered /item/_item (0.01279)
+Rendered /item/_summary (0.01933)
+Rendered /item/_item (0.01988)
+Rendered /item/_summary (0.01833)
+Rendered /item/_item (0.01888)
+Rendered /item/_summary (0.01199)
+Rendered /item/_item (0.01253)
+Rendered /item/_summary (0.01590)
+Rendered /item/_item (0.01643)
+Rendered /item/_summary (0.13471)
+Rendered /item/_item (0.13638)
+Rendered /item/_summary (0.02358)
+Rendered /item/_item (0.02422)
+Rendering item/search
+Rendered /item/_summary (0.01252)
+Rendered /item/_item (0.01319)
+Rendered /item/_summary (0.01736)
+Rendered /item/_item (0.01796)
+Rendered /item/_summary (0.01245)
+Rendered /item/_item (0.01302)
+Rendered /item/_summary (0.01254)
+Rendered /item/_item (0.01309)
+Rendered /item/_summary (0.02049)
+Rendered /item/_item (0.02105)
+Rendered /item/_summary (0.01743)
+Rendered /item/_item (0.01800)
+Rendered /item/_summary (0.01201)
+Rendered /item/_item (0.01257)
+Rendered /item/_summary (0.01470)
+Rendered /item/_item (0.01524)
+Rendered /item/_summary (0.01549)
+Rendered /item/_item (0.01604)
+Rendered /item/_summary (0.01617)
+Rendered /item/_item (0.01672)
+Rendering /item/show
+Rendered /item/_summary (0.01296)
+Rendered /item/_pricing (0.01028)
+Rendered /item/_image (0.00105)
+Rendered /item/_description (0.00202)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.13565)
+Rendered /item/_pricing (0.00765)
+Rendered /item/_description (0.00121)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01323)
+Rendered /item/_pricing (0.00803)
+Rendered /item/_image (0.00052)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01805)
+Rendered /item/_pricing (0.00823)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01809)
+Rendered /item/_pricing (0.00758)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_summary (0.01240)
+Rendered /item/_pricing (0.00871)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01816)
+Rendered /item/_pricing (0.00728)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.14604)
+Rendered /item/_pricing (0.00855)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00072)
+Rendering /item/show
+Rendered /item/_summary (0.01405)
+Rendered /item/_pricing (0.01387)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00113)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01552)
+Rendered /item/_pricing (0.00738)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00112)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01321)
+Rendered /item/_pricing (0.01219)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01015)
+Rendered /item/_pricing (0.01036)
+Rendering /item/show
+Rendered /item/_summary (0.01282)
+Rendered /item/_pricing (0.00755)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00051)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:32:54) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.25207 (3 reqs/sec) | Rendering: 0.00059 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:32:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00298 (336 reqs/sec) | Rendering: 0.00041 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:32:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02914 (34 reqs/sec) | Rendering: 0.00059 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01395)
+Rendered /item/_item (0.01506)
+Rendered /item/_summary (0.01582)
+Rendered /item/_item (0.01640)
+Rendered /item/_summary (0.01299)
+Rendered /item/_item (0.01360)
+Rendered /item/_summary (0.01239)
+Rendered /item/_item (0.01294)
+Rendered /item/_summary (0.02741)
+Rendered /item/_item (0.02802)
+Rendered /item/_summary (0.01947)
+Rendered /item/_item (0.02005)
+Rendered /item/_summary (0.01213)
+Rendered /item/_item (0.01270)
+Rendered /item/_summary (0.01516)
+Rendered /item/_item (0.01572)
+Rendered /item/_summary (0.01509)
+Rendered /item/_item (0.01566)
+Rendered /item/_summary (0.01551)
+Rendered /item/_item (0.01606)
+Rendering item/search
+Rendered /item/_summary (0.01308)
+Rendered /item/_item (0.01357)
+Rendered /item/_summary (0.01572)
+Rendered /item/_item (0.01625)
+Rendered /item/_summary (0.12850)
+Rendered /item/_item (0.12904)
+Rendered /item/_summary (0.01332)
+Rendered /item/_item (0.01404)
+Rendered /item/_summary (0.02088)
+Rendered /item/_item (0.02148)
+Rendered /item/_summary (0.01860)
+Rendered /item/_item (0.01934)
+Rendered /item/_summary (0.01294)
+Rendered /item/_item (0.01352)
+Rendered /item/_summary (0.01444)
+Rendered /item/_item (0.01499)
+Rendered /item/_summary (0.01587)
+Rendered /item/_item (0.01644)
+Rendered /item/_summary (0.01579)
+Rendered /item/_item (0.01635)
+Rendering item/search
+Rendered /item/_summary (0.01248)
+Rendered /item/_item (0.01300)
+Rendered /item/_summary (0.01717)
+Rendered /item/_item (0.01773)
+Rendered /item/_summary (0.01293)
+Rendered /item/_item (0.01348)
+Rendered /item/_summary (0.01228)
+Rendered /item/_item (0.01282)
+Rendered /item/_summary (0.01902)
+Rendered /item/_item (0.01961)
+Rendered /item/_summary (0.01742)
+Rendered /item/_item (0.01806)
+Rendered /item/_summary (0.01210)
+Rendered /item/_item (0.01263)
+Rendered /item/_summary (0.01443)
+Rendered /item/_item (0.01538)
+Rendered /item/_summary (0.13324)
+Rendered /item/_item (0.13400)
+Rendered /item/_summary (0.01740)
+Rendered /item/_item (0.01802)
+Rendering item/search
+Rendered /item/_summary (0.01255)
+Rendered /item/_item (0.01309)
+Rendered /item/_summary (0.01491)
+Rendered /item/_item (0.01546)
+Rendered /item/_summary (0.01232)
+Rendered /item/_item (0.01288)
+Rendered /item/_summary (0.01323)
+Rendered /item/_item (0.01439)
+Rendered /item/_summary (0.01921)
+Rendered /item/_item (0.01979)
+Rendered /item/_summary (0.01811)
+Rendered /item/_item (0.01874)
+Rendered /item/_summary (0.01209)
+Rendered /item/_item (0.01265)
+Rendered /item/_summary (0.01529)
+Rendered /item/_item (0.01583)
+Rendered /item/_summary (0.01600)
+Rendered /item/_item (0.01655)
+Rendered /item/_summary (0.01597)
+Rendered /item/_item (0.01652)
+Rendering /item/show
+Rendered /item/_summary (0.01734)
+Rendered /item/_pricing (0.00937)
+Rendered /item/_image (0.00107)
+Rendered /item/_description (0.00188)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.13538)
+Rendered /item/_pricing (0.00862)
+Rendered /item/_description (0.00122)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01328)
+Rendered /item/_pricing (0.00738)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00136)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01344)
+Rendered /item/_pricing (0.00732)
+Rendered /item/_image (0.00131)
+Rendering /item/show
+Rendered /item/_summary (0.01753)
+Rendered /item/_pricing (0.00725)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_summary (0.01234)
+Rendered /item/_pricing (0.00696)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01860)
+Rendered /item/_pricing (0.00728)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.13861)
+Rendered /item/_pricing (0.00821)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00132)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01361)
+Rendered /item/_pricing (0.01255)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00266)
+Rendered /item/_pricing (0.00054)
+Rendering /item/show
+Rendered /item/_summary (0.01402)
+Rendered /item/_pricing (0.00761)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00128)
+Rendered /item/_pricing (0.00064)
+Rendering /item/show
+Rendered /item/_summary (0.01291)
+Rendered /item/_pricing (0.00723)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01037)
+Rendered /item/_pricing (0.00521)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00690)
+Rendering /item/show
+Rendered /item/_summary (0.01335)
+Rendered /item/_pricing (0.00805)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00169)
+Rendered /item/_pricing (0.00048)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-01 08:33:54) [GET]
+  Session ID: 
+  Parameters: {"search"=>"book", "action"=>"search", "controller"=>"item", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.25113 (3 reqs/sec) | Rendering: 0.00059 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/book/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:33:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00301 (332 reqs/sec) | Rendering: 0.00042 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-01 08:33:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02620 (38 reqs/sec) | Rendering: 0.00049 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.01392)
+Rendered /item/_item (0.01571)
+Rendered /item/_summary (0.01646)
+Rendered /item/_item (0.01713)
+Rendered /item/_summary (0.01225)
+Rendered /item/_item (0.01280)
+Rendered /item/_summary (0.01241)
+Rendered /item/_item (0.01293)
+Rendered /item/_summary (0.01910)
+Rendered /item/_item (0.01965)
+Rendered /item/_summary (0.01805)
+Rendered /item/_item (0.01863)
+Rendered /item/_summary (0.01209)
+Rendered /item/_item (0.01265)
+Rendered /item/_summary (0.01459)
+Rendered /item/_item (0.01514)
+Rendered /item/_summary (0.01679)
+Rendered /item/_item (0.01734)
+Rendered /item/_summary (0.01556)
+Rendered /item/_item (0.01611)
+Rendering item/search
+Rendered /item/_summary (0.01256)
+Rendered /item/_item (0.01304)
+Rendered /item/_summary (0.01528)
+Rendered /item/_item (0.01580)
+Rendered /item/_summary (0.12871)
+Rendered /item/_item (0.12926)
+Rendered /item/_summary (0.01426)
+Rendered /item/_item (0.01487)
+Rendered /item/_summary (0.01991)
+Rendered /item/_item (0.02052)
+Rendered /item/_summary (0.01894)
+Rendered /item/_item (0.01953)
+Rendered /item/_summary (0.01895)
+Rendered /item/_item (0.01954)
+Rendered /item/_summary (0.01447)
+Rendered /item/_item (0.01504)
+Rendered /item/_summary (0.01543)
+Rendered /item/_item (0.01598)
+Rendered /item/_summary (0.01778)
+Rendered /item/_item (0.01873)
+Rendering item/search
+Rendered /item/_summary (0.01249)
+Rendered /item/_item (0.01299)
+Rendered /item/_summary (0.01472)
+Rendered /item/_item (0.01526)
+Rendered /item/_summary (0.01282)
+Rendered /item/_item (0.01372)
+Rendered /item/_summary (0.01281)
+Rendered /item/_item (0.01336)
+Rendered /item/_summary (0.01917)
+Rendered /item/_item (0.01971)
+Rendered /item/_summary (0.01819)
+Rendered /item/_item (0.01874)
+Rendered /item/_summary (0.01201)
+Rendered /item/_item (0.01256)
+Rendered /item/_summary (0.01442)
+Rendered /item/_item (0.01495)
+Rendered /item/_summary (0.13042)
+Rendered /item/_item (0.13098)
+Rendered /item/_summary (0.01671)
+Rendered /item/_item (0.01748)
+Rendering item/search
+Rendered /item/_summary (0.01325)
+Rendered /item/_item (0.01379)
+Rendered /item/_summary (0.01598)
+Rendered /item/_item (0.01667)
+Rendered /item/_summary (0.01230)
+Rendered /item/_item (0.01287)
+Rendered /item/_summary (0.01335)
+Rendered /item/_item (0.01394)
+Rendered /item/_summary (0.01903)
+Rendered /item/_item (0.01972)
+Rendered /item/_summary (0.01732)
+Rendered /item/_item (0.01790)
+Rendered /item/_summary (0.01471)
+Rendered /item/_item (0.01528)
+Rendered /item/_summary (0.01424)
+Rendered /item/_item (0.01480)
+Rendered /item/_summary (0.01504)
+Rendered /item/_item (0.01558)
+Rendered /item/_summary (0.01634)
+Rendered /item/_item (0.01689)
+Rendering /item/show
+Rendered /item/_summary (0.01288)
+Rendered /item/_pricing (0.00962)
+Rendered /item/_image (0.00106)
+Rendered /item/_description (0.00200)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.13656)
+Rendered /item/_pricing (0.00767)
+Rendered /item/_description (0.00121)
+Rendered /item/_pricing (0.00052)
+Rendering /item/show
+Rendered /item/_summary (0.01455)
+Rendered /item/_pricing (0.00738)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00158)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01296)
+Rendered /item/_pricing (0.00825)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01587)
+Rendered /item/_pricing (0.01225)
+Rendered /item/_image (0.00042)
+Rendering /item/show
+Rendered /item/_summary (0.01255)
+Rendered /item/_pricing (0.00703)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00097)
+Rendered /item/_pricing (0.00061)
+Rendering /item/show
+Rendered /item/_summary (0.01767)
+Rendered /item/_pricing (0.00736)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.13997)
+Rendered /item/_pricing (0.00940)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01344)
+Rendered /item/_pricing (0.01252)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00171)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01305)
+Rendered /item/_pricing (0.00742)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00121)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01285)
+Rendered /item/_pricing (0.00724)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01154)
+Rendered /item/_pricing (0.00517)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00510)
+Rendering /item/show
+Rendered /item/_summary (0.01358)
+Rendered /item/_pricing (0.00820)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00117)
+Rendered /item/_pricing (0.00047)

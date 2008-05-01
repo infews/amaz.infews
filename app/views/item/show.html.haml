@@ -5,7 +5,7 @@
     #rating
       #stars
         = "#{@item.average_rating} out of 5 stars"
-      .count= "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })"
+      .count= "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })" unless @item.number_of_reviews.nil?
     #rank
       %span.label Amazon Sales Rank:
       %span.rank= number_with_delimiter @item.sales_rank

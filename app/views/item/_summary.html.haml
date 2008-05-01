@@ -1,4 +1,4 @@
 .summary
   %span.title= link_to_unless_current item.title, item_url(item)
-  %span.edition= "(#{[item.binding, item.edition].compact.join(', ')})"
-  .authors= "by #{item.authors.to_sentence}" unless item.authors.nil?
+  %span.edition= "(#{[item.binding, item.edition].compact.join(', ')})" unless item.binding.nil? && item.edition.nil?
+  .authors= ('by ' + item.authors.collect{|a| link_to(a, {:controller => 'item', :action => 'search', :search => 'book', :keywords => a})}.to_sentence) unless item.authors.nil?
