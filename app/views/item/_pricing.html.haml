@@ -1,8 +1,9 @@
 %div{:class => "pricing #{location}"}
-  .list_price
-    %span.label List Price:
-    %span.price= @item.list_price[:formatted] unless @item.list_price.nil?
-  .amazon_price
-    Foo
-    %span.label Amazon Price:
-    %span.price= (@item.amazon_price[:formatted] + link_to('*', :anchor => 'disclaimer')) unless @item.amazon_price.nil?
+  - unless @item.list_price.nil?
+    .list_price
+      %span.label List Price:
+      %span.price= @item.list_price[:formatted]
+  - unless @item.amazon_price.nil?
+    .amazon_price
+      %span.label Amazon Price:
+      %span.price= (@item.amazon_price[:formatted] + link_to('*', :anchor => 'disclaimer')) 

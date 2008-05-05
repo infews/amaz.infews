@@ -1,5 +1,15 @@
 #messages
-  #search_message= @search_message
-  #results_count=  @results_count
+  #search_message= @results.message
+  #results_count= "Found #{pluralize(@results.total_results, 'item')}"
+  #results_pages= @results.page_info
 #items
-  = render :partial => 'item', :collection => @items
+  = render :partial => 'item', :collection => @results.items
+#page_nav
+  #prev
+    = link_to('<<', search_path(:search => params[:search],                                     |
+                                :keywords => params[:keywords],                                 |
+                                :page => (params[:page].to_i - 1))) unless @results.first_page? |
+  #next
+    = link_to('>>', search_path(:search => params[:search],                                    |
+                                :keywords => params[:keywords],                                |
+                                :page => (params[:page].to_i + 1))) unless @results.last_page? |

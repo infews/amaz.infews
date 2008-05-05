@@ -3,9 +3,6 @@ require 'iconv'
 require 'net/http'
 require 'uri'
 
-# The main module to be mixed in to your application/calling class.  On include,
-# your class will gain an reader <tt>ecs</tt> that can be used to call the 
-# Amazon REST API.
 module AmazonAWS
 
   def aws_request
@@ -65,7 +62,7 @@ module AmazonAWS
     
     # Call CartGet via REST. Requires a options[:aws_cart_id] and options[:hmac] to be set to the 
     # cartid and HMAC returned from a previous CartCreate call.
-    def get_cart(options)
+    def get_cart(options)      
       get_response_with '&Operation=CartGet' +
                         "&CartId=#{options[:aws_cart_id]}&HMAC=#{options[:hmac]}"
     end  
@@ -83,7 +80,7 @@ module AmazonAWS
                         "&Item.1.Quantity=#{options[:quantity]}"
     end
   
-    def get_response_with request_params
+    def get_response_with(request_params)
       AmazonAWS::Response.new(fetch("#{@url_base}#{request_params}"))
     end
 
@@ -122,8 +119,8 @@ module AmazonAWS
               "&BrowseNode=#{URI.escape(value)}"
             when :director
               "&Director=#{URI.escape(Iconv.new('latin1', 'utf-8').iconv(value))}"
-            when :item_page
-              "&ItemPage=#{URI.escape(value)}"
+            when :page
+              "&ItemPage=#{value}"
             when :keywords
               "&Keywords=#{URI.escape(Iconv.new('latin1', 'utf-8').iconv(value))}"
             when :operation

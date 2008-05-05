@@ -12,11 +12,15 @@ class ItemController < ApplicationController
   end
   
   def search
-    aws_response = aws_item_search(:keywords => params[:keywords],                                
-                                :search_index => params[:search])
-    @items = aws_response.items.collect {|i| ItemPresenter.new(i)}
-    @search_message = "Searching #{params[:search].capitalize} for \"#{params[:keywords]}\""
-    @results_count = "Found #{pluralize_with_delimiter(aws_response.doc/:totalresults, 'item')}"
+    aws_response = aws_item_search(:keywords     => params[:keywords],                                
+                                   :search_index => 'Books',
+                                   :page         => params[:page])
+    
+    # TODO: handle bad results from amazon                              
+    @results = SearchResultsPresenter.new(aws_response)
+    @search_message = "Searching Books for \"#{params[:keywords]}\""
+    @results_count  = "Found #{pluralize_with_delimiter((aws_response.doc/:totalresults).innerHTML.to_i, 'item')}"
+    @pages_info     = "page #{params[:page]} of #{number_with_delimiter((aws_response.doc/:totalpages).innerHTML.to_i)}"
     
     # TODO: if @item.nil? then we need to flash and redirect to search
     respond_to do |format|

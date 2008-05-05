@@ -24,7 +24,7 @@ module AmazonAWS
   end
 
   def aws_item_search(options)
-    aws_request.item_search(options)
+    aws_request.item_search(options)    
   end
   
   def aws_add_to_cart(options)
