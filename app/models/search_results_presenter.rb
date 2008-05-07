@@ -1,4 +1,4 @@
-class SearchResultsPresenter
+class SearchResultsPresenter < AwsItemPresenter
   
   attr_reader :doc
   attr_reader :items
@@ -35,12 +35,13 @@ class SearchResultsPresenter
   def page_info
     @page_info ||= "page #{page} of #{total_pages}"
   end
-  
-  private
-  
-  def get(xpath)
-    node = @doc%xpath
-    node.nil? ? nil : node.innerHTML
+   
+  def search_index
+    @search_index ||= get('//items/request/itemsearchrequest/searchindex')
+  end
+
+  def keywords
+    @keywords ||= get('//items/request/itemsearchrequest/keywords')
   end
   
 end

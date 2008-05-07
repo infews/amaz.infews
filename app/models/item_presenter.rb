@@ -1,4 +1,4 @@
-class ItemPresenter
+class ItemPresenter < AwsItemPresenter
   
   attr_reader :doc
   
@@ -77,11 +77,6 @@ class ItemPresenter
   end
   
   private
-  
-  def get(xpath)
-    node = @doc%xpath
-    node.nil? ? nil : node.innerHTML
-  end
   
   def get_price(xpath)
     doc_node = @doc%xpath

@@ -29,13 +29,14 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
 
-  # Route for item/asin
   map.connect 'item_test', :controller => 'item', :action => 'test_show'
-  map.item 'item/:asin', :controller => 'item', :action => 'show'
+  map.conntect 'search_test', :controller => 'item', :action => 'test_search'
+  
   map.search 'item/search/:search/:keywords/:page', :controller => 'item', 
                                                     :action => 'search', 
                                                     :defaults => {:page => '1'},
                                                     :requirements => {:page => /\d*/}
+  map.item 'item/:asin', :controller => 'item', :action => 'show'
   
   # Install the default routes as the lowest priority.
   map.connect ':controller/:action/:id'

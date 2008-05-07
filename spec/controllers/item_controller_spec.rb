@@ -75,7 +75,7 @@ describe ItemController do
     response_xml = File.read('spec/response_xml/item_search_book_keyword.xml')
     controller.aws_request.stub!(:fetch).and_return(response_xml)
     
-    get 'search', :search => 'book', 
+    get 'search', :search => 'Books', 
                   :keywords => 'Against the day', 
                   :page => '1'
     
@@ -87,7 +87,7 @@ describe ItemController do
     response_xml = File.read('spec/response_xml/item_search_book_page_last.xml')
     controller.aws_request.stub!(:fetch).and_return(response_xml)
     
-    get 'search', :search => 'book', 
+    get 'search', :search => 'Books', 
                   :keywords => 'harry potter', 
                   :page => '178'
 

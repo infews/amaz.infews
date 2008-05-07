@@ -57,4 +57,16 @@ describe SearchResultsPresenter do
     results.page_info.should == 'page 1 of 178'
   end
   
+  it 'should preserve the Amazon search index' do
+    results = SearchResultsPresenter.new(@book_keyword_search)
+    
+    results.search_index.should == 'Books'
+  end
+  
+  it 'should preserve the search keywords' do
+    results = SearchResultsPresenter.new(@book_keyword_search)
+    
+    results.keywords.should == 'harry potter'
+  end
+  
 end

@@ -7,17 +7,14 @@
 #  Copyright 2006-2008 Infews, LLC.  Provided via the Ruby license
 
 # Definition of all supported countries' base URLs.  Your code must require
+require 'lib/request'
+require 'lib/response'
+
 module AmazonAWS
   # TODO: add other countries as support is added
   AWS_URL_US = 'http://webservices.amazon.com/onca/xml?Service=AWSECommerceService'
   DISCLAIMER = 'Disclaimer: Prices are accurate as of the date/time indicated. Prices and product availability are subject to change. Any price displayed on the Amazon website at the time of purchase will govern the sale of this product.'
   AWS_URL    = AWS_URL_US unless const_defined?(:AWS_URL)
-end  
-
-require 'lib/request'
-require 'lib/response'
-
-module AmazonAWS
 
   def aws_item_lookup(options)
     aws_request.item_lookup(options)

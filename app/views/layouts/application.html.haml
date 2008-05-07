@@ -1,8 +1,8 @@
 !!! 1.1
 %html
   %head
-    %meta{'http-equiv' => "content-type", :content => "text/html;charset=UTF-8"}/
-    %meta{:name => 'HandheldFriendly', :content => 'True'}/
+    %meta {'http-equiv' => "content-type", :content => "text/html;charset=UTF-8"}/
+    %meta {:name => 'HandheldFriendly', :content => 'True'}/
     %title amaz.infews
     = stylesheet_link_tag 'application'
     = stylesheet_link_tag @controller.controller_name
@@ -10,6 +10,20 @@
     #logo{:align => 'center'}
       = link_to image_tag('header_amaz.gif', :alt => 'amaz.infews'), :controller => 'search'
     = yield
+    #search_form
+      %a{:name => '#search_form'}
+      - form_tag :controller => 'item', :action => 'search' do
+        #text_label
+          Search for
+        #text_field
+          = text_field_tag(:search_text, session[:last_search_text], {:size => '10'}) 
+        #type_label
+          in
+        #type_field
+          = select_tag(:search, options_for_select(ItemController.search_types, session[:last_search])) 
+        #float_clear
+        .submit_button
+          = submit_tag('Go')
     #powered
       powered by    
       = image_tag('footer_infews.gif', :align => 'right')

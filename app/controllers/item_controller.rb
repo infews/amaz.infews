@@ -13,15 +13,12 @@ class ItemController < ApplicationController
   
   def search
     aws_response = aws_item_search(:keywords     => params[:keywords],                                
-                                   :search_index => 'Books',
+                                   :search_index => params[:search],
                                    :page         => params[:page])
     
     # TODO: handle bad results from amazon                              
     @results = SearchResultsPresenter.new(aws_response)
-    @search_message = "Searching Books for \"#{params[:keywords]}\""
-    @results_count  = "Found #{pluralize_with_delimiter((aws_response.doc/:totalresults).innerHTML.to_i, 'item')}"
-    @pages_info     = "page #{params[:page]} of #{number_with_delimiter((aws_response.doc/:totalpages).innerHTML.to_i)}"
-    
+
     # TODO: if @item.nil? then we need to flash and redirect to search
     respond_to do |format|
       format.html # search.html.erb
@@ -29,11 +26,24 @@ class ItemController < ApplicationController
     
   end
 
+  def self.search_types
+    [['Books', 'Books']]#,
+#     ['Music', 'CD'  ],
+#     ['DVDs',  'DVD' ]]
+  end
+  
   # TODO: this doesn't work on FF!
   def test_show
     @item = ItemPresenter.new(Hpricot.parse(File.read('spec/response_xml/item_lookup_book.xml'))/:item)
 
-    render :template => 'show'
+    render :action => 'show'
+  end
+  
+  def test_search
+    
+    @results = SearchResultsPresenter.new(AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_page_1.xml')))
+    
+    render :action => 'search'
   end
   
 end
