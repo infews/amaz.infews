@@ -66,7 +66,7 @@ describe SearchResultsPresenter do
   it 'should preserve the search keywords' do
     results = SearchResultsPresenter.new(@book_keyword_search)
     
-    results.keywords.should == 'harry potter'
+    results.keywords.should == 'harry potter' 
   end
   
 end

@@ -26,7 +26,7 @@ describe '/item/show' do
     render '/item/show'
     
     response.should have_tag('div#item') do
-      with_tag('span.edition', '')
+      without_tag('span.edition')
     end
   end
 

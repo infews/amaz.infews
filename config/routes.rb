@@ -28,7 +28,7 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
 
   # See how all your routes lay out with "rake routes"
-
+  # TODO: there's got to be a better way to do these tests (mostly used when no connectivity)
   map.connect 'item_test', :controller => 'item', :action => 'test_show'
   map.conntect 'search_test', :controller => 'item', :action => 'test_search'
   
