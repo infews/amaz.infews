@@ -15,8 +15,8 @@ describe ItemPresenter do
     @item.authors.should be_nil
   end
   
-  it 'should return nil when there is no average customer rating of an item' do
-    @item.average_rating.should be_nil    
+  it 'should return "No Customer Ranknings" when there is no average customer rating of an item' do
+    @item.average_rating.should == 'No Customer Ratings'
   end
   
   it 'should return nil if the binding is not present' do

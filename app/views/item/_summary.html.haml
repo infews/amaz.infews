@@ -3,4 +3,4 @@
   - unless item.binding.nil? && item.edition.nil?
     %span.edition= "(#{[item.binding, item.edition].compact.join(', ')})" 
   - unless item.authors.nil?
-    .authors= ('by ' + item.authors.collect{|a| link_to(a, {:controller => 'item', :action => 'search', :search => 'book', :keywords => a})}.to_sentence)
+    .authors= ('by ' + item.authors.collect{|a| link_to(a, search_path(:search_index => 'Books', :keywords => a))}.to_sentence)

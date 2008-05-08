@@ -6,10 +6,7 @@
   = render :partial => 'item', :collection => @results.items
 #page_nav
   #prev
-    = link_to('<<', search_path(:search => @results.search_index,                               |
-                                :keywords => @results.keywords,                                 |
-                                :page => (@results.page.to_i - 1))) unless @results.first_page? |
+    = @results.first_page? ? "&nbsp;" : link_to('<<', previous_page_of(@results))
+  \---
   #next
-    = link_to('>>', search_path(:search => @results.search_index,                              |
-                                :keywords => @results.keywords,                                |
-                                :page => (@results.page.to_i + 1))) unless @results.last_page? |
+    = @results.last_page? ? "&nbsp;" : link_to('>>', next_page_of(@results))

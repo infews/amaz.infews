@@ -9,7 +9,7 @@ class SearchResultsPresenter < AwsItemPresenter
   end
   
   def page
-    @page ||= get('//items/request/itemsearchrequest/itempage')
+    @page = (@xml_item_page ||= get('//items/request/itemsearchrequest/itempage')) || '1'
   end
   
   def total_pages

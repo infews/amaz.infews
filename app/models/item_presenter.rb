@@ -25,7 +25,8 @@ class ItemPresenter < AwsItemPresenter
   end
   
   def average_rating
-    @average_rating ||= get '//customerreviews/averagerating'
+    @xml_rating ||= get '//customerreviews/averagerating'
+    @average_rating = @xml_rating.nil? ? "No Customer Ratings" : "#{@xml_rating} out of 5 stars"
   end
   
   def binding

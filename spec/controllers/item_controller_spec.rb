@@ -22,32 +22,32 @@ describe ItemController do
   it "should route to /item/search?search_type=book&keywords=foo" do 
     route_for(:controller => 'item', 
               :action => 'search',
-              :search => 'book',
-              :keywords => 'foo').should == '/item/search/book/foo'
+              :search_index => 'Books',
+              :keywords => 'foo').should == '/item/search/Books/foo'
   end
 
   it 'should get routed from /item/search?keywords=foo&search=book' do
-    params_from(:get, '/item/search/book/foo').should == {:controller => 'item', 
-                                                          :action => 'search',
-                                                          :search => 'book',
-                                                          :keywords => 'foo',
-                                                          :page => '1'}
+    params_from(:get, '/item/search/Books/foo').should == {:controller => 'item', 
+                                                           :action => 'search',
+                                                           :search_index => 'Books',
+                                                           :keywords => 'foo',
+                                                           :page => '1'}
   end
 
   it "should route to /item/search?search_type=book&keywords=foo&page=3" do 
     route_for(:controller => 'item', 
               :action => 'search',
-              :search => 'book',
+              :search_index => 'Books',
               :keywords => 'foo',
-              :page => '3').should == '/item/search/book/foo/3'
+              :page => '3').should == '/item/search/Books/foo/3'
   end
 
   it 'should get routed from /item/search?keywords=foo&search=book&page=3' do
-    params_from(:get, '/item/search/book/foo/3').should == {:controller => 'item', 
-                                                            :action => 'search',
-                                                            :search => 'book',
-                                                            :keywords => 'foo',
-                                                            :page => '3'}
+    params_from(:get, '/item/search/Books/foo/3').should == {:controller => 'item', 
+                                                             :action => 'search',
+                                                             :search_index => 'Books',
+                                                             :keywords => 'foo',
+                                                             :page => '3'}
   end
 
   
@@ -75,7 +75,7 @@ describe ItemController do
     response_xml = File.read('spec/response_xml/item_search_book_keyword.xml')
     controller.aws_request.stub!(:fetch).and_return(response_xml)
     
-    get 'search', :search => 'Books', 
+    get 'search', :search_index => 'Books', 
                   :keywords => 'Against the day', 
                   :page => '1'
     
@@ -87,7 +87,7 @@ describe ItemController do
     response_xml = File.read('spec/response_xml/item_search_book_page_last.xml')
     controller.aws_request.stub!(:fetch).and_return(response_xml)
     
-    get 'search', :search => 'Books', 
+    get 'search', :search_index => 'Books', 
                   :keywords => 'harry potter', 
                   :page => '178'
 

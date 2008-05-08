@@ -13,7 +13,7 @@ class ItemController < ApplicationController
   
   def search
     aws_response = aws_item_search(:keywords     => params[:keywords],                                
-                                   :search_index => params[:search],
+                                   :search_index => params[:search_index],
                                    :page         => params[:page])
     
     # TODO: handle bad results from amazon                              

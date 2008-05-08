@@ -33,7 +33,7 @@ describe ItemPresenter do
   end
   
   it 'should get the average customer rating of an item' do
-    @item.average_rating.should == '4.5'
+    @item.average_rating.should == '4.5 out of 5 stars'
   end
   
   it 'should get the binding of the item' do
