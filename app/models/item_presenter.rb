@@ -1,9 +1,12 @@
+require 'htmlentities'
+
 class ItemPresenter < AwsItemPresenter
   
   attr_reader :doc
   
   def initialize(doc)
     @doc = doc
+    @coder = HTMLEntities.new
   end
   
   def amazon_price
@@ -45,7 +48,7 @@ class ItemPresenter < AwsItemPresenter
     end
    
     @description ||= {:source  => (@description_node%'source').innerHTML,
-                      :content => (@description_node%'content').innerHTML}
+                      :content => @coder.decode((@description_node%'content').innerHTML)}
   end
   
   def edition

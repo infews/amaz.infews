@@ -34671,3 +34671,1251 @@ Processing ItemController#show (for 0.0.0.0 at 2008-05-08 08:13:36) [GET]
 Rendering template within layouts/application
 Rendering item/show
 Completed in 0.02901 (34 reqs/sec) | Rendering: 0.00051 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.00549)
+Rendered /item/_item (0.00688)
+Rendering item/search
+Rendered /item/_summary (0.00402)
+Rendered /item/_item (0.00458)
+Rendered /item/_summary (0.00426)
+Rendered /item/_item (0.00470)
+Rendered /item/_summary (0.00367)
+Rendered /item/_item (0.00409)
+Rendered /item/_summary (0.00395)
+Rendered /item/_item (0.00436)
+Rendered /item/_summary (0.00374)
+Rendered /item/_item (0.00416)
+Rendered /item/_summary (0.00392)
+Rendered /item/_item (0.00434)
+Rendered /item/_summary (0.00374)
+Rendered /item/_item (0.00417)
+Rendered /item/_summary (0.00412)
+Rendered /item/_item (0.00453)
+Rendered /item/_summary (0.00392)
+Rendered /item/_item (0.00434)
+Rendered /item/_summary (0.00445)
+Rendered /item/_item (0.00486)
+Rendering item/search
+Rendered /item/_summary (0.00419)
+Rendered /item/_item (0.00473)
+Rendered /item/_summary (0.00385)
+Rendered /item/_item (0.00429)
+Rendered /item/_summary (0.00404)
+Rendered /item/_item (0.00446)
+Rendered /item/_summary (0.00395)
+Rendered /item/_item (0.00439)
+Rendered /item/_summary (0.00423)
+Rendered /item/_item (0.00466)
+Rendered /item/_summary (0.00445)
+Rendered /item/_item (0.00490)
+Rendered /item/_summary (0.10495)
+Rendered /item/_item (0.10547)
+Rendered /item/_summary (0.00462)
+Rendered /item/_item (0.00523)
+Rendered /item/_summary (0.00437)
+Rendered /item/_item (0.00492)
+Rendered /item/_summary (0.00461)
+Rendered /item/_item (0.00516)
+Rendering item/search
+Rendered /item/_summary (0.01448)
+Rendered /item/_item (0.01504)
+Rendered /item/_summary (0.01767)
+Rendered /item/_item (0.01821)
+Rendered /item/_summary (0.01456)
+Rendered /item/_item (0.01509)
+Rendered /item/_summary (0.01509)
+Rendered /item/_item (0.01561)
+Rendered /item/_summary (0.02224)
+Rendered /item/_item (0.02277)
+Rendered /item/_summary (0.15064)
+Rendered /item/_item (0.15120)
+Rendered /item/_summary (0.01759)
+Rendered /item/_item (0.01822)
+Rendered /item/_summary (0.01879)
+Rendered /item/_item (0.01961)
+Rendered /item/_summary (0.01988)
+Rendered /item/_item (0.02047)
+Rendered /item/_summary (0.01998)
+Rendered /item/_item (0.02056)
+Rendering item/search
+Rendered /item/_summary (0.01479)
+Rendered /item/_item (0.01538)
+Rendered /item/_summary (0.01773)
+Rendered /item/_item (0.01827)
+Rendered /item/_summary (0.01445)
+Rendered /item/_item (0.01500)
+Rendered /item/_summary (0.01638)
+Rendered /item/_item (0.01700)
+Rendered /item/_summary (0.02112)
+Rendered /item/_item (0.02166)
+Rendered /item/_summary (0.02014)
+Rendered /item/_item (0.02067)
+Rendered /item/_summary (0.01397)
+Rendered /item/_item (0.01463)
+Rendered /item/_summary (0.01668)
+Rendered /item/_item (0.01721)
+Rendered /item/_summary (0.01795)
+Rendered /item/_item (0.01849)
+Rendered /item/_summary (0.10993)
+Rendered /item/_item (0.11047)
+Rendering item/search
+Rendered /item/_summary (0.01508)
+Rendered /item/_item (0.01571)
+Rendered /item/_summary (0.01796)
+Rendered /item/_item (0.01854)
+Rendered /item/_summary (0.01583)
+Rendered /item/_item (0.01640)
+Rendered /item/_summary (0.01521)
+Rendered /item/_item (0.01578)
+Rendered /item/_summary (0.02160)
+Rendered /item/_item (0.02214)
+Rendered /item/_summary (0.01994)
+Rendered /item/_item (0.02047)
+Rendered /item/_summary (0.01375)
+Rendered /item/_item (0.01425)
+Rendered /item/_summary (0.01645)
+Rendered /item/_item (0.01697)
+Rendered /item/_summary (0.01740)
+Rendered /item/_item (0.01791)
+Rendered /item/_summary (0.01836)
+Rendered /item/_item (0.01887)
+Rendering item/search
+Rendered /item/_summary (0.01499)
+Rendered /item/_item (0.01556)
+Rendered /item/_summary (0.10810)
+Rendered /item/_item (0.10865)
+Rendered /item/_summary (0.01578)
+Rendered /item/_item (0.01639)
+Rendered /item/_summary (0.01553)
+Rendered /item/_item (0.01613)
+Rendered /item/_summary (0.02231)
+Rendered /item/_item (0.02289)
+Rendered /item/_summary (0.02128)
+Rendered /item/_item (0.02186)
+Rendered /item/_summary (0.01575)
+Rendered /item/_item (0.01631)
+Rendered /item/_summary (0.01701)
+Rendered /item/_item (0.01757)
+Rendered /item/_summary (0.01755)
+Rendered /item/_item (0.01808)
+Rendered /item/_summary (0.01774)
+Rendered /item/_item (0.01825)
+Rendering item/search
+Rendered /item/_summary (0.01441)
+Rendered /item/_item (0.01498)
+Rendered /item/_summary (0.01751)
+Rendered /item/_item (0.01802)
+Rendered /item/_summary (0.01463)
+Rendered /item/_item (0.01516)
+Rendered /item/_summary (0.01464)
+Rendered /item/_item (0.01515)
+Rendered /item/_summary (0.02184)
+Rendered /item/_item (0.02235)
+Rendered /item/_summary (0.11454)
+Rendered /item/_item (0.11509)
+Rendered /item/_summary (0.01509)
+Rendered /item/_item (0.01570)
+Rendered /item/_summary (0.01731)
+Rendered /item/_item (0.01792)
+Rendered /item/_summary (0.01836)
+Rendered /item/_item (0.01898)
+Rendered /item/_summary (0.01839)
+Rendered /item/_item (0.01896)
+Rendering /item/show
+Rendered /item/_summary (0.01540)
+Rendered /item/_pricing (0.02116)
+Rendered /item/_image (0.00465)
+Rendered /item/_description (0.00781)
+Rendered /item/_pricing (0.00049)
+Rendering /item/show
+Rendered /item/_summary (0.01898)
+Rendered /item/_pricing (0.00672)
+Rendered /item/_description (0.00101)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_summary (0.01496)
+Rendered /item/_pricing (0.01175)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00097)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_summary (0.01503)
+Rendered /item/_pricing (0.00714)
+Rendered /item/_image (0.00042)
+Rendering /item/show
+Rendered /item/_summary (0.12629)
+Rendered /item/_pricing (0.00774)
+Rendered /item/_image (0.00043)
+Rendering /item/show
+Rendered /item/_summary (0.01605)
+Rendered /item/_pricing (0.01235)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00111)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01535)
+Rendered /item/_pricing (0.00786)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01521)
+Rendered /item/_pricing (0.00711)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00100)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01967)
+Rendered /item/_pricing (0.00700)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_summary (0.01515)
+Rendered /item/_pricing (0.00712)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01959)
+Rendered /item/_pricing (0.00740)
+Rendered /item/_image (0.00045)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01336)
+Rendered /item/_pricing (0.00558)
+Rendered /item/_description (0.00118)
+Rendered /item/_pricing (0.00545)
+Rendering /item/show
+Rendered /item/_summary (0.01535)
+Rendered /item/_pricing (0.00733)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00046)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 18:09:16) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"178", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.00876 (114 reqs/sec) | Rendering: 0.00045 (5%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/harry%20potter/178]
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 18:09:16) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.21451 (4 reqs/sec) | Rendering: 0.00050 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 18:09:16) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00321 (311 reqs/sec) | Rendering: 0.00042 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 18:09:16) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02572 (38 reqs/sec) | Rendering: 0.00049 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.00671)
+Rendered /item/_item (0.00836)
+Rendering item/search
+Rendered /item/_summary (0.00397)
+Rendered /item/_item (0.00471)
+Rendered /item/_summary (0.00427)
+Rendered /item/_item (0.00470)
+Rendered /item/_summary (0.00368)
+Rendered /item/_item (0.00410)
+Rendered /item/_summary (0.00395)
+Rendered /item/_item (0.00436)
+Rendered /item/_summary (0.00376)
+Rendered /item/_item (0.00417)
+Rendered /item/_summary (0.00409)
+Rendered /item/_item (0.00452)
+Rendered /item/_summary (0.00389)
+Rendered /item/_item (0.00432)
+Rendered /item/_summary (0.00413)
+Rendered /item/_item (0.00457)
+Rendered /item/_summary (0.00393)
+Rendered /item/_item (0.00435)
+Rendered /item/_summary (0.00452)
+Rendered /item/_item (0.00496)
+Rendering item/search
+Rendered /item/_summary (0.00420)
+Rendered /item/_item (0.00475)
+Rendered /item/_summary (0.00385)
+Rendered /item/_item (0.00428)
+Rendered /item/_summary (0.00420)
+Rendered /item/_item (0.00462)
+Rendered /item/_summary (0.00425)
+Rendered /item/_item (0.00468)
+Rendered /item/_summary (0.00435)
+Rendered /item/_item (0.00479)
+Rendered /item/_summary (0.00403)
+Rendered /item/_item (0.00446)
+Rendered /item/_summary (0.10148)
+Rendered /item/_item (0.10196)
+Rendered /item/_summary (0.00509)
+Rendered /item/_item (0.00567)
+Rendered /item/_summary (0.00437)
+Rendered /item/_item (0.00491)
+Rendered /item/_summary (0.00470)
+Rendered /item/_item (0.00524)
+Rendering item/search
+Rendered /item/_summary (0.01439)
+Rendered /item/_item (0.01497)
+Rendered /item/_summary (0.01813)
+Rendered /item/_item (0.01864)
+Rendered /item/_summary (0.02015)
+Rendered /item/_item (0.02073)
+Rendered /item/_summary (0.01462)
+Rendered /item/_item (0.01524)
+Rendered /item/_summary (0.02257)
+Rendered /item/_item (0.02309)
+Rendered /item/_summary (0.11395)
+Rendered /item/_item (0.11454)
+Rendered /item/_summary (0.01522)
+Rendered /item/_item (0.01582)
+Rendered /item/_summary (0.01737)
+Rendered /item/_item (0.01796)
+Rendered /item/_summary (0.01934)
+Rendered /item/_item (0.01992)
+Rendered /item/_summary (0.01880)
+Rendered /item/_item (0.01937)
+Rendering item/search
+Rendered /item/_summary (0.01481)
+Rendered /item/_item (0.01541)
+Rendered /item/_summary (0.01746)
+Rendered /item/_item (0.01799)
+Rendered /item/_summary (0.01439)
+Rendered /item/_item (0.01491)
+Rendered /item/_summary (0.01522)
+Rendered /item/_item (0.01584)
+Rendered /item/_summary (0.02152)
+Rendered /item/_item (0.02205)
+Rendered /item/_summary (0.02037)
+Rendered /item/_item (0.02089)
+Rendered /item/_summary (0.01402)
+Rendered /item/_item (0.01455)
+Rendered /item/_summary (0.01711)
+Rendered /item/_item (0.01763)
+Rendered /item/_summary (0.01836)
+Rendered /item/_item (0.01888)
+Rendered /item/_summary (0.11423)
+Rendered /item/_item (0.11477)
+Rendering item/search
+Rendered /item/_summary (0.01516)
+Rendered /item/_item (0.01579)
+Rendered /item/_summary (0.01881)
+Rendered /item/_item (0.01938)
+Rendered /item/_summary (0.01497)
+Rendered /item/_item (0.01553)
+Rendered /item/_summary (0.01489)
+Rendered /item/_item (0.01543)
+Rendered /item/_summary (0.02177)
+Rendered /item/_item (0.02231)
+Rendered /item/_summary (0.02077)
+Rendered /item/_item (0.02131)
+Rendered /item/_summary (0.01577)
+Rendered /item/_item (0.01630)
+Rendered /item/_summary (0.01645)
+Rendered /item/_item (0.01698)
+Rendered /item/_summary (0.01846)
+Rendered /item/_item (0.01897)
+Rendered /item/_summary (0.01816)
+Rendered /item/_item (0.01868)
+Rendering item/search
+Rendered /item/_summary (0.01544)
+Rendered /item/_item (0.01603)
+Rendered /item/_summary (0.11012)
+Rendered /item/_item (0.11067)
+Rendered /item/_summary (0.01575)
+Rendered /item/_item (0.01636)
+Rendered /item/_summary (0.01618)
+Rendered /item/_item (0.01676)
+Rendered /item/_summary (0.02285)
+Rendered /item/_item (0.02342)
+Rendered /item/_summary (0.02062)
+Rendered /item/_item (0.02120)
+Rendered /item/_summary (0.01420)
+Rendered /item/_item (0.01475)
+Rendered /item/_summary (0.01699)
+Rendered /item/_item (0.01764)
+Rendered /item/_summary (0.01767)
+Rendered /item/_item (0.01819)
+Rendered /item/_summary (0.01798)
+Rendered /item/_item (0.01849)
+Rendering item/search
+Rendered /item/_summary (0.01527)
+Rendered /item/_item (0.01585)
+Rendered /item/_summary (0.01757)
+Rendered /item/_item (0.01808)
+Rendered /item/_summary (0.01463)
+Rendered /item/_item (0.01516)
+Rendered /item/_summary (0.01523)
+Rendered /item/_item (0.01574)
+Rendered /item/_summary (0.02715)
+Rendered /item/_item (0.02766)
+Rendered /item/_summary (0.11222)
+Rendered /item/_item (0.11276)
+Rendered /item/_summary (0.01510)
+Rendered /item/_item (0.01573)
+Rendered /item/_summary (0.02083)
+Rendered /item/_item (0.02144)
+Rendered /item/_summary (0.01843)
+Rendered /item/_item (0.01901)
+Rendered /item/_summary (0.01891)
+Rendered /item/_item (0.01948)
+Rendering /item/show
+Rendered /item/_summary (0.01564)
+Rendered /item/_pricing (0.02074)
+Rendered /item/_image (0.00443)
+Rendered /item/_description (0.00807)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01931)
+Rendered /item/_pricing (0.00689)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01516)
+Rendered /item/_pricing (0.01195)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_summary (0.01499)
+Rendered /item/_pricing (0.00717)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_summary (0.12835)
+Rendered /item/_pricing (0.00791)
+Rendered /item/_image (0.00043)
+Rendering /item/show
+Rendered /item/_summary (0.01619)
+Rendered /item/_pricing (0.01292)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00114)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01519)
+Rendered /item/_pricing (0.01226)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01537)
+Rendered /item/_pricing (0.00725)
+Rendered /item/_image (0.00042)
+Rendered /item/_description (0.00125)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01513)
+Rendered /item/_pricing (0.01185)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00098)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_summary (0.02242)
+Rendered /item/_pricing (0.00740)
+Rendered /item/_image (0.00045)
+Rendered /item/_description (0.00099)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01609)
+Rendered /item/_pricing (0.01225)
+Rendered /item/_image (0.00044)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01403)
+Rendered /item/_pricing (0.00553)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00548)
+Rendering /item/show
+Rendered /item/_summary (0.01561)
+Rendered /item/_pricing (0.01292)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00046)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 21:09:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"178", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.00906 (110 reqs/sec) | Rendering: 0.00047 (5%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/harry%20potter/178]
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 21:09:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.21759 (4 reqs/sec) | Rendering: 0.00050 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 21:09:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00316 (316 reqs/sec) | Rendering: 0.00047 (15%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 21:09:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02573 (38 reqs/sec) | Rendering: 0.00050 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.00540)
+Rendered /item/_item (0.00658)
+Rendering item/search
+Rendered /item/_summary (0.00397)
+Rendered /item/_item (0.00452)
+Rendered /item/_summary (0.00423)
+Rendered /item/_item (0.00465)
+Rendered /item/_summary (0.00368)
+Rendered /item/_item (0.00409)
+Rendered /item/_summary (0.00406)
+Rendered /item/_item (0.00446)
+Rendered /item/_summary (0.00380)
+Rendered /item/_item (0.00421)
+Rendered /item/_summary (0.00388)
+Rendered /item/_item (0.00447)
+Rendered /item/_summary (0.00374)
+Rendered /item/_item (0.00415)
+Rendered /item/_summary (0.00419)
+Rendered /item/_item (0.00459)
+Rendered /item/_summary (0.00405)
+Rendered /item/_item (0.00447)
+Rendered /item/_summary (0.00444)
+Rendered /item/_item (0.00487)
+Rendering item/search
+Rendered /item/_summary (0.00429)
+Rendered /item/_item (0.00484)
+Rendered /item/_summary (0.00450)
+Rendered /item/_item (0.00494)
+Rendered /item/_summary (0.00406)
+Rendered /item/_item (0.00449)
+Rendered /item/_summary (0.00412)
+Rendered /item/_item (0.00453)
+Rendered /item/_summary (0.00450)
+Rendered /item/_item (0.00495)
+Rendered /item/_summary (0.10904)
+Rendered /item/_item (0.10953)
+Rendered /item/_summary (0.00501)
+Rendered /item/_item (0.00559)
+Rendered /item/_summary (0.00546)
+Rendered /item/_item (0.00602)
+Rendered /item/_summary (0.00435)
+Rendered /item/_item (0.00524)
+Rendered /item/_summary (0.00529)
+Rendered /item/_item (0.00582)
+Rendering item/search
+Rendered /item/_summary (0.01816)
+Rendered /item/_item (0.01874)
+Rendered /item/_summary (0.01878)
+Rendered /item/_item (0.01931)
+Rendered /item/_summary (0.01586)
+Rendered /item/_item (0.01638)
+Rendered /item/_summary (0.01589)
+Rendered /item/_item (0.01640)
+Rendered /item/_summary (0.13467)
+Rendered /item/_item (0.13521)
+Rendered /item/_summary (0.02322)
+Rendered /item/_item (0.02382)
+Rendered /item/_summary (0.01587)
+Rendered /item/_item (0.01647)
+Rendered /item/_summary (0.01924)
+Rendered /item/_item (0.01981)
+Rendered /item/_summary (0.01954)
+Rendered /item/_item (0.02086)
+Rendered /item/_summary (0.02041)
+Rendered /item/_item (0.02099)
+Rendering item/search
+Rendered /item/_summary (0.01504)
+Rendered /item/_item (0.01589)
+Rendered /item/_summary (0.01819)
+Rendered /item/_item (0.01872)
+Rendered /item/_summary (0.01512)
+Rendered /item/_item (0.01564)
+Rendered /item/_summary (0.01488)
+Rendered /item/_item (0.01539)
+Rendered /item/_summary (0.02226)
+Rendered /item/_item (0.02278)
+Rendered /item/_summary (0.02282)
+Rendered /item/_item (0.02336)
+Rendered /item/_summary (0.01482)
+Rendered /item/_item (0.01536)
+Rendered /item/_summary (0.01812)
+Rendered /item/_item (0.01865)
+Rendered /item/_summary (0.02052)
+Rendered /item/_item (0.02104)
+Rendered /item/_summary (0.11804)
+Rendered /item/_item (0.11858)
+Rendering item/search
+Rendered /item/_summary (0.01563)
+Rendered /item/_item (0.01626)
+Rendered /item/_summary (0.01907)
+Rendered /item/_item (0.01964)
+Rendered /item/_summary (0.01519)
+Rendered /item/_item (0.01576)
+Rendered /item/_summary (0.01553)
+Rendered /item/_item (0.01608)
+Rendered /item/_summary (0.02348)
+Rendered /item/_item (0.02403)
+Rendered /item/_summary (0.02120)
+Rendered /item/_item (0.02175)
+Rendered /item/_summary (0.01423)
+Rendered /item/_item (0.01511)
+Rendered /item/_summary (0.02297)
+Rendered /item/_item (0.02351)
+Rendered /item/_summary (0.02350)
+Rendered /item/_item (0.02405)
+Rendered /item/_summary (0.01958)
+Rendered /item/_item (0.02011)
+Rendering item/search
+Rendered /item/_summary (0.22210)
+Rendered /item/_item (0.22269)
+Rendered /item/_summary (0.04229)
+Rendered /item/_item (0.04290)
+Rendered /item/_summary (0.04116)
+Rendered /item/_item (0.04176)
+Rendered /item/_summary (0.01923)
+Rendered /item/_item (0.01982)
+Rendered /item/_summary (0.02407)
+Rendered /item/_item (0.02466)
+Rendered /item/_summary (0.03127)
+Rendered /item/_item (0.03184)
+Rendered /item/_summary (0.01530)
+Rendered /item/_item (0.01590)
+Rendered /item/_summary (0.01829)
+Rendered /item/_item (0.01886)
+Rendered /item/_summary (0.01856)
+Rendered /item/_item (0.01909)
+Rendered /item/_summary (0.01991)
+Rendered /item/_item (0.02044)
+Rendering item/search
+Rendered /item/_summary (0.01502)
+Rendered /item/_item (0.01559)
+Rendered /item/_summary (0.01766)
+Rendered /item/_item (0.01818)
+Rendered /item/_summary (0.01529)
+Rendered /item/_item (0.01582)
+Rendered /item/_summary (0.01513)
+Rendered /item/_item (0.01565)
+Rendered /item/_summary (0.02397)
+Rendered /item/_item (0.02451)
+Rendered /item/_summary (0.02567)
+Rendered /item/_item (0.12060)
+Rendered /item/_summary (0.01512)
+Rendered /item/_item (0.01583)
+Rendered /item/_summary (0.01903)
+Rendered /item/_item (0.01963)
+Rendered /item/_summary (0.01888)
+Rendered /item/_item (0.01945)
+Rendered /item/_summary (0.01880)
+Rendered /item/_item (0.01935)
+Rendering /item/show
+Rendered /item/_summary (0.01575)
+Rendered /item/_pricing (0.00963)
+Rendered /item/_image (0.00121)
+Rendering /item/show
+Rendered /item/_summary (0.01573)
+Rendered /item/_pricing (0.00731)
+Rendering /item/show
+Rendered /item/_summary (0.01542)
+Rendered /item/_pricing (0.00842)
+Rendered /item/_image (0.00043)
+Rendering /item/show
+Rendered /item/_summary (0.01697)
+Rendered /item/_pricing (0.00743)
+Rendered /item/_image (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01770)
+Rendered /item/_pricing (0.00762)
+Rendered /item/_image (0.00185)
+Rendering /item/show
+Rendered /item/_summary (0.01766)
+Rendered /item/_pricing (0.00809)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.01553)
+Rendered /item/_pricing (0.00697)
+Rendered /item/_image (0.00042)
+Rendering /item/show
+Rendered /item/_summary (0.01561)
+Rendered /item/_pricing (0.00839)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_summary (0.01526)
+Rendered /item/_pricing (0.00880)
+Rendered /item/_image (0.00041)
+Rendering /item/show
+Rendered /item/_summary (0.13562)
+Rendered /item/_pricing (0.00793)
+Rendered /item/_image (0.00044)
+Rendering /item/show
+Rendered /item/_summary (0.01904)
+Rendered /item/_pricing (0.00860)
+Rendered /item/_image (0.00040)
+Rendering /item/show
+Rendered /item/_summary (0.01377)
+Rendered /item/_pricing (0.00508)
+Rendering /item/show
+Rendered /item/_summary (0.01565)
+Rendered /item/_pricing (0.00836)
+Rendered /item/_image (0.00041)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 21:20:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"178", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.01338 (74 reqs/sec) | Rendering: 0.00049 (3%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/harry%20potter/178]
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 21:20:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.40702 (2 reqs/sec) | Rendering: 0.00068 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 21:20:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00322 (310 reqs/sec) | Rendering: 0.00051 (15%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 21:20:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02276 (43 reqs/sec) | Rendering: 0.00053 (2%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.00594)
+Rendered /item/_item (0.00722)
+Rendering item/search
+Rendered /item/_summary (0.00398)
+Rendered /item/_item (0.00452)
+Rendered /item/_summary (0.00425)
+Rendered /item/_item (0.00468)
+Rendered /item/_summary (0.00379)
+Rendered /item/_item (0.00421)
+Rendered /item/_summary (0.00396)
+Rendered /item/_item (0.00437)
+Rendered /item/_summary (0.00378)
+Rendered /item/_item (0.00419)
+Rendered /item/_summary (0.00444)
+Rendered /item/_item (0.00485)
+Rendered /item/_summary (0.00387)
+Rendered /item/_item (0.00430)
+Rendered /item/_summary (0.00415)
+Rendered /item/_item (0.00457)
+Rendered /item/_summary (0.00401)
+Rendered /item/_item (0.00445)
+Rendered /item/_summary (0.00451)
+Rendered /item/_item (0.00494)
+Rendering item/search
+Rendered /item/_summary (0.00458)
+Rendered /item/_item (0.00530)
+Rendered /item/_summary (0.00392)
+Rendered /item/_item (0.00436)
+Rendered /item/_summary (0.00407)
+Rendered /item/_item (0.00449)
+Rendered /item/_summary (0.00396)
+Rendered /item/_item (0.00437)
+Rendered /item/_summary (0.00429)
+Rendered /item/_item (0.00472)
+Rendered /item/_summary (0.10627)
+Rendered /item/_item (0.10676)
+Rendered /item/_summary (0.00581)
+Rendered /item/_item (0.00640)
+Rendered /item/_summary (0.00502)
+Rendered /item/_item (0.00571)
+Rendered /item/_summary (0.00436)
+Rendered /item/_item (0.00489)
+Rendered /item/_summary (0.00499)
+Rendered /item/_item (0.00553)
+Rendering item/search
+Rendered /item/_summary (0.01533)
+Rendered /item/_item (0.01589)
+Rendered /item/_summary (0.01786)
+Rendered /item/_item (0.01837)
+Rendered /item/_summary (0.01523)
+Rendered /item/_item (0.01574)
+Rendered /item/_summary (0.01533)
+Rendered /item/_item (0.01585)
+Rendered /item/_summary (0.11251)
+Rendered /item/_item (0.11305)
+Rendered /item/_summary (0.02238)
+Rendered /item/_item (0.02298)
+Rendered /item/_summary (0.01485)
+Rendered /item/_item (0.01566)
+Rendered /item/_summary (0.01764)
+Rendered /item/_item (0.01823)
+Rendered /item/_summary (0.01845)
+Rendered /item/_item (0.01903)
+Rendered /item/_summary (0.01896)
+Rendered /item/_item (0.01951)
+Rendering item/search
+Rendered /item/_summary (0.01504)
+Rendered /item/_item (0.01563)
+Rendered /item/_summary (0.01765)
+Rendered /item/_item (0.01817)
+Rendered /item/_summary (0.01559)
+Rendered /item/_item (0.01612)
+Rendered /item/_summary (0.01522)
+Rendered /item/_item (0.01575)
+Rendered /item/_summary (0.02135)
+Rendered /item/_item (0.02188)
+Rendered /item/_summary (0.02048)
+Rendered /item/_item (0.02102)
+Rendered /item/_summary (0.01416)
+Rendered /item/_item (0.01469)
+Rendered /item/_summary (0.02250)
+Rendered /item/_item (0.02303)
+Rendered /item/_summary (0.01874)
+Rendered /item/_item (0.01926)
+Rendered /item/_summary (0.11192)
+Rendered /item/_item (0.11251)
+Rendering item/search
+Rendered /item/_summary (0.02018)
+Rendered /item/_item (0.02080)
+Rendered /item/_summary (0.01844)
+Rendered /item/_item (0.01903)
+Rendered /item/_summary (0.01549)
+Rendered /item/_item (0.01606)
+Rendered /item/_summary (0.01539)
+Rendered /item/_item (0.01592)
+Rendered /item/_summary (0.02213)
+Rendered /item/_item (0.02266)
+Rendered /item/_summary (0.02109)
+Rendered /item/_item (0.02174)
+Rendered /item/_summary (0.01448)
+Rendered /item/_item (0.01509)
+Rendered /item/_summary (0.01802)
+Rendered /item/_item (0.01855)
+Rendered /item/_summary (0.01806)
+Rendered /item/_item (0.01858)
+Rendered /item/_summary (0.01868)
+Rendered /item/_item (0.01919)
+Rendering item/search
+Rendered /item/_summary (0.10890)
+Rendered /item/_item (0.10950)
+Rendered /item/_summary (0.01920)
+Rendered /item/_item (0.01981)
+Rendered /item/_summary (0.01571)
+Rendered /item/_item (0.01632)
+Rendered /item/_summary (0.01648)
+Rendered /item/_item (0.01708)
+Rendered /item/_summary (0.02256)
+Rendered /item/_item (0.02314)
+Rendered /item/_summary (0.02114)
+Rendered /item/_item (0.02170)
+Rendered /item/_summary (0.01438)
+Rendered /item/_item (0.01493)
+Rendered /item/_summary (0.01733)
+Rendered /item/_item (0.01786)
+Rendered /item/_summary (0.01809)
+Rendered /item/_item (0.01861)
+Rendered /item/_summary (0.01788)
+Rendered /item/_item (0.01841)
+Rendering item/search
+Rendered /item/_summary (0.01482)
+Rendered /item/_item (0.01541)
+Rendered /item/_summary (0.01775)
+Rendered /item/_item (0.01825)
+Rendered /item/_summary (0.01526)
+Rendered /item/_item (0.01578)
+Rendered /item/_summary (0.01551)
+Rendered /item/_item (0.01605)
+Rendered /item/_summary (0.02265)
+Rendered /item/_item (0.02317)
+Rendered /item/_summary (0.02306)
+Rendered /item/_item (0.11492)
+Rendered /item/_summary (0.01512)
+Rendered /item/_item (0.01573)
+Rendered /item/_summary (0.01731)
+Rendered /item/_item (0.01790)
+Rendered /item/_summary (0.01883)
+Rendered /item/_item (0.01942)
+Rendered /item/_summary (0.01922)
+Rendered /item/_item (0.01979)
+Rendering /item/show
+Rendered /item/_summary (0.01776)
+Rendered /item/_pricing (0.01108)
+Rendered /item/_image (0.00106)
+Rendered /item/_description (0.00193)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01989)
+Rendered /item/_pricing (0.00706)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01537)
+Rendered /item/_pricing (0.01231)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00045)
+Rendering /item/show
+Rendered /item/_summary (0.02068)
+Rendered /item/_pricing (0.00727)
+Rendered /item/_image (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01650)
+Rendered /item/_pricing (0.00780)
+Rendered /item/_image (0.00043)
+Rendering /item/show
+Rendered /item/_summary (0.01592)
+Rendered /item/_pricing (0.01273)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01576)
+Rendered /item/_pricing (0.01197)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00128)
+Rendered /item/_pricing (0.00047)
+Rendering /item/show
+Rendered /item/_summary (0.01544)
+Rendered /item/_pricing (0.00716)
+Rendered /item/_image (0.00038)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01579)
+Rendered /item/_pricing (0.01212)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00102)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01594)
+Rendered /item/_pricing (0.01267)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00105)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.13240)
+Rendered /item/_pricing (0.00807)
+Rendered /item/_image (0.00043)
+Rendered /item/_description (0.00293)
+Rendered /item/_pricing (0.00054)
+Rendering /item/show
+Rendered /item/_summary (0.01945)
+Rendered /item/_pricing (0.00569)
+Rendered /item/_description (0.00116)
+Rendered /item/_pricing (0.00598)
+Rendering /item/show
+Rendered /item/_summary (0.01550)
+Rendered /item/_pricing (0.01204)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00111)
+Rendered /item/_pricing (0.00046)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 21:27:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"178", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.00902 (110 reqs/sec) | Rendering: 0.00045 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/harry%20potter/178]
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 21:27:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.21444 (4 reqs/sec) | Rendering: 0.00051 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 21:27:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00307 (325 reqs/sec) | Rendering: 0.00042 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 21:27:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02620 (38 reqs/sec) | Rendering: 0.00049 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]
+Rendering item/search
+Rendered /item/_summary (0.00529)
+Rendered /item/_item (0.00649)
+Rendering item/search
+Rendered /item/_summary (0.00409)
+Rendered /item/_item (0.00463)
+Rendered /item/_summary (0.00427)
+Rendered /item/_item (0.00470)
+Rendered /item/_summary (0.00604)
+Rendered /item/_item (0.00649)
+Rendered /item/_summary (0.00405)
+Rendered /item/_item (0.00451)
+Rendered /item/_summary (0.00418)
+Rendered /item/_item (0.00461)
+Rendered /item/_summary (0.00409)
+Rendered /item/_item (0.00451)
+Rendered /item/_summary (0.00401)
+Rendered /item/_item (0.00442)
+Rendered /item/_summary (0.00422)
+Rendered /item/_item (0.00464)
+Rendered /item/_summary (0.00400)
+Rendered /item/_item (0.00442)
+Rendered /item/_summary (0.00443)
+Rendered /item/_item (0.00484)
+Rendering item/search
+Rendered /item/_summary (0.00425)
+Rendered /item/_item (0.00480)
+Rendered /item/_summary (0.00390)
+Rendered /item/_item (0.00432)
+Rendered /item/_summary (0.00410)
+Rendered /item/_item (0.00452)
+Rendered /item/_summary (0.00398)
+Rendered /item/_item (0.00441)
+Rendered /item/_summary (0.00426)
+Rendered /item/_item (0.00467)
+Rendered /item/_summary (0.10043)
+Rendered /item/_item (0.10092)
+Rendered /item/_summary (0.00489)
+Rendered /item/_item (0.00546)
+Rendered /item/_summary (0.00469)
+Rendered /item/_item (0.00524)
+Rendered /item/_summary (0.00435)
+Rendered /item/_item (0.00487)
+Rendered /item/_summary (0.00466)
+Rendered /item/_item (0.00519)
+Rendering item/search
+Rendered /item/_summary (0.01515)
+Rendered /item/_item (0.01572)
+Rendered /item/_summary (0.01833)
+Rendered /item/_item (0.01885)
+Rendered /item/_summary (0.01462)
+Rendered /item/_item (0.01514)
+Rendered /item/_summary (0.01489)
+Rendered /item/_item (0.01540)
+Rendered /item/_summary (0.11136)
+Rendered /item/_item (0.11194)
+Rendered /item/_summary (0.02454)
+Rendered /item/_item (0.02513)
+Rendered /item/_summary (0.01496)
+Rendered /item/_item (0.01556)
+Rendered /item/_summary (0.01842)
+Rendered /item/_item (0.01901)
+Rendered /item/_summary (0.01827)
+Rendered /item/_item (0.01885)
+Rendered /item/_summary (0.01834)
+Rendered /item/_item (0.01890)
+Rendering item/search
+Rendered /item/_summary (0.01500)
+Rendered /item/_item (0.01559)
+Rendered /item/_summary (0.01752)
+Rendered /item/_item (0.01806)
+Rendered /item/_summary (0.01498)
+Rendered /item/_item (0.01566)
+Rendered /item/_summary (0.01468)
+Rendered /item/_item (0.01594)
+Rendered /item/_summary (0.02148)
+Rendered /item/_item (0.02200)
+Rendered /item/_summary (0.02355)
+Rendered /item/_item (0.02409)
+Rendered /item/_summary (0.01480)
+Rendered /item/_item (0.01534)
+Rendered /item/_summary (0.01671)
+Rendered /item/_item (0.01724)
+Rendered /item/_summary (0.01818)
+Rendered /item/_item (0.01871)
+Rendered /item/_summary (0.11611)
+Rendered /item/_item (0.11667)
+Rendering item/search
+Rendered /item/_summary (0.01641)
+Rendered /item/_item (0.01706)
+Rendered /item/_summary (0.01826)
+Rendered /item/_item (0.01882)
+Rendered /item/_summary (0.01497)
+Rendered /item/_item (0.01552)
+Rendered /item/_summary (0.01533)
+Rendered /item/_item (0.01593)
+Rendered /item/_summary (0.02245)
+Rendered /item/_item (0.02299)
+Rendered /item/_summary (0.02566)
+Rendered /item/_item (0.02620)
+Rendered /item/_summary (0.01379)
+Rendered /item/_item (0.01442)
+Rendered /item/_summary (0.01640)
+Rendered /item/_item (0.01692)
+Rendered /item/_summary (0.01900)
+Rendered /item/_item (0.01951)
+Rendered /item/_summary (0.01779)
+Rendered /item/_item (0.01833)
+Rendering item/search
+Rendered /item/_summary (0.11252)
+Rendered /item/_item (0.11312)
+Rendered /item/_summary (0.01926)
+Rendered /item/_item (0.01986)
+Rendered /item/_summary (0.01619)
+Rendered /item/_item (0.01678)
+Rendered /item/_summary (0.01541)
+Rendered /item/_item (0.01599)
+Rendered /item/_summary (0.02238)
+Rendered /item/_item (0.02297)
+Rendered /item/_summary (0.02341)
+Rendered /item/_item (0.02396)
+Rendered /item/_summary (0.01497)
+Rendered /item/_item (0.01552)
+Rendered /item/_summary (0.01666)
+Rendered /item/_item (0.01720)
+Rendered /item/_summary (0.01850)
+Rendered /item/_item (0.01902)
+Rendered /item/_summary (0.01869)
+Rendered /item/_item (0.01921)
+Rendering item/search
+Rendered /item/_summary (0.01471)
+Rendered /item/_item (0.01528)
+Rendered /item/_summary (0.01844)
+Rendered /item/_item (0.01897)
+Rendered /item/_summary (0.01475)
+Rendered /item/_item (0.01528)
+Rendered /item/_summary (0.01481)
+Rendered /item/_item (0.01534)
+Rendered /item/_summary (0.09508)
+Rendered /item/_item (0.11282)
+Rendered /item/_summary (0.02294)
+Rendered /item/_item (0.02363)
+Rendered /item/_summary (0.01487)
+Rendered /item/_item (0.01547)
+Rendered /item/_summary (0.01781)
+Rendered /item/_item (0.01840)
+Rendered /item/_summary (0.01843)
+Rendered /item/_item (0.01902)
+Rendered /item/_summary (0.01877)
+Rendered /item/_item (0.01932)
+Rendering /item/show
+Rendered /item/_summary (0.01575)
+Rendered /item/_pricing (0.00967)
+Rendered /item/_image (0.00104)
+Rendered /item/_description (0.00197)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01942)
+Rendered /item/_pricing (0.00674)
+Rendered /item/_description (0.00106)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01521)
+Rendered /item/_pricing (0.01198)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00103)
+Rendered /item/_pricing (0.00091)
+Rendering /item/show
+Rendered /item/_summary (0.01522)
+Rendered /item/_pricing (0.00705)
+Rendered /item/_image (0.00042)
+Rendering /item/show
+Rendered /item/_summary (0.01683)
+Rendered /item/_pricing (0.00778)
+Rendered /item/_image (0.00043)
+Rendering /item/show
+Rendered /item/_summary (0.01633)
+Rendered /item/_pricing (0.01255)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00115)
+Rendered /item/_pricing (0.00048)
+Rendering /item/show
+Rendered /item/_summary (0.01564)
+Rendered /item/_pricing (0.01274)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00109)
+Rendered /item/_pricing (0.00051)
+Rendering /item/show
+Rendered /item/_summary (0.01586)
+Rendered /item/_pricing (0.01244)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00107)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01487)
+Rendered /item/_pricing (0.00721)
+Rendered /item/_image (0.00041)
+Rendered /item/_description (0.00104)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.01766)
+Rendered /item/_pricing (0.01246)
+Rendered /item/_image (0.00039)
+Rendered /item/_description (0.00110)
+Rendered /item/_pricing (0.00046)
+Rendering /item/show
+Rendered /item/_summary (0.13078)
+Rendered /item/_pricing (0.00794)
+Rendered /item/_image (0.00045)
+Rendered /item/_description (0.00125)
+Rendered /item/_pricing (0.00050)
+Rendering /item/show
+Rendered /item/_summary (0.01913)
+Rendered /item/_pricing (0.00549)
+Rendered /item/_description (0.00587)
+Rendered /item/_pricing (0.00562)
+Rendering /item/show
+Rendered /item/_summary (0.02080)
+Rendered /item/_pricing (0.00723)
+Rendered /item/_image (0.00040)
+Rendered /item/_description (0.00112)
+Rendered /item/_pricing (0.00047)
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 21:39:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"178", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.00897 (111 reqs/sec) | Rendering: 0.00046 (5%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/harry%20potter/178]
+
+
+Processing ItemController#search (for 0.0.0.0 at 2008-05-08 21:39:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Against the day"}
+Rendering template within layouts/application
+Rendering item/search
+Completed in 0.21912 (4 reqs/sec) | Rendering: 0.00052 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/search/Books/Against%20the%20day]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 21:39:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"fffffffff", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.00336 (297 reqs/sec) | Rendering: 0.00043 (12%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/fffffffff]
+
+
+Processing ItemController#show (for 0.0.0.0 at 2008-05-08 21:39:28) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Completed in 0.02550 (39 reqs/sec) | Rendering: 0.00517 (20%) | DB: 0.00000 (0%) | 200 OK [http://test.host/item/0143112562]

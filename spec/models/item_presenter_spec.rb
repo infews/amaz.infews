@@ -44,6 +44,7 @@ describe ItemPresenter do
     @item.description.should_not be_nil
     @item.description[:source].should == 'Product Description'
     @item.description[:content].should match(/^The inimitable Thomas Pynchon has done it again/)
+    @item.description[:content].should_not match(/(&lt;|&gt;)/)
   end
 
   it 'should get the edition of the item' do
