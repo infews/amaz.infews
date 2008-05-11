@@ -30,12 +30,12 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
   # TODO: there's got to be a better way to do these tests (mostly used when no connectivity)
   map.connect 'item_test', :controller => 'item', :action => 'test_show'
-  map.conntect 'search_test', :controller => 'item', :action => 'test_search'
+  map.connect 'search_test', :controller => 'item', :action => 'test_search'
   
-  map.search 'item/search/:search_index/:keywords/:page', :controller => 'item', 
-                                                          :action => 'search', 
-                                                          :defaults => { :search_index => 'Books' ,:page => '1'},
-                                                          :requirements => {:search_index => /Books/, :page => /\d*/}
+  map.search '/item/search/:search_index/:keywords/:page', :controller => 'item', 
+                                                     :action => 'search', 
+                                                     :defaults => { :page => '1'}#,
+#                                                     :requirements => {:search_index => /Books/}
   map.item 'item/:asin', :controller => 'item', :action => 'show'
   
   # Install the default routes as the lowest priority.

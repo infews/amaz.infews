@@ -27,29 +27,36 @@ describe ItemController do
   end
 
   it 'should get routed from /item/search?keywords=foo&search=book' do
-    params_from(:get, '/item/search/Books/foo').should == {:controller => 'item', 
-                                                           :action => 'search',
-                                                           :search_index => 'Books',
-                                                           :keywords => 'foo',
-                                                           :page => '1'}
+    params_from(:post, '/item/search/Books/foo').should == {:controller => 'item', 
+                                                            :action => 'search',
+                                                            :search_index => 'Books',
+                                                            :keywords => 'foo',
+                                                            :page => '1'}
   end
 
-  it "should route to /item/search?search_type=book&keywords=foo&page=3" do 
+  it "should route to /item/search/Books/foo%20bar/3" do 
     route_for(:controller => 'item', 
               :action => 'search',
               :search_index => 'Books',
-              :keywords => 'foo',
-              :page => '3').should == '/item/search/Books/foo/3'
+              :keywords => 'foo bar',
+              :page => '3').should == '/item/search/Books/foo%20bar/3'
   end
 
-  it 'should get routed from /item/search?keywords=foo&search=book&page=3' do
-    params_from(:get, '/item/search/Books/foo/3').should == {:controller => 'item', 
-                                                             :action => 'search',
-                                                             :search_index => 'Books',
-                                                             :keywords => 'foo',
-                                                             :page => '3'}
+  it 'should get routed from /item/search/Books/foo%20bar/3' do
+    params_from(:post, '/item/search/Books/foo%20bar/3').should == {:controller => 'item', 
+                                                                    :action => 'search',
+                                                                    :search_index => 'Books',
+                                                                    :keywords => 'foo bar',
+                                                                    :page => '3'}
   end
 
+  it 'should get routed from /item/search/=foo&search=book&page=3' do
+    params_from(:post, '/item/search/Books/foo/3').should == {:controller => 'item', 
+                                                              :action => 'search',
+                                                              :search_index => 'Books',
+                                                              :keywords => 'foo',
+                                                              :page => '3'}
+  end
   
   
   # Actions
