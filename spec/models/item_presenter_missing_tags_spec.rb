@@ -43,4 +43,12 @@ describe ItemPresenter do
     @item.sales_rank.should be_nil
   end
   
+  it 'should return nil for label if the tag is not present' do
+    @item.label.should be_nil
+  end
+  
+  it 'should return nil for tracks if the tags are not present' do
+    @item.tracks.should be_nil
+  end
+  
 end

@@ -1,6 +1,8 @@
 .summary
+  - unless item.artists.nil?
+    .artists= item.artists.collect{|a| link_to(a, search_path(:search_index => 'Music', :keywords => a))}.to_sentence
   %span.title= link_to_unless_current item.title, item_url(item.asin)
   - unless item.binding.nil? && item.edition.nil?
     %span.edition= "(#{[item.binding, item.edition].compact.join(', ')})" 
   - unless item.authors.nil?
-    .authors= ('by ' + item.authors.collect{|a| link_to(a, search_path(:search_index => 'Books', :keywords => a))}.to_sentence)
+    .authors= 'by ' + item.authors.collect{|a| link_to(a, search_path(:search_index => 'Books', :keywords => a))}.to_sentence

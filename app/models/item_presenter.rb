@@ -14,8 +14,13 @@ class ItemPresenter < AwsItemPresenter
     @amazon_price ||= get_price '//offers/offer/offerlisting/price'
   end
 
-  def artist
-    @artist ||= get '//itemattributes/artist'
+  def artists
+    @artists_node ||= @doc/'//itemattributes/artist'
+    return nil if @artists_node.empty?
+    
+    @artists ||= @artists_node.inject([]) do |artists, artist_node|
+                   artists << artist_node.innerHTML
+                 end
   end
   
   def asin
@@ -88,8 +93,9 @@ class ItemPresenter < AwsItemPresenter
     @title ||= get '//itemattributes/title'
   end
   
-  def tracks            
-    @tracks ||= (@doc%'tracks').children_of_type('disc').inject([]) do |discs, disc_node|
+  def tracks
+    return nil unless @tracks_node ||= @doc%'tracks'
+    @tracks ||= @tracks_node.children_of_type('disc').inject([]) do |discs, disc_node|
                   discs << disc_node.children_of_type('track').inject([]) do |tracks, track_node| 
                              tracks << track_node.innerHTML
                            end

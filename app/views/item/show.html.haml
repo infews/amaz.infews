@@ -1,5 +1,7 @@
 #item
   = render :partial => 'summary', :locals => {:item => @item}
+  - unless @item.label.nil?
+    .label= "#{@item.label}"
   = render :partial => 'pricing', :locals => {:location => 'top'}
   #rating_and_rank
     #rating
@@ -10,6 +12,7 @@
       %span.label Amazon Sales Rank:
       %span.rank= number_with_delimiter @item.sales_rank
   = render :partial => 'image' unless @item.image.nil?
+  = render :partial => 'disc', :collection => @item.tracks unless @item.tracks.nil?
   = render :partial => 'description' unless @item.description.nil?
   = render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?
 #disclaimer

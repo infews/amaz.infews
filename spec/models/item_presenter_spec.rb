@@ -89,7 +89,7 @@ describe ItemPresenter do
     aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_cd_2.xml'))
     item = ItemPresenter.new((aws_response.doc/:item).first)
 
-    item.artist.should == 'Vampire Weekend'
+    item.artists.should == ['Vampire Weekend']
   end
   
   it 'should get the label of the item' do
