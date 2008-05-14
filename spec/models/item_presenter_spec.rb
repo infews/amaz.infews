@@ -85,4 +85,67 @@ describe ItemPresenter do
     @item.title.should == 'Against the Day'
   end
   
+  it 'should get the artist of the item' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_cd_2.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+
+    item.artist.should == 'Vampire Weekend'
+  end
+  
+  it 'should get the label of the item' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_cd_2.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+
+    item.label.should == 'Xl Recordings'
+  end
+  
+  it 'should get the track listings of one disc' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_cd_2.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+
+    item.tracks.should == [['Mansard Roof',
+                            'Oxford Comma',
+                            'A-Punk',
+                            'Cape Cod Kwassa Kwassa',
+                            'M79',
+                            'Campus',
+                            'Bryn',
+                            "One (Blake's Got A New Face)",
+                            'I Stand Corrected',
+                            'Walcott',
+                            "The Kids Don't Stand A Chance"]]
+  end
+  
+  it 'should get the track listings of a multi-disc CD' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_cd.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+    
+    item.tracks.should == [['In The Flesh?',
+                            'The Thin Ice',
+                            'Another Brick In The Wall, Part 1',
+                            'The Happiest Days Of Our Lives',
+                            'Another Brick In The Wall, Part 2',
+                            'Mother',
+                            'Goodbye Blue Sky',
+                            'Empty Spaces',
+                            'Young Lust',
+                            'One Of My Turns',
+                            "Don't Leave Me Now",
+                            'Another Brick In The Wall (Part III)',
+                            'Goodbye Cruel World'],
+                           ['Hey You',
+                            'Is There Anybody Out There?',
+                            'Nobody Home',
+                            'Vera',
+                            'Bring the Boys Back Home',
+                            'Comfortably Numb',
+                            'The Show Must Go On',
+                            'In The Flesh',
+                            'Run Like Hell',
+                            'Waiting For The Worms',
+                            'Stop',
+                            'The Trial',
+                            'Outside The Wall']]
+  end
+  
 end

@@ -27,10 +27,10 @@ describe ItemController do
   end
 
   it 'should get routed from /item/search?keywords=foo&search=book' do
-    params_from(:post, '/item/search/Books/foo').should == {:controller => 'item', 
+    params_from(:post, "/item/search/Books/J%20K%20Rowling").should == {:controller => 'item', 
                                                             :action => 'search',
                                                             :search_index => 'Books',
-                                                            :keywords => 'foo',
+                                                            :keywords => 'J K Rowling',
                                                             :page => '1'}
   end
 

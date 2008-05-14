@@ -5,13 +5,14 @@
     %meta{:name => 'HandheldFriendly', :content => 'True'}/
     %title amaz.infews
     = stylesheet_link_tag 'application'
+    = stylesheet_link_tag @controller.controller_name
   %body
-    #logo{:align => 'center'}
+    #logo
       = link_to image_tag('header_amaz.gif', :alt => 'amaz.infews'), :controller => 'search'
     = yield
     #search_form
       %a{:name => '#search_form'}
-      - form_tag({:controller => 'item', :action => 'search'}, :method => 'POST') do
+      - form_tag(:controller => 'item', :action => 'search') do
         #text_label
           Search for
         #text_field
@@ -26,4 +27,3 @@
     #powered
       powered by    
       = image_tag('footer_infews.gif', :align => 'right')
-    

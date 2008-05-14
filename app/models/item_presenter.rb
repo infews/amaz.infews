@@ -13,6 +13,10 @@ class ItemPresenter < AwsItemPresenter
     # TODO: better protect against no amazon? offer?    
     @amazon_price ||= get_price '//offers/offer/offerlisting/price'
   end
+
+  def artist
+    @artist ||= get '//itemattributes/artist'
+  end
   
   def asin
     @asin ||= get '//asin'
@@ -64,6 +68,10 @@ class ItemPresenter < AwsItemPresenter
                 :width  => (@image_node%'width').innerHTML}
   end
   
+  def label
+    @label ||= get '//itemattributes/label'
+  end
+  
   def list_price    
     @list_price ||= get_price '//itemattributes/listprice'
   end
@@ -78,6 +86,14 @@ class ItemPresenter < AwsItemPresenter
   
   def title
     @title ||= get '//itemattributes/title'
+  end
+  
+  def tracks            
+    @tracks ||= (@doc%'tracks').children_of_type('disc').inject([]) do |discs, disc_node|
+                  discs << disc_node.children_of_type('track').inject([]) do |tracks, track_node| 
+                             tracks << track_node.innerHTML
+                           end
+                  end
   end
   
   private
