@@ -7,16 +7,16 @@ describe ItemController do
     end
   end
   # Routing
-  it 'should route to /item/123456' do 
+  it 'should route to /item/show/123456' do 
     route_for(:controller => 'item', 
               :action => 'show',
-              :asin => '123456').should == '/item/123456'
+              :asin => '123456').should == '/item/show/123456'
   end
 
   it 'should get routed from /item/123456' do
-    params_from(:get, '/item/123456').should == {:controller => 'item',
-                                                 :action     => 'show',
-                                                 :asin       => '123456'}
+    params_from(:get, '/item/show/123456X').should == {:controller => 'item',
+                                                       :action     => 'show',
+                                                       :asin       => '123456X'}
   end
 
   it "should route to /item/search?search_type=book&keywords=foo" do 

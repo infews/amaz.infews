@@ -8,11 +8,12 @@
     = stylesheet_link_tag @controller.controller_name
   %body
     #logo
-      = link_to image_tag('header_amaz.gif', :alt => 'amaz.infews'), :controller => 'search'
+      =# link_to image_tag('header_amaz.gif', :alt => 'amaz.infews'), :controller => 'search'
+      = image_tag('header_amaz.gif', :alt => 'amaz.infews')
     = yield
     #search_form
       %a{:name => '#search_form'}
-      - form_tag(:controller => 'item', :action => 'search') do
+      - form_tag('/item/search') do
         #text_label
           Search for
         #text_field
@@ -20,7 +21,7 @@
         #type_label
           in
         #type_field
-          = select_tag(:search, options_for_select(ItemController.search_types, session[:last_search])) 
+          = select_tag(:search_index, options_for_select(ItemController.search_types, session[:last_search])) 
         #float_clear
         .submit_button
           = submit_tag('Go')

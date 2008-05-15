@@ -27,8 +27,8 @@ class ItemController < ApplicationController
   end
 
   def self.search_types
-    [['Books', 'Books']]#,
-#     ['Music', 'CD'  ],
+    [['Books', 'Books'],
+     ['Music', 'Music'  ]]#,
 #     ['DVDs',  'DVD' ]]
   end
   
