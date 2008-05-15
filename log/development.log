@@ -33718,3 +33718,227 @@ Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller
   [4;36;1mSQL (0.002519)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
   [4;35;1mSQL (0.004441)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
   [4;36;1mSQL (0.003010)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000406)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000301)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000262)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.005336)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002365)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001795)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003469)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000404)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000256)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000261)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006854)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002637)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.004509)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003111)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000426)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000258)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000299)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000250)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.004643)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002939)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002255)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003427)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000603)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000261)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.010132)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.004824)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002717)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002819)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000273)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.009617)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.004600)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002458)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.007400)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000439)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000437)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000307)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000264)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.005176)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002728)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001998)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003576)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000551)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000377)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000452)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000511)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.009660)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003517)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002745)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002704)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000404)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000304)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000248)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006627)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002785)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.004017)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002363)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000389)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000253)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006362)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002706)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001875)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003332)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000321)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000247)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007862)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002537)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001990)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003575)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000387)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000305)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000250)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.004898)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002845)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002864)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002319)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000396)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000300)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000246)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.005039)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002518)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001905)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003503)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000264)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000301)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000261)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.005975)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002545)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001807)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003458)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000275)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000307)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000255)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.025629)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003070)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002290)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002433)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000821)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000593)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000702)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000189)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000491)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.007970)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.004241)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002882)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003579)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000394)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000295)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000309)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000248)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.004671)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002851)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002481)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002691)[0m   [0;1mUPDATE schema_info SET version = 1[0m

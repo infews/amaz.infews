@@ -40,13 +40,20 @@ describe ItemPresenter do
     @item.binding.should == 'Paperback'
   end
   
-  it 'should get the description of the item' do
-    @item.description.should_not be_nil
-    @item.description[:source].should == 'Product Description'
-    @item.description[:content].should match(/^The inimitable Thomas Pynchon has done it again/)
-    @item.description[:content].should_not match(/(&lt;|&gt;)/)
+  it 'should get the editorial reviews of the item' do
+    @item.editorial_reviews.should_not be_nil
+    @item.editorial_reviews.first[:source].should == 'Product Description'
+    @item.editorial_reviews.first[:content].should match(/^The inimitable Thomas Pynchon has done it again/)
+    @item.editorial_reviews.first[:content].should_not match(/(&lt;|&gt;)/)
   end
 
+  it 'should get all editorial reviews when there are multiple in the XML' do
+    multi_editorial_review_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_cd_2.xml'))
+    item = ItemPresenter.new((multi_editorial_review_response.doc/:item)[0])
+    
+    item.editorial_reviews.length.should == 2
+  end
+  
   it 'should get the edition of the item' do
     @item.edition.should == 'Reprint'
   end
@@ -147,5 +154,7 @@ describe ItemPresenter do
                             'The Trial',
                             'Outside The Wall']]
   end
+  
+  
   
 end

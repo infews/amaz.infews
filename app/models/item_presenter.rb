@@ -45,23 +45,21 @@ class ItemPresenter < AwsItemPresenter
     @binding ||= get '//itemattributes/binding'
   end
   
-  def description
-    # TODO: this will need to expand to an array as we support other types of
-    # =>    'descriptions', Amazon's review, publisher's info, etc.
-    @description_node ||= @doc/'//editorialreviews/editorialreview'
-    return nil if @description_node.nil?
-    
-    if (@description_node%'source').nil? || 
-       (@description_node%'source').innerHTML != 'Product Description'
-      return nil
-    end
-   
-    @description ||= {:source  => (@description_node%'source').innerHTML,
-                      :content => @coder.decode((@description_node%'content').innerHTML)}
-  end
-  
   def edition
     @edition ||= get '//itemattributes/edition'
+  end
+  
+  def editorial_reviews
+    @ed_review_node ||= @doc%:editorialreviews
+    return nil if @ed_review_node.nil?    
+    
+    @review_nodes ||= @ed_review_node.children_of_type('editorialreview')
+    return nil if @review_nodes.nil?    
+
+    @editorial_reviews ||= @review_nodes.inject([]) do |reviews, this_review|
+                             reviews << {:source => (this_review%:source).innerHTML,
+                                         :content => @coder.decode((this_review%:content).innerHTML)}
+                           end
   end
   
   def image

@@ -101,18 +101,18 @@ describe '/item/show' do
     end
   end
 
-  it 'should show the description if a valid one is found' do
+  it 'should show the editorial reviews if a valid one is found' do
     assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
     
     render '/item/show'
       
-    response.should have_tag('div#description') do
+    response.should have_tag('div.review') do
       with_tag('div.source')
       with_tag('div.content')
     end
   end
     
-  it 'should not show a description if a valid one is not found' do
+  it 'should not show editorial reviews if there are none in the response' do
     aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book_no_description.xml'))
     assigns[:item] = ItemPresenter.new(aws_response.items.first)
  

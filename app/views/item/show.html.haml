@@ -13,8 +13,9 @@
       %span.rank= number_with_delimiter @item.sales_rank
   = render :partial => 'image' unless @item.image.nil?
   = render :partial => 'disc', :collection => @item.tracks unless @item.tracks.nil?
-  = render :partial => 'description' unless @item.description.nil?
-  = render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.description.nil?
+  - unless @item.editorial_reviews.nil?
+    = render :partial => 'editorial_review', :collection =>  @item.editorial_reviews
+    = render :partial => 'pricing', :locals => {:location => 'bottom'}
 #disclaimer
   %a{:name => 'disclaimer'} 
     %em=AmazonAWS::DISCLAIMER
