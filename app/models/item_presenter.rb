@@ -3,10 +3,30 @@ require 'htmlentities'
 class ItemPresenter < AwsItemPresenter
   
   attr_reader :doc
+  attr_reader_from_xml :asin, '//asin'
+  attr_reader_from_xml :audience_rating, '/itemattributes/audiencerating'  
+  attr_reader_from_xml :binding, '/itemattributes/binding'
+  attr_reader_from_xml :detail_page_url, '/detailpageurl'
+  attr_reader_from_xml :edition, '/itemattributes/edition'
+  attr_reader_from_xml :label, '/itemattributes/label'
+  attr_reader_from_xml :number_of_reviews, '/customerreviews/totalreviews'  
+  attr_reader_from_xml :product_group, '/itemattributes/productgroup'
+  attr_reader_from_xml :sales_rank, '/salesrank'
+  attr_reader_from_xml :title, '/itemattributes/title'
+    
+  # TODO: make an attr_xml meta_programming method and use for all simple attrs
   
   def initialize(doc)
     @doc = doc
     @coder = HTMLEntities.new
+  end
+  
+  def actors   
+    @actors_node ||= (@doc%:itemattributes).children_of_type('actor')
+    
+    @actors ||= @actors_node.inject([]) {|actors, an_actor| actors << an_actor.innerHTML}
+  rescue 
+    nil
   end
   
   def amazon_price
@@ -15,89 +35,59 @@ class ItemPresenter < AwsItemPresenter
   end
 
   def artists
-    @artists_node ||= @doc/'//itemattributes/artist'
-    return nil if @artists_node.empty?
-    
-    @artists ||= @artists_node.inject([]) do |artists, artist_node|
+    @artists ||= (@doc/'//itemattributes/artist').inject([]) do |artists, artist_node|
                    artists << artist_node.innerHTML
                  end
+  rescue
+    nil
   end
-  
-  def asin
-    @asin ||= get '//asin'
-  end
-  
+
   def authors
-    @authors_node ||= @doc/'//itemattributes/author'
-    return nil if @authors_node.empty?
-    
-    @authors ||= @authors_node.inject([]) do |authors, author_node|
+    @authors ||= (@doc/'//itemattributes/author').inject([]) do |authors, author_node|
                    authors << author_node.innerHTML
                  end
+  rescue
+    nil
   end
   
   def average_rating
     @xml_rating ||= get '//customerreviews/averagerating'
     @average_rating = @xml_rating.nil? ? "No Customer Ratings" : "#{@xml_rating} out of 5 stars"
   end
-  
-  def binding
-    @binding ||= get '//itemattributes/binding'
-  end
-  
-  def edition
-    @edition ||= get '//itemattributes/edition'
-  end
-  
+
   def editorial_reviews
-    @ed_review_node ||= @doc%:editorialreviews
-    return nil if @ed_review_node.nil?    
-    
-    @review_nodes ||= @ed_review_node.children_of_type('editorialreview')
-    return nil if @review_nodes.nil?    
+    @review_nodes ||= (@doc%:editorialreviews).children_of_type('editorialreview')
 
     @editorial_reviews ||= @review_nodes.inject([]) do |reviews, this_review|
                              reviews << {:source => (this_review%:source).innerHTML,
                                          :content => @coder.decode((this_review%:content).innerHTML)}
                            end
+  rescue
+    nil
   end
   
   def image
     @image_node ||= @doc%'//mediumimage' || @doc%'//smallimage'
-    return nil if @image_node.nil?
     
     @image ||= {:url    => (@image_node%'url').innerHTML,
                 :height => (@image_node%'height').innerHTML,
                 :width  => (@image_node%'width').innerHTML}
+  rescue
+    nil
   end
-  
-  def label
-    @label ||= get '//itemattributes/label'
-  end
-  
+
   def list_price    
     @list_price ||= get_price '//itemattributes/listprice'
   end
-  
-  def number_of_reviews
-    @number_of_reviews ||= get '//customerreviews/totalreviews'  
-  end
-  
-  def sales_rank
-    @sales_rank ||= get '//salesrank'
-  end
-  
-  def title
-    @title ||= get '//itemattributes/title'
-  end
-  
+    
   def tracks
-    return nil unless @tracks_node ||= @doc%'tracks'
-    @tracks ||= @tracks_node.children_of_type('disc').inject([]) do |discs, disc_node|
+    @tracks ||= (@doc%'tracks').children_of_type('disc').inject([]) do |discs, disc_node|
                   discs << disc_node.children_of_type('track').inject([]) do |tracks, track_node| 
                              tracks << track_node.innerHTML
                            end
-                  end
+                end
+  rescue
+    nil
   end
   
   private

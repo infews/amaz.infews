@@ -156,5 +156,27 @@ describe ItemPresenter do
   end
   
   
+  it 'should return an array of Actors if present' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_dvd.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+    
+    item.actors.length.should == 5
+    item.actors[0].should == 'Fran Drescher'    
+  end
+  
+  it 'should return the Audience Rating if present' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_dvd.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+
+    item.audience_rating.should == 'R (Restricted)'
+  end
+  
+  it 'should return the Amazon detail URL' do
+    @item.detail_page_url.should == 'http://www.amazon.com/gp/redirect.html%3FASIN=0143112562%26tag=ws%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/o/ASIN/0143112562%253FSubscriptionId=0525E2PQ81DD7ZTWTK82'
+  end
+  
+  it 'should return the product group' do
+    @item.product_group.should == 'Book'
+  end
   
 end

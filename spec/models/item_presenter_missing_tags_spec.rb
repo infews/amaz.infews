@@ -11,8 +11,8 @@ describe ItemPresenter do
     @item.amazon_price.should be_nil    
   end
   
-  it 'should return nil when there are no authors of this item' do
-    @item.authors.should be_nil
+  it 'should return an empty array when there are no authors of this item' do
+    @item.authors.should == []
   end
   
   it 'should return "No Customer Ranknings" when there is no average customer rating of an item' do
