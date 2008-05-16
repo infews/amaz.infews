@@ -1,10 +1,22 @@
 class AwsItemPresenter
 
-  def self.attr_reader_from_xml(symbol, xpath)
+  def self.attr_from_xml(symbol, xpath)
     self.class_eval """def #{symbol}
                          @#{symbol} ||= get('#{xpath}')
                        end
                     """
+  end
+  
+  def self.attr_array_from_xml(symbol, xpath, tag)
+    self.class_eval  """def #{symbol}
+                          node = @doc%'#{xpath}'
+                          @#{symbol} ||= node.children_of_type('#{tag}').inject([]) do |foos, a_foo|
+                                           foos << a_foo.innerHTML
+                                         end
+                        rescue
+                          []    
+                        end
+                     """
   end
   
   private

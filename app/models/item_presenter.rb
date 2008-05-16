@@ -3,30 +3,23 @@ require 'htmlentities'
 class ItemPresenter < AwsItemPresenter
   
   attr_reader :doc
-  attr_reader_from_xml :asin, '//asin'
-  attr_reader_from_xml :audience_rating, '/itemattributes/audiencerating'  
-  attr_reader_from_xml :binding, '/itemattributes/binding'
-  attr_reader_from_xml :detail_page_url, '/detailpageurl'
-  attr_reader_from_xml :edition, '/itemattributes/edition'
-  attr_reader_from_xml :label, '/itemattributes/label'
-  attr_reader_from_xml :number_of_reviews, '/customerreviews/totalreviews'  
-  attr_reader_from_xml :product_group, '/itemattributes/productgroup'
-  attr_reader_from_xml :sales_rank, '/salesrank'
-  attr_reader_from_xml :title, '/itemattributes/title'
-    
-  # TODO: make an attr_xml meta_programming method and use for all simple attrs
-  
+  attr_from_xml :asin, '//asin'
+  attr_from_xml :audience_rating, '/itemattributes/audiencerating'  
+  attr_from_xml :binding, '/itemattributes/binding'
+  attr_from_xml :detail_page_url, '/detailpageurl'
+  attr_from_xml :edition, '/itemattributes/edition'
+  attr_from_xml :label, '/itemattributes/label'
+  attr_from_xml :number_of_reviews, '/customerreviews/totalreviews'  
+  attr_from_xml :product_group, '/itemattributes/productgroup'
+  attr_from_xml :sales_rank, '/salesrank'
+  attr_from_xml :title, '/itemattributes/title'
+  attr_array_from_xml :actors, '//itemattributes', 'actor'
+  attr_array_from_xml :artists, '//itemattributes', 'artist'
+  attr_array_from_xml :authors, '//itemattributes', 'author'
+   
   def initialize(doc)
     @doc = doc
     @coder = HTMLEntities.new
-  end
-  
-  def actors   
-    @actors_node ||= (@doc%:itemattributes).children_of_type('actor')
-    
-    @actors ||= @actors_node.inject([]) {|actors, an_actor| actors << an_actor.innerHTML}
-  rescue 
-    nil
   end
   
   def amazon_price
@@ -34,22 +27,6 @@ class ItemPresenter < AwsItemPresenter
     @amazon_price ||= get_price '//offers/offer/offerlisting/price'
   end
 
-  def artists
-    @artists ||= (@doc/'//itemattributes/artist').inject([]) do |artists, artist_node|
-                   artists << artist_node.innerHTML
-                 end
-  rescue
-    nil
-  end
-
-  def authors
-    @authors ||= (@doc/'//itemattributes/author').inject([]) do |authors, author_node|
-                   authors << author_node.innerHTML
-                 end
-  rescue
-    nil
-  end
-  
   def average_rating
     @xml_rating ||= get '//customerreviews/averagerating'
     @average_rating = @xml_rating.nil? ? "No Customer Ratings" : "#{@xml_rating} out of 5 stars"
