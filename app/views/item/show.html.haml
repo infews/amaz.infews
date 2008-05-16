@@ -1,7 +1,5 @@
 #item
-  = render :partial => 'summary', :locals => {:item => @item}
-  - unless @item.label.nil?
-    .label= "#{@item.label}"
+  = render :partial => @item.summary_partial, :locals => {:item => @item}
   = render :partial => 'pricing', :locals => {:location => 'top'}
   #rating_and_rank
     #rating

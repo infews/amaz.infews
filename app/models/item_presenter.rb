@@ -16,11 +16,11 @@ class ItemPresenter < AwsItemPresenter
   attr_from_xml :studio, '/itemattributes/studio'
   attr_from_xml :title, '/itemattributes/title'
   
-  attr_array_from_xml :actors, '//itemattributes', 'actor'
-  attr_array_from_xml :artists, '//itemattributes', 'artist'
-  attr_array_from_xml :authors, '//itemattributes', 'author'
-  attr_array_from_xml :directors, '//itemattributes', 'director'  
-  attr_array_from_xml :formats, '//itemattributes', 'format'  
+  attr_array_from_xml :actors
+  attr_array_from_xml :artists
+  attr_array_from_xml :authors
+  attr_array_from_xml :directors
+  attr_array_from_xml :formats
    
   def initialize(doc)
     @doc = doc
@@ -61,7 +61,11 @@ class ItemPresenter < AwsItemPresenter
   def list_price    
     @list_price ||= get_price '//itemattributes/listprice'
   end
-    
+   
+  def summary_partial
+    "#{product_group.downcase}_summary"  
+  end
+  
   def tracks
     @tracks ||= (@doc%'tracks').children_of_type('disc').inject([]) do |discs, disc_node|
                   discs << disc_node.children_of_type('track').inject([]) do |tracks, track_node| 
