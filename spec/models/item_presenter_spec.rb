@@ -179,4 +179,25 @@ describe ItemPresenter do
     @item.product_group.should == 'Book'
   end
   
+  it 'should return an array of Directors, if present' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_dvd_2.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+
+    item.directors.should == ['Steven Spielberg']
+  end
+  
+  it 'should return the array of Format strings, if present' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_dvd_2.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+    
+    item.formats.length.should == 10
+  end
+  
+  it 'should return the studio, if present' do
+    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_dvd_2.xml'))
+    item = ItemPresenter.new((aws_response.doc/:item).first)
+    
+    item.studio.should == 'Dreamworks Video'
+  end
+  
 end

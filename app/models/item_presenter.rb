@@ -3,6 +3,7 @@ require 'htmlentities'
 class ItemPresenter < AwsItemPresenter
   
   attr_reader :doc
+  
   attr_from_xml :asin, '//asin'
   attr_from_xml :audience_rating, '/itemattributes/audiencerating'  
   attr_from_xml :binding, '/itemattributes/binding'
@@ -12,10 +13,14 @@ class ItemPresenter < AwsItemPresenter
   attr_from_xml :number_of_reviews, '/customerreviews/totalreviews'  
   attr_from_xml :product_group, '/itemattributes/productgroup'
   attr_from_xml :sales_rank, '/salesrank'
+  attr_from_xml :studio, '/itemattributes/studio'
   attr_from_xml :title, '/itemattributes/title'
+  
   attr_array_from_xml :actors, '//itemattributes', 'actor'
   attr_array_from_xml :artists, '//itemattributes', 'artist'
   attr_array_from_xml :authors, '//itemattributes', 'author'
+  attr_array_from_xml :directors, '//itemattributes', 'director'  
+  attr_array_from_xml :formats, '//itemattributes', 'format'  
    
   def initialize(doc)
     @doc = doc
