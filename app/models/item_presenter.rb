@@ -5,6 +5,7 @@ class ItemPresenter < AwsItemPresenter
   attr_reader :doc
   
   attr_from_xml :asin, '//asin'
+  attr_from_xml :aspect_ratio, '/itemattributes/aspectratio'
   attr_from_xml :audience_rating, '/itemattributes/audiencerating'  
   attr_from_xml :binding, '/itemattributes/binding'
   attr_from_xml :detail_page_url, '/detailpageurl'
@@ -15,6 +16,7 @@ class ItemPresenter < AwsItemPresenter
   attr_from_xml :sales_rank, '/salesrank'
   attr_from_xml :studio, '/itemattributes/studio'
   attr_from_xml :title, '/itemattributes/title'
+  
   
   attr_array_from_xml :actors
   attr_array_from_xml :artists
@@ -70,6 +72,14 @@ class ItemPresenter < AwsItemPresenter
                 end
   rescue
     nil
+  end
+  
+  def summary_partial
+    "#{product_group.downcase}_summary"
+  end
+  
+  def other_details_partial
+    "#{product_group.downcase}_other_details"
   end
   
   private

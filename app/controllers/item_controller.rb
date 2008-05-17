@@ -7,7 +7,7 @@ class ItemController < ApplicationController
     
     # TODO: if @item.nil? then we need to flash and redirect to search
     respond_to do |format|
-      format.html # show.html.erb
+      format.html
     end
   end
   
@@ -21,15 +21,15 @@ class ItemController < ApplicationController
 
     # TODO: if @item.nil? then we need to flash and redirect to search
     respond_to do |format|
-      format.html # search.html.erb
+      format.html
     end
     
   end
 
   def self.search_types
     [['Books', 'Books'],
-     ['Music', 'Music'  ]]#,
-#     ['DVDs',  'DVD' ]]
+     ['Music', 'Music'  ],
+     ['DVDs',  'DVD' ]]
   end
   
   # TODO: this doesn't work on FF!

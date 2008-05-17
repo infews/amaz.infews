@@ -1,1 +1,1 @@
-= render :partial => item.product_group.downcase, :layout => "search_layout", :locals => {:item => item}
+%div.item= render :partial => item.summary_partial, :locals => {:item => item}

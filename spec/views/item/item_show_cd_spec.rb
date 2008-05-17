@@ -38,7 +38,9 @@ describe '/item/show' do
     render '/item/show'
       
     response.should have_tag('div#item') do
-      with_tag('div.disc', /Disc 1/)
+      with_tag('div.disc') do
+        without_tag('span.label', /Disc 1/)
+      end
     end
   end
   

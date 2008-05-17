@@ -1,0 +1,20 @@
+- unless item.audience_rating.nil?
+  .mpaa
+    %span.label Rated
+    = "#{item.audience_rating}"
+- unless item.directors.empty?
+  .directors
+    %span.label Directed by
+    = item.directors.collect{|d| link_to(d, search_path(:search_index => 'DVD', :keywords => d))}.to_sentence
+- unless item.actors.empty?
+  .actors
+    %span.label Starring
+    = item.actors.collect{|a| link_to(a, search_path(:search_index => 'DVD', :keywords => a))}.to_sentence
+- unless item.formats.empty?
+  .formats
+    %span.label Formats:
+    = item.formats.join(', ')
+- unless item.aspect_ratio.nil?
+  .aspect_ratio
+    %span.label Aspect Ratio:
+    = item.aspect_ratio

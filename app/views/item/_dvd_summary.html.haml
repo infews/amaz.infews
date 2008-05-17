@@ -1,0 +1,4 @@
+.summary
+  %span.title= link_to_unless_current item.title, show_path(item.asin)
+  - unless item.binding.nil? && item.edition.nil?
+    %span.edition= "(#{[item.binding, item.edition].compact.join(', ')})" 

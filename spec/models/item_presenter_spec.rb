@@ -185,4 +185,16 @@ describe ItemPresenter do
     @dvd_2.studio.should == 'Dreamworks Video'
   end
   
+  it 'should return the correct summary partial name' do
+    @book.summary_partial.should == 'book_summary'
+    @cd_2.summary_partial.should == 'music_summary'
+    @dvd_2.summary_partial.should == 'dvd_summary'
+  end
+  
+  it 'should return the correct other details partial name' do
+    @book.other_details_partial.should == 'book_other_details'
+    @cd_2.other_details_partial.should == 'music_other_details'
+    @dvd_2.other_details_partial.should == 'dvd_other_details'
+  end
+  
 end

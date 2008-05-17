@@ -96,8 +96,7 @@ describe '/item/show' do
     render '/item/show'
       
     response.should have_tag('div#disclaimer') do
-      with_tag('a')
-      with_tag('em', /^Disclaimer/)
+      with_tag('a', /^Disclaimer/)
     end
   end
 

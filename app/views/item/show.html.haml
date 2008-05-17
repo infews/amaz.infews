@@ -1,1 +1,18 @@
-= render :partial => @item.product_group.downcase, :layout => 'show_layout', :locals => {:item => @item}
+#item
+  = render :partial => @item.summary_partial, :locals => {:item => @item}
+  = render :partial => 'pricing', :locals => {:location => 'top'}
+  #rating_and_rank
+    #rating
+      #stars
+        = @item.average_rating
+      .count= "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })" unless @item.number_of_reviews.nil?
+    #rank
+      %span.label Amazon Sales Rank:
+      %span.rank= number_with_delimiter @item.sales_rank
+  = render :partial => 'image' unless @item.image.nil?
+  = render :partial => @item.other_details_partial, :locals => {:item => @item}
+  - unless @item.editorial_reviews.nil?
+    = render :partial => 'editorial_review', :collection =>  @item.editorial_reviews
+    = render :partial => 'pricing', :locals => {:location => 'bottom'}
+#disclaimer
+  %a{:name => 'disclaimer'}= AmazonAWS::DISCLAIMER
