@@ -1,0 +1,40 @@
+.clear {
+  float: clear; }
+
+#results_count {
+  float: left; }
+
+#results_pages {
+  float: right; }
+
+#page_nav {
+  width: 100%; }
+  #page_nav #prev {
+    float: left;
+    text-align: left;
+    width: 20%; }
+  #page_nav #next {
+    float: right;
+    text-align: right;
+    width: 20%; }
+
+.summary .title {
+  font-weight: bold; }
+
+.even {
+  background-color: #FFF; }
+
+.odd {
+  background-color: #e5e5e5; }
+
+#item #image {
+  float: right; }
+#item .label {
+  font-weight: bold; }
+#item .pricing .price a {
+  text-decoration: none; }
+#item .review {
+  margin-bottom: 4px;
+  margin-top: 4px; }
+  #item .review .source {
+    font: italic bold; }

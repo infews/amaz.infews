@@ -2,11 +2,13 @@
   #search_message= @results.message
   #results_count= "Found #{pluralize(@results.total_results, 'item')}"
   #results_pages= @results.page_info
+  .clear &nbsp;
+%hr/
 #items
   = render :partial => 'item', :collection => @results.items
 #page_nav
   #prev
     = @results.first_page? ? "&nbsp;" : link_to('<<', previous_page_of(@results))
-  \---
   #next
     = @results.last_page? ? "&nbsp;" : link_to('>>', next_page_of(@results))
+  .clear
