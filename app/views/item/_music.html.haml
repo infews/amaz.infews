@@ -1,0 +1,12 @@
+- content_for :summary do
+  .summary
+    - unless item.artists.nil?
+      .artists= item.artists.collect{|a| link_to(a, search_path(:search_index => 'Music', :keywords => a))}.to_sentence
+    %span.title= link_to_unless_current item.title, show_path(item.asin)
+    - unless item.binding.nil? && item.edition.nil?
+      %span.edition= "(#{[item.binding, item.edition].compact.join(', ')})" 
+    - unless @item.label.nil?
+      .label= "#{@item.label}"
+
+- content_for :other_details do
+  = render :partial => 'disc', :collection => item.tracks unless item.tracks.nil?

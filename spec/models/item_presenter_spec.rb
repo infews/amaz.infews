@@ -185,14 +185,4 @@ describe ItemPresenter do
     @dvd_2.studio.should == 'Dreamworks Video'
   end
   
-  it 'should return the correct summary partial name for a book' do
-    @book.summary_partial.should == 'book_summary'
-  end
-  
-  it 'should return the correct summary partial name for music' do
-    @cd_2.summary_partial.should == 'music_summary'
-  end
-  
-  it 'should return the correct summary partial name for a dvd'
-  
 end

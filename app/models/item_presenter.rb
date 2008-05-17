@@ -62,10 +62,6 @@ class ItemPresenter < AwsItemPresenter
     @list_price ||= get_price '//itemattributes/listprice'
   end
    
-  def summary_partial
-    "#{product_group.downcase}_summary"  
-  end
-  
   def tracks
     @tracks ||= (@doc%'tracks').children_of_type('disc').inject([]) do |discs, disc_node|
                   discs << disc_node.children_of_type('track').inject([]) do |tracks, track_node| 
