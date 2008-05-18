@@ -3,7 +3,6 @@
   #results_count= "Found #{pluralize(@results.total_results, 'item')}"
   #results_pages= @results.page_info
   .clear &nbsp;
-%hr/
 #items
   = render :partial => 'item', :collection => @results.items
 #page_nav

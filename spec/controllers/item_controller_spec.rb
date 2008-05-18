@@ -101,6 +101,18 @@ describe ItemController do
     assigns[:results].should_not be_nil   
     assigns[:results].items.size.should == 1    
   end
+
+  it 'should preserve the state of the previous seach' do
+    response_xml = File.read('spec/response_xml/item_search_book_page_last.xml')
+    controller.aws_request.stub!(:fetch).and_return(response_xml)
+
+    get 'search', :search_index => 'Books', 
+                  :keywords => 'Against the day', 
+                  :page => '1'
+
+    assigns[:previous_keywords].should == 'Against the day'
+    assigns[:previous_search_index].should == 'Books'    
+  end
   
   it 'should tell the user that the item is not found'     
   it 'should redirect to an empty search page when an item is not found'

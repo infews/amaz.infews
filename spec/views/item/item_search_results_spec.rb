@@ -125,8 +125,5 @@ describe '/item/search' do
         without_tag('a')
       end
     end
-  end
-  
-  it 'should have a search form on the page' # TODO: should this be in layout testing?
-  it 'should default the search form to the last search'
+  end  
 end

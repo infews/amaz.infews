@@ -12,13 +12,14 @@ class ItemController < ApplicationController
   end
   
   def search
+    @previous_search_index = params[:search_index]
+    @previous_keywords     = params[:keywords]
     aws_response = aws_item_search(:keywords     => params[:keywords],                                
                                    :search_index => params[:search_index],
                                    :page         => params[:page])
     
     # TODO: handle bad results from amazon                              
     @results = SearchResultsPresenter.new(aws_response)
-
     # TODO: if @item.nil? then we need to flash and redirect to search
     respond_to do |format|
       format.html

@@ -17,11 +17,11 @@
         #text_label
           Search for
         #text_field
-          = text_field_tag(:keywords, session[:last_search_keywords], {:size => '10'}) 
+          = text_field_tag(:keywords, @previous_keywords, {:size => '10'}) 
         #type_label
           in
         #type_field
-          = select_tag(:search_index, options_for_select(ItemController.search_types, session[:last_search])) 
+          = select_tag(:search_index, options_for_select(ItemController.search_types, @previous_search_index)) 
         #float_clear
         .submit_button
           = submit_tag('Go')

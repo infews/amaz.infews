@@ -49605,3 +49605,588 @@ Rendered item/_music_other_details (0.00995)
 Rendered item/_editorial_review (0.00032)
 Rendered item/_pricing (0.00045)
 Completed in 0.60849 (1 reqs/sec) | Rendering: 0.06771 (11%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000PFU7OO]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-17 15:49:29) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Music", "keywords"=>"living colour"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_music_summary (0.00658)
+Rendered item/_item (0.00787)
+Rendered item/_dvd_summary (0.01009)
+Rendered item/_item (0.01675)
+Rendered item/_music_summary (0.17504)
+Rendered item/_item (0.17637)
+Rendered item/_music_summary (0.01006)
+Rendered item/_item (0.01150)
+Rendered item/_music_summary (0.00774)
+Rendered item/_item (0.00915)
+Rendered item/_music_summary (0.00696)
+Rendered item/_item (0.00837)
+Rendered item/_music_summary (0.00620)
+Rendered item/_item (0.00755)
+Rendered item/_music_summary (0.00693)
+Rendered item/_item (0.00814)
+Rendered item/_music_summary (0.00675)
+Rendered item/_item (0.00805)
+Rendered item/_music_summary (0.00669)
+Rendered item/_item (0.00796)
+Completed in 1.36599 (0 reqs/sec) | Rendering: 0.45441 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-17 15:49:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000OYC3I4", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_dvd_summary (0.01048)
+Rendered item/_image (0.00049)
+Rendered item/_pricing (0.01778)
+Rendered item/_dvd_other_details (0.04624)
+Completed in 0.76402 (1 reqs/sec) | Rendering: 0.10339 (13%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000OYC3I4]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-17 15:49:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B00006IK2S", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.02592)
+Rendered item/_image (0.00055)
+Rendered item/_pricing (0.01343)
+Rendered item/_track (0.00042)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00072)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.00829)
+Rendered item/_music_other_details (0.01388)
+Rendered item/_editorial_review (0.00032)
+Rendered item/_pricing (0.00046)
+Completed in 0.77460 (1 reqs/sec) | Rendering: 0.08115 (10%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B00006IK2S]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 11:46:26) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Books", "keywords"=>"murakami"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.02809)
+Rendered item/_item (0.02945)
+Rendered item/_book_summary (0.00608)
+Rendered item/_item (0.00756)
+Rendered item/_book_summary (0.00703)
+Rendered item/_item (0.02273)
+Rendered item/_book_summary (0.45191)
+Rendered item/_item (0.45402)
+Rendered item/_book_summary (0.01406)
+Rendered item/_item (0.01581)
+Rendered item/_book_summary (0.00664)
+Rendered item/_item (0.00806)
+Rendered item/_book_summary (0.00745)
+Rendered item/_item (0.00888)
+Rendered item/_book_summary (0.01002)
+Rendered item/_item (0.01144)
+Rendered item/_book_summary (0.00746)
+Rendered item/_item (0.00940)
+Rendered item/_book_summary (0.00889)
+Rendered item/_item (0.01043)
+Completed in 2.00828 (0 reqs/sec) | Rendering: 0.76848 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 11:46:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"2", "search_index"=>"Books", "keywords"=>"murakami"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00834)
+Rendered item/_item (0.00966)
+Rendered item/_book_summary (0.00634)
+Rendered item/_item (0.00753)
+Rendered item/_book_summary (0.00645)
+Rendered item/_item (0.00762)
+Rendered item/_book_summary (0.00566)
+Rendered item/_item (0.00681)
+Rendered item/_book_summary (0.00592)
+Rendered item/_item (0.00711)
+Rendered item/_book_summary (0.12948)
+Rendered item/_item (0.13079)
+Rendered item/_book_summary (0.00729)
+Rendered item/_item (0.00883)
+Rendered item/_book_summary (0.01320)
+Rendered item/_item (0.01480)
+Rendered item/_book_summary (0.00783)
+Rendered item/_item (0.00918)
+Rendered item/_book_summary (0.00696)
+Rendered item/_item (0.00897)
+Completed in 1.27206 (0 reqs/sec) | Rendering: 0.30092 (23%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search/Books/murakami/2]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 11:46:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"murakami"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00639)
+Rendered item/_item (0.00768)
+Rendered item/_book_summary (0.01335)
+Rendered item/_item (0.01454)
+Rendered item/_book_summary (0.00763)
+Rendered item/_item (0.00892)
+Rendered item/_book_summary (0.00594)
+Rendered item/_item (0.00709)
+Rendered item/_book_summary (0.00643)
+Rendered item/_item (0.00757)
+Rendered item/_book_summary (0.00620)
+Rendered item/_item (0.00733)
+Rendered item/_book_summary (0.00578)
+Rendered item/_item (0.00692)
+Rendered item/_book_summary (0.12275)
+Rendered item/_item (0.13050)
+Rendered item/_book_summary (0.00715)
+Rendered item/_item (0.00910)
+Rendered item/_book_summary (0.01344)
+Rendered item/_item (0.01486)
+Completed in 1.33204 (0 reqs/sec) | Rendering: 0.30665 (23%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search/Books/murakami]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 11:47:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Scott Rothkopf"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00787)
+Rendered item/_item (0.00928)
+Rendered item/_book_summary (0.00748)
+Rendered item/_item (0.00904)
+Rendered item/_book_summary (0.00722)
+Rendered item/_item (0.00850)
+Rendered item/_book_summary (0.00945)
+Rendered item/_item (0.01220)
+Rendered item/_book_summary (0.01094)
+Rendered item/_item (0.01240)
+Rendered item/_book_summary (0.00615)
+Rendered item/_item (0.00736)
+Rendered item/_book_summary (0.00571)
+Rendered item/_item (0.00684)
+Rendered item/_book_summary (0.01289)
+Rendered item/_item (0.01447)
+Rendered item/_book_summary (0.00678)
+Rendered item/_item (0.00799)
+Rendered item/_book_summary (0.00425)
+Rendered item/_item (0.00578)
+Completed in 1.35545 (0 reqs/sec) | Rendering: 0.33779 (24%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search/Books/Scott%20Rothkopf]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 11:47:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"0847830039", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01577)
+Rendered item/_image (0.00051)
+Rendered item/_pricing (0.01033)
+Rendered item/_book_other_details (0.00029)
+Rendered item/_editorial_review (0.00036)
+Rendered item/_pricing (0.00046)
+Completed in 0.65080 (1 reqs/sec) | Rendering: 0.08755 (13%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/0847830039]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 11:47:55) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Music", "keywords"=>"the cars"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_music_summary (0.01308)
+Rendered item/_item (0.01450)
+Rendered item/_music_summary (0.00723)
+Rendered item/_item (0.00869)
+Rendered item/_music_summary (0.00744)
+Rendered item/_item (0.00870)
+Rendered item/_dvd_summary (0.00437)
+Rendered item/_item (0.00656)
+Rendered item/_music_summary (0.00656)
+Rendered item/_item (0.00778)
+Rendered item/_dvd_summary (0.00493)
+Rendered item/_item (0.00632)
+Rendered item/_music_summary (0.00680)
+Rendered item/_item (0.00841)
+Rendered item/_music_summary (0.00834)
+Rendered item/_item (0.00957)
+Rendered item/_music_summary (0.00620)
+Rendered item/_item (0.00801)
+Rendered item/_music_summary (0.00847)
+Rendered item/_item (0.00992)
+Completed in 1.57007 (0 reqs/sec) | Rendering: 0.37374 (23%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 11:48:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B00005Y1XY", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.01557)
+Rendered item/_image (0.00042)
+Rendered item/_pricing (0.00966)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00023)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00038)
+Rendered item/_disc (0.00788)
+Rendered item/_music_other_details (0.01244)
+Rendered item/_editorial_review (0.00031)
+Rendered item/_editorial_review (0.00023)
+Rendered item/_pricing (0.00045)
+Completed in 0.63068 (1 reqs/sec) | Rendering: 0.06332 (10%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B00005Y1XY]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 11:48:39) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Books", "keywords"=>"the wall"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00756)
+Rendered item/_item (0.00884)
+Rendered item/_book_summary (0.00609)
+Rendered item/_item (0.00730)
+Rendered item/_book_summary (0.00581)
+Rendered item/_item (0.00699)
+Rendered item/_book_summary (0.00692)
+Rendered item/_item (0.00812)
+Rendered item/_book_summary (0.00601)
+Rendered item/_item (0.00720)
+Rendered item/_book_summary (0.00729)
+Rendered item/_item (0.00848)
+Rendered item/_book_summary (0.00717)
+Rendered item/_item (0.00848)
+Rendered item/_book_summary (0.00576)
+Rendered item/_item (0.00696)
+Rendered item/_book_summary (0.01174)
+Rendered item/_item (0.01298)
+Rendered item/_book_summary (0.00657)
+Rendered item/_item (0.00783)
+Completed in 1.26653 (0 reqs/sec) | Rendering: 0.21050 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 11:48:52) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Music", "keywords"=>"pink floyd the wall"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_music_summary (0.00733)
+Rendered item/_item (0.00863)
+Rendered item/_dvd_summary (0.00520)
+Rendered item/_item (0.00661)
+Rendered item/_dvd_summary (0.00381)
+Rendered item/_item (0.00514)
+Rendered item/_music_summary (0.00642)
+Rendered item/_item (0.00754)
+Rendered item/_music_summary (0.00710)
+Rendered item/_item (0.00823)
+Rendered item/_music_summary (0.00693)
+Rendered item/_item (0.00822)
+Rendered item/_dvd_summary (0.00398)
+Rendered item/_item (0.00517)
+Rendered item/_music_summary (0.00796)
+Rendered item/_item (0.00950)
+Rendered item/_music_summary (0.01328)
+Rendered item/_item (0.01447)
+Rendered item/_music_summary (0.00660)
+Rendered item/_item (0.00777)
+Completed in 1.26482 (0 reqs/sec) | Rendering: 0.21449 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 11:48:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000006TRV", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.02014)
+Rendered item/_image (0.00062)
+Rendered item/_pricing (0.01353)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00031)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.00653)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00084)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.00606)
+Rendered item/_music_other_details (0.01874)
+Rendered item/_editorial_review (0.00044)
+Rendered item/_pricing (0.00045)
+Completed in 0.96931 (1 reqs/sec) | Rendering: 0.08201 (8%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000006TRV]
+
+
+Processing ItemController#test_show (for 127.0.0.1 at 2008-05-18 11:57:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01169)
+Rendered item/_image (0.00041)
+Rendered item/_pricing (0.00805)
+Rendered item/_book_other_details (0.00027)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00042)
+Completed in 0.11870 (8 reqs/sec) | Rendering: 0.04020 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item_test]
+  [4;36;1mSQL (0.000646)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000440)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000540)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000388)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.022260)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.004196)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002721)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003297)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000301)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000253)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.004555)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002419)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.004128)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002263)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000389)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000308)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000252)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.008214)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002652)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001892)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003732)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 12:29:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00652)
+Rendered item/_item (0.00789)
+Rendered item/_book_summary (0.01244)
+Rendered item/_item (0.01364)
+Rendered item/_book_summary (0.00766)
+Rendered item/_item (0.00892)
+Rendered item/_book_summary (0.00703)
+Rendered item/_item (0.00852)
+Rendered item/_book_summary (0.00754)
+Rendered item/_item (0.00876)
+Rendered item/_book_summary (0.00686)
+Rendered item/_item (0.00814)
+Rendered item/_book_summary (0.00593)
+Rendered item/_item (0.00802)
+Rendered item/_book_summary (0.00767)
+Rendered item/_item (0.00889)
+Rendered item/_book_summary (0.00687)
+Rendered item/_item (0.00809)
+Rendered item/_book_summary (0.00612)
+Rendered item/_item (0.00730)
+Completed in 1.33919 (0 reqs/sec) | Rendering: 0.18734 (13%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 12:29:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00671)
+Rendered item/_item (0.00814)
+Rendered item/_book_summary (0.00602)
+Rendered item/_item (0.00722)
+Rendered item/_book_summary (0.00651)
+Rendered item/_item (0.00819)
+Rendered item/_book_summary (0.00581)
+Rendered item/_item (0.00699)
+Rendered item/_book_summary (0.00718)
+Rendered item/_item (0.00832)
+Rendered item/_book_summary (0.00620)
+Rendered item/_item (0.00745)
+Rendered item/_book_summary (0.00627)
+Rendered item/_item (0.00743)
+Rendered item/_book_summary (0.00673)
+Rendered item/_item (0.00796)
+Rendered item/_book_summary (0.00662)
+Rendered item/_item (0.00790)
+Rendered item/_book_summary (0.00645)
+Rendered item/_item (0.00762)
+Completed in 1.34057 (0 reqs/sec) | Rendering: 0.17950 (13%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search/Books/Thomas%20Pynchon]
+  [4;36;1mSQL (0.000384)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000305)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000305)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000274)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.005871)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002650)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002009)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003416)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 12:34:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00705)
+Rendered item/_item (0.00861)
+Rendered item/_book_summary (0.00799)
+Rendered item/_item (0.00931)
+Rendered item/_book_summary (0.00653)
+Rendered item/_item (0.00785)
+Rendered item/_book_summary (0.00674)
+Rendered item/_item (0.00808)
+Rendered item/_book_summary (0.00610)
+Rendered item/_item (0.00774)
+Rendered item/_book_summary (0.01249)
+Rendered item/_item (0.01377)
+Rendered item/_book_summary (0.00663)
+Rendered item/_item (0.00794)
+Rendered item/_book_summary (0.00742)
+Rendered item/_item (0.00867)
+Rendered item/_book_summary (0.00611)
+Rendered item/_item (0.00768)
+Rendered item/_book_summary (0.00575)
+Rendered item/_item (0.00724)
+Completed in 1.41742 (0 reqs/sec) | Rendering: 0.18675 (13%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 12:35:02) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Music", "keywords"=>"beatles"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_music_summary (0.00694)
+Rendered item/_item (0.00833)
+Rendered item/_music_summary (0.00696)
+Rendered item/_item (0.00872)
+Rendered item/_music_summary (0.00649)
+Rendered item/_item (0.00776)
+Rendered item/_music_summary (0.00758)
+Rendered item/_item (0.00904)
+Rendered item/_music_summary (0.01248)
+Rendered item/_item (0.01377)
+Rendered item/_music_summary (0.00706)
+Rendered item/_item (0.00882)
+Rendered item/_music_summary (0.00716)
+Rendered item/_item (0.00844)
+Rendered item/_music_summary (0.00728)
+Rendered item/_item (0.00850)
+Rendered item/_music_summary (0.00700)
+Rendered item/_item (0.00820)
+Rendered item/_music_summary (0.00739)
+Rendered item/_item (0.00862)
+Completed in 1.42905 (0 reqs/sec) | Rendering: 0.34871 (24%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 12:35:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAR", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.01561)
+Rendered item/_image (0.00044)
+Rendered item/_pricing (0.00997)
+Rendered item/_track (0.00023)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00082)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00028)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00041)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.00679)
+Rendered item/_music_other_details (0.01280)
+Rendered item/_editorial_review (0.00034)
+Rendered item/_editorial_review (0.00022)
+Rendered item/_pricing (0.00045)
+Completed in 0.68593 (1 reqs/sec) | Rendering: 0.06484 (9%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAR]
+  [4;36;1mSQL (0.000391)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000259)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000320)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000282)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006410)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003006)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002255)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002828)[0m   [0;1mUPDATE schema_info SET version = 1[0m
