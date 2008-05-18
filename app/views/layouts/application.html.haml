@@ -5,6 +5,7 @@
     %meta{:name => 'HandheldFriendly', :content => 'True'}/
     %title amaz.infews
     = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'iphone', {:media => 'only screen and (max-device-width 480px)'}
     = stylesheet_link_tag @controller.controller_name
   %body
     #logo
