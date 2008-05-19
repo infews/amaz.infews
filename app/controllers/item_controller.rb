@@ -1,3 +1,12 @@
+#  def self.bestsellers(options = {})
+#    
+#    Item.search(:searchindex => 'Books',
+#                :sort        => 'salesrank',
+#                :browsenode  => '1000',
+#                :itempage    => options[:page] || '1' )
+#  end
+
+
 class ItemController < ApplicationController
   include ApplicationHelper #included for pluralize_with_delimiter
   
@@ -14,6 +23,7 @@ class ItemController < ApplicationController
   def search
     @previous_search_index = params[:search_index]
     @previous_keywords     = params[:keywords]
+   
     aws_response = aws_item_search(:keywords     => params[:keywords],                                
                                    :search_index => params[:search_index],
                                    :page         => params[:page])

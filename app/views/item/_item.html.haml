@@ -1,2 +1,2 @@
-%div{:class => "item #{cycle('even','odd')}"}
+%div.item
   = render :partial => item.summary_partial, :locals => {:item => item}

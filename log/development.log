@@ -50190,3 +50190,1851 @@ Completed in 0.68593 (1 reqs/sec) | Rendering: 0.06484 (9%) | DB: 0.00000 (0%) |
   [4;36;1mSQL (0.003006)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
   [4;35;1mSQL (0.002255)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
   [4;36;1mSQL (0.002828)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 13:09:07) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Music", "keywords"=>"beatles"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_music_summary (0.00629)
+Rendered item/_item (0.00757)
+Rendered item/_music_summary (0.00657)
+Rendered item/_item (0.00816)
+Rendered item/_music_summary (0.00797)
+Rendered item/_item (0.00912)
+Rendered item/_music_summary (0.00681)
+Rendered item/_item (0.00799)
+Rendered item/_music_summary (0.00660)
+Rendered item/_item (0.00773)
+Rendered item/_music_summary (0.00666)
+Rendered item/_item (0.00781)
+Rendered item/_music_summary (0.00660)
+Rendered item/_item (0.00774)
+Rendered item/_music_summary (0.00634)
+Rendered item/_item (0.00783)
+Rendered item/_music_summary (0.00869)
+Rendered item/_item (0.00980)
+Rendered item/_music_summary (0.00705)
+Rendered item/_item (0.00826)
+Completed in 1.37874 (0 reqs/sec) | Rendering: 0.22655 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#test_show (for 192.168.2.168 at 2008-05-18 13:11:40) [GET]
+  Session ID: 929040d1d1e581b851f5f01fc703bf36
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.02281)
+Rendered item/_image (0.00070)
+Rendered item/_pricing (0.01439)
+Rendered item/_book_other_details (0.00027)
+Rendered item/_editorial_review (0.00033)
+Rendered item/_pricing (0.00073)
+Completed in 0.11955 (8 reqs/sec) | Rendering: 0.07137 (59%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:11:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00648)
+Rendered item/_item (0.00782)
+Rendered item/_book_summary (0.00610)
+Rendered item/_item (0.00767)
+Rendered item/_book_summary (0.00594)
+Rendered item/_item (0.00707)
+Rendered item/_book_summary (0.00636)
+Rendered item/_item (0.00747)
+Rendered item/_book_summary (0.00744)
+Rendered item/_item (0.12749)
+Rendered item/_book_summary (0.00759)
+Rendered item/_item (0.01277)
+Rendered item/_book_summary (0.00653)
+Rendered item/_item (0.00792)
+Rendered item/_book_summary (0.00681)
+Rendered item/_item (0.00821)
+Rendered item/_book_summary (0.00735)
+Rendered item/_item (0.00957)
+Rendered item/_book_summary (0.00675)
+Rendered item/_item (0.00810)
+Completed in 1.63574 (0 reqs/sec) | Rendering: 0.29422 (17%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#test_show (for 192.168.2.168 at 2008-05-18 13:12:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01174)
+Rendered item/_image (0.00041)
+Rendered item/_pricing (0.00848)
+Rendered item/_book_other_details (0.00030)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00047)
+Completed in 0.09568 (10 reqs/sec) | Rendering: 0.04011 (41%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ItemController#test_show (for 192.168.2.168 at 2008-05-18 13:12:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01860)
+Rendered item/_image (0.00044)
+Rendered item/_pricing (0.00913)
+Rendered item/_book_other_details (0.00027)
+Rendered item/_editorial_review (0.00029)
+Rendered item/_pricing (0.00044)
+Completed in 0.14804 (6 reqs/sec) | Rendering: 0.05708 (38%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 13:12:31) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Music", "keywords"=>"beatles"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_music_summary (0.00685)
+Rendered item/_item (0.00812)
+Rendered item/_music_summary (0.00680)
+Rendered item/_item (0.00798)
+Rendered item/_music_summary (0.00876)
+Rendered item/_item (0.00993)
+Rendered item/_music_summary (0.00686)
+Rendered item/_item (0.00807)
+Rendered item/_music_summary (0.00786)
+Rendered item/_item (0.00903)
+Rendered item/_music_summary (0.00688)
+Rendered item/_item (0.00809)
+Rendered item/_music_summary (0.00661)
+Rendered item/_item (0.00799)
+Rendered item/_music_summary (0.00682)
+Rendered item/_item (0.00809)
+Rendered item/_music_summary (0.01330)
+Rendered item/_item (0.01451)
+Rendered item/_music_summary (0.00749)
+Rendered item/_item (0.00885)
+Completed in 1.60039 (0 reqs/sec) | Rendering: 0.22714 (14%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#show (for 192.168.2.168 at 2008-05-18 13:12:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"show", "asin"=>"0143112562", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01737)
+Rendered item/_image (0.00185)
+Rendered item/_pricing (0.00947)
+Rendered item/_book_other_details (0.00032)
+Rendered item/_editorial_review (0.00037)
+Rendered item/_pricing (0.00055)
+Completed in 0.67419 (1 reqs/sec) | Rendering: 0.07080 (10%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/show/0143112562]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:12:58) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1f6cf4001a8f13a34602400d69b09a729d4ac325", "action"=>"search", "controller"=>"item", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00757)
+Rendered item/_item (0.01378)
+Rendered item/_book_summary (0.00742)
+Rendered item/_item (0.00887)
+Rendered item/_book_summary (0.00694)
+Rendered item/_item (0.00834)
+Rendered item/_book_summary (0.00742)
+Rendered item/_item (0.00879)
+Rendered item/_book_summary (0.00679)
+Rendered item/_item (0.00862)
+Rendered item/_book_summary (0.00752)
+Rendered item/_item (0.00903)
+Rendered item/_book_summary (0.00838)
+Rendered item/_item (0.01044)
+Rendered item/_book_summary (0.00777)
+Rendered item/_item (0.00919)
+Rendered item/_book_summary (0.00658)
+Rendered item/_item (0.00788)
+Rendered item/_book_summary (0.00655)
+Rendered item/_item (0.00777)
+Completed in 1.47832 (0 reqs/sec) | Rendering: 0.32129 (21%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-05-18 13:14:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheet/iphone.css" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1424:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:16:19) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1f6cf4001a8f13a34602400d69b09a729d4ac325", "action"=>"search", "controller"=>"item", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00713)
+Rendered item/_item (0.00853)
+Rendered item/_book_summary (0.00648)
+Rendered item/_item (0.00775)
+Rendered item/_book_summary (0.00709)
+Rendered item/_item (0.00841)
+Rendered item/_book_summary (0.00600)
+Rendered item/_item (0.00723)
+Rendered item/_book_summary (0.00758)
+Rendered item/_item (0.00885)
+Rendered item/_book_summary (0.00986)
+Rendered item/_item (0.01120)
+Rendered item/_book_summary (0.00748)
+Rendered item/_item (0.00885)
+Rendered item/_book_summary (0.00661)
+Rendered item/_item (0.00787)
+Rendered item/_book_summary (0.00627)
+Rendered item/_item (0.00751)
+Rendered item/_book_summary (0.00694)
+Rendered item/_item (0.00812)
+Completed in 1.80187 (0 reqs/sec) | Rendering: 0.23792 (13%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:16:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"2", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00812)
+Rendered item/_item (0.00965)
+Rendered item/_book_summary (0.00716)
+Rendered item/_item (0.00844)
+Rendered item/_book_summary (0.00580)
+Rendered item/_item (0.00702)
+Rendered item/_book_summary (0.00606)
+Rendered item/_item (0.00731)
+Rendered item/_book_summary (0.00670)
+Rendered item/_item (0.00792)
+Rendered item/_book_summary (0.00635)
+Rendered item/_item (0.00756)
+Rendered item/_book_summary (0.00667)
+Rendered item/_item (0.00805)
+Rendered item/_book_summary (0.00610)
+Rendered item/_item (0.00746)
+Rendered item/_book_summary (0.00588)
+Rendered item/_item (0.00709)
+Rendered item/_book_summary (0.00708)
+Rendered item/_item (0.00831)
+Completed in 1.23921 (0 reqs/sec) | Rendering: 0.16633 (13%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/harry%20potter/2]
+
+
+Processing ItemController#show (for 192.168.2.168 at 2008-05-18 13:17:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"show", "asin"=>"0763623296", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01900)
+Rendered item/_image (0.00043)
+Rendered item/_pricing (0.01188)
+Rendered item/_book_other_details (0.00028)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00049)
+Completed in 0.68212 (1 reqs/sec) | Rendering: 0.05696 (8%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/show/0763623296]
+
+
+Processing ItemController#show (for 192.168.2.168 at 2008-05-18 13:18:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"show", "asin"=>"8478886540", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.04176)
+Rendered item/_image (0.00046)
+Rendered item/_pricing (0.02688)
+Rendered item/_book_other_details (0.00031)
+Rendered item/_editorial_review (0.00034)
+Rendered item/_pricing (0.00045)
+Completed in 1.02320 (0 reqs/sec) | Rendering: 0.12065 (11%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/show/8478886540]
+
+
+Processing ItemController#search (for 127.0.0.1 at 2008-05-18 13:20:45) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1ede7fce7a45e881f5450c2db8a9c48180db9639", "action"=>"search", "controller"=>"item", "search_index"=>"Music", "keywords"=>"beatles"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_music_summary (0.00710)
+Rendered item/_item (0.00849)
+Rendered item/_music_summary (0.00746)
+Rendered item/_item (0.00876)
+Rendered item/_music_summary (0.00716)
+Rendered item/_item (0.00840)
+Rendered item/_music_summary (0.00748)
+Rendered item/_item (0.00874)
+Rendered item/_music_summary (0.00638)
+Rendered item/_item (0.00758)
+Rendered item/_music_summary (0.00683)
+Rendered item/_item (0.00854)
+Rendered item/_music_summary (0.00680)
+Rendered item/_item (0.00798)
+Rendered item/_music_summary (0.00789)
+Rendered item/_item (0.00923)
+Rendered item/_music_summary (0.00668)
+Rendered item/_item (0.00801)
+Rendered item/_music_summary (0.00729)
+Rendered item/_item (0.00896)
+Completed in 1.84016 (0 reqs/sec) | Rendering: 0.22070 (11%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/search]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:20:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.02464)
+Rendered item/_image (0.00122)
+Rendered item/_pricing (0.01120)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00042)
+Rendered item/_disc (0.18953)
+Rendered item/_music_other_details (0.19570)
+Rendered item/_editorial_review (0.00035)
+Rendered item/_editorial_review (0.00025)
+Rendered item/_pricing (0.00049)
+Completed in 0.94838 (1 reqs/sec) | Rendering: 0.30178 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:21:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.01662)
+Rendered item/_image (0.00062)
+Rendered item/_pricing (0.02098)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00024)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00034)
+Rendered item/_track (0.00023)
+Rendered item/_track (0.00038)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.01262)
+Rendered item/_music_other_details (0.01775)
+Rendered item/_editorial_review (0.00099)
+Rendered item/_editorial_review (0.00026)
+Rendered item/_pricing (0.00045)
+Completed in 0.98052 (1 reqs/sec) | Rendering: 0.13269 (13%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:22:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.01675)
+Rendered item/_image (0.00041)
+Rendered item/_pricing (0.01253)
+Rendered item/_track (0.00049)
+Rendered item/_track (0.00071)
+Rendered item/_track (0.00025)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00021)
+Rendered item/_disc (0.12113)
+Rendered item/_music_other_details (0.12924)
+Rendered item/_editorial_review (0.00031)
+Rendered item/_editorial_review (0.00024)
+Rendered item/_pricing (0.00049)
+Completed in 1.00063 (0 reqs/sec) | Rendering: 0.18847 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:23:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.02390)
+Rendered item/_image (0.00043)
+Rendered item/_pricing (0.01188)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00032)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00024)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00028)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.00558)
+Rendered item/_music_other_details (0.01115)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_editorial_review (0.00023)
+Rendered item/_pricing (0.00045)
+Completed in 0.92390 (1 reqs/sec) | Rendering: 0.07529 (8%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:23:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.28251)
+Rendered item/_image (0.00046)
+Rendered item/_pricing (0.02673)
+Rendered item/_track (0.00051)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00139)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.02359)
+Rendered item/_music_other_details (0.02879)
+Rendered item/_editorial_review (0.00033)
+Rendered item/_editorial_review (0.00024)
+Rendered item/_pricing (0.00046)
+Completed in 1.01336 (0 reqs/sec) | Rendering: 0.39389 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:24:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.02247)
+Rendered item/_image (0.00042)
+Rendered item/_pricing (0.01114)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00021)
+Rendered item/_disc (0.00530)
+Rendered item/_music_other_details (0.01064)
+Rendered item/_editorial_review (0.00031)
+Rendered item/_editorial_review (0.00023)
+Rendered item/_pricing (0.00056)
+Completed in 0.89877 (1 reqs/sec) | Rendering: 0.07197 (8%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:26:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.03811)
+Rendered item/_image (0.00044)
+Rendered item/_pricing (0.02571)
+Rendered item/_track (0.00023)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00030)
+Rendered item/_track (0.00164)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00025)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.01270)
+Rendered item/_music_other_details (0.02871)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_editorial_review (0.00023)
+Rendered item/_pricing (0.00311)
+Completed in 1.15758 (0 reqs/sec) | Rendering: 0.15349 (13%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:28:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.01691)
+Rendered item/_image (0.00042)
+Rendered item/_pricing (0.01140)
+Rendered item/_track (0.00023)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00023)
+Rendered item/_track (0.00027)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00038)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00019)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00055)
+Rendered item/_disc (0.00602)
+Rendered item/_music_other_details (0.01127)
+Rendered item/_editorial_review (0.00028)
+Rendered item/_editorial_review (0.00050)
+Rendered item/_pricing (0.00083)
+Completed in 0.92215 (1 reqs/sec) | Rendering: 0.06547 (7%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:29:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"2", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00814)
+Rendered item/_item (0.00959)
+Rendered item/_book_summary (0.00614)
+Rendered item/_item (0.00733)
+Rendered item/_book_summary (0.00558)
+Rendered item/_item (0.00671)
+Rendered item/_book_summary (0.00587)
+Rendered item/_item (0.00707)
+Rendered item/_book_summary (0.00590)
+Rendered item/_item (0.00704)
+Rendered item/_book_summary (0.00565)
+Rendered item/_item (0.00684)
+Rendered item/_book_summary (0.00569)
+Rendered item/_item (0.00681)
+Rendered item/_book_summary (0.00755)
+Rendered item/_item (0.00871)
+Rendered item/_book_summary (0.00575)
+Rendered item/_item (0.00694)
+Rendered item/_book_summary (0.00709)
+Rendered item/_item (0.00873)
+Completed in 1.27089 (0 reqs/sec) | Rendering: 0.16602 (13%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/harry%20potter/2]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:30:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"2", "search_index"=>"Books", "keywords"=>"harry potter"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00791)
+Rendered item/_item (0.00934)
+Rendered item/_book_summary (0.00617)
+Rendered item/_item (0.00735)
+Rendered item/_book_summary (0.00623)
+Rendered item/_item (0.00737)
+Rendered item/_book_summary (0.00637)
+Rendered item/_item (0.00761)
+Rendered item/_book_summary (0.00596)
+Rendered item/_item (0.00714)
+Rendered item/_book_summary (0.00571)
+Rendered item/_item (0.00684)
+Rendered item/_book_summary (0.00629)
+Rendered item/_item (0.00747)
+Rendered item/_book_summary (0.00600)
+Rendered item/_item (0.00720)
+Rendered item/_book_summary (0.00627)
+Rendered item/_item (0.00744)
+Rendered item/_book_summary (0.00628)
+Rendered item/_item (0.00744)
+Completed in 1.72320 (0 reqs/sec) | Rendering: 0.21207 (12%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/harry%20potter/2]
+
+
+Processing ItemController#test_show (for 192.168.2.168 at 2008-05-18 13:35:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01136)
+Rendered item/_image (0.00039)
+Rendered item/_pricing (0.00705)
+Rendered item/_book_other_details (0.00027)
+Rendered item/_editorial_review (0.00029)
+Rendered item/_pricing (0.00044)
+Completed in 0.09692 (10 reqs/sec) | Rendering: 0.03817 (39%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ItemController#test_show (for 192.168.2.168 at 2008-05-18 13:35:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01154)
+Rendered item/_image (0.00041)
+Rendered item/_pricing (0.00746)
+Rendered item/_book_other_details (0.00030)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00048)
+Completed in 0.10381 (9 reqs/sec) | Rendering: 0.04628 (44%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:36:04) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1f6cf4001a8f13a34602400d69b09a729d4ac325", "action"=>"search", "controller"=>"item", "search_index"=>"Books", "keywords"=>"Apple"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00700)
+Rendered item/_item (0.00834)
+Rendered item/_book_summary (0.00581)
+Rendered item/_item (0.00711)
+Rendered item/_book_summary (0.00738)
+Rendered item/_item (0.00853)
+Rendered item/_book_summary (0.12335)
+Rendered item/_item (0.12539)
+Rendered item/_book_summary (0.00678)
+Rendered item/_item (0.00821)
+Rendered item/_book_summary (0.00779)
+Rendered item/_item (0.00921)
+Rendered item/_book_summary (0.00654)
+Rendered item/_item (0.00803)
+Rendered item/_book_summary (0.01390)
+Rendered item/_item (0.01534)
+Rendered item/_book_summary (0.00749)
+Rendered item/_item (0.00989)
+Rendered item/_book_summary (0.00707)
+Rendered item/_item (0.00879)
+Completed in 1.69522 (0 reqs/sec) | Rendering: 0.35771 (21%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:36:26) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1f6cf4001a8f13a34602400d69b09a729d4ac325", "action"=>"search", "controller"=>"item", "search_index"=>"Books", "keywords"=>"Apple"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00622)
+Rendered item/_item (0.00749)
+Rendered item/_book_summary (0.00581)
+Rendered item/_item (0.00769)
+Rendered item/_book_summary (0.00566)
+Rendered item/_item (0.00676)
+Rendered item/_book_summary (0.12454)
+Rendered item/_item (0.12648)
+Rendered item/_book_summary (0.00670)
+Rendered item/_item (0.00820)
+Rendered item/_book_summary (0.00737)
+Rendered item/_item (0.00877)
+Rendered item/_book_summary (0.00710)
+Rendered item/_item (0.00939)
+Rendered item/_book_summary (0.00709)
+Rendered item/_item (0.00860)
+Rendered item/_book_summary (0.00681)
+Rendered item/_item (0.00812)
+Rendered item/_book_summary (0.00895)
+Rendered item/_item (0.01030)
+Completed in 1.60025 (0 reqs/sec) | Rendering: 0.32034 (20%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:36:32) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"1f6cf4001a8f13a34602400d69b09a729d4ac325", "action"=>"search", "controller"=>"item", "search_index"=>"Books", "keywords"=>"Apple"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.02642)
+Rendered item/_item (0.02774)
+Rendered item/_book_summary (0.01639)
+Rendered item/_item (0.01765)
+Rendered item/_book_summary (0.16138)
+Rendered item/_item (0.16296)
+Rendered item/_book_summary (0.00710)
+Rendered item/_item (0.00859)
+Rendered item/_book_summary (0.00771)
+Rendered item/_item (0.00912)
+Rendered item/_book_summary (0.00725)
+Rendered item/_item (0.00867)
+Rendered item/_book_summary (0.00636)
+Rendered item/_item (0.00807)
+Rendered item/_book_summary (0.00646)
+Rendered item/_item (0.00792)
+Rendered item/_book_summary (0.00625)
+Rendered item/_item (0.00758)
+Rendered item/_book_summary (0.00624)
+Rendered item/_item (0.00754)
+Completed in 1.89662 (0 reqs/sec) | Rendering: 0.44133 (23%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search]
+
+
+Processing ItemController#test_show (for 192.168.2.168 at 2008-05-18 13:37:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01198)
+Rendered item/_image (0.00040)
+Rendered item/_pricing (0.00777)
+Rendered item/_book_other_details (0.00029)
+Rendered item/_editorial_review (0.00029)
+Rendered item/_pricing (0.00043)
+Completed in 0.11904 (8 reqs/sec) | Rendering: 0.04322 (36%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:37:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00882)
+Rendered item/_item (0.01090)
+Rendered item/_book_summary (0.00626)
+Rendered item/_item (0.00765)
+Rendered item/_book_summary (0.00647)
+Rendered item/_item (0.00999)
+Rendered item/_book_summary (0.00614)
+Rendered item/_item (0.00740)
+Rendered item/_book_summary (0.00720)
+Rendered item/_item (0.00874)
+Rendered item/_book_summary (0.00627)
+Rendered item/_item (0.00752)
+Rendered item/_book_summary (0.00605)
+Rendered item/_item (0.00730)
+Rendered item/_book_summary (0.00666)
+Rendered item/_item (0.00853)
+Rendered item/_book_summary (0.00600)
+Rendered item/_item (0.00722)
+Rendered item/_book_summary (0.00664)
+Rendered item/_item (0.00781)
+Completed in 1.63120 (0 reqs/sec) | Rendering: 0.17417 (10%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:37:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00687)
+Rendered item/_item (0.00830)
+Rendered item/_book_summary (0.00619)
+Rendered item/_item (0.00747)
+Rendered item/_book_summary (0.00688)
+Rendered item/_item (0.00816)
+Rendered item/_book_summary (0.00668)
+Rendered item/_item (0.00789)
+Rendered item/_book_summary (0.00687)
+Rendered item/_item (0.00832)
+Rendered item/_book_summary (0.00613)
+Rendered item/_item (0.00738)
+Rendered item/_book_summary (0.00742)
+Rendered item/_item (0.00862)
+Rendered item/_book_summary (0.00622)
+Rendered item/_item (0.00746)
+Rendered item/_book_summary (0.00774)
+Rendered item/_item (0.00894)
+Rendered item/_book_summary (0.03265)
+Rendered item/_item (0.03388)
+Completed in 1.52430 (0 reqs/sec) | Rendering: 0.23350 (15%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:37:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00736)
+Rendered item/_item (0.00934)
+Rendered item/_book_summary (0.00660)
+Rendered item/_item (0.00804)
+Rendered item/_book_summary (0.00660)
+Rendered item/_item (0.00790)
+Rendered item/_book_summary (0.00716)
+Rendered item/_item (0.00844)
+Rendered item/_book_summary (0.00631)
+Rendered item/_item (0.00759)
+Rendered item/_book_summary (0.00675)
+Rendered item/_item (0.00803)
+Rendered item/_book_summary (0.00660)
+Rendered item/_item (0.00818)
+Rendered item/_book_summary (0.00618)
+Rendered item/_item (0.00802)
+Rendered item/_book_summary (0.00687)
+Rendered item/_item (0.00809)
+Rendered item/_book_summary (0.00580)
+Rendered item/_item (0.00706)
+Completed in 1.46793 (0 reqs/sec) | Rendering: 0.29214 (19%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:38:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00783)
+Rendered item/_item (0.00923)
+Rendered item/_book_summary (0.12298)
+Rendered item/_item (0.12470)
+Rendered item/_book_summary (0.00742)
+Rendered item/_item (0.00894)
+Rendered item/_book_summary (0.00760)
+Rendered item/_item (0.00900)
+Rendered item/_book_summary (0.00697)
+Rendered item/_item (0.00846)
+Rendered item/_book_summary (0.00788)
+Rendered item/_item (0.00930)
+Rendered item/_book_summary (0.00634)
+Rendered item/_item (0.00770)
+Rendered item/_book_summary (0.00727)
+Rendered item/_item (0.00857)
+Rendered item/_book_summary (0.00663)
+Rendered item/_item (0.00864)
+Rendered item/_book_summary (0.00617)
+Rendered item/_item (0.00760)
+Completed in 1.62173 (0 reqs/sec) | Rendering: 0.29037 (17%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#test_show (for 192.168.2.162 at 2008-05-18 13:42:06) [GET]
+  Session ID: 1b8a10d6fd5eb3ddf97bae6af31c8202
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01273)
+Rendered item/_image (0.00038)
+Rendered item/_pricing (0.00794)
+Rendered item/_book_other_details (0.00029)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00043)
+Completed in 0.12612 (7 reqs/sec) | Rendering: 0.04424 (35%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ApplicationController#index (for 192.168.2.162 at 2008-05-18 13:42:07) [GET]
+  Session ID: aeb9e9ed402eb936dba89db32fd22260
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1424:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 192.168.2.162 at 2008-05-18 13:42:10) [GET]
+  Session ID: a2c9c20f154828a7c311c69e8ecc80b2
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/favicon.ico" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1424:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ItemController#test_show (for 192.168.2.162 at 2008-05-18 13:43:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmU5NmRkM2U4ZDkyYTk3MWIwN2I2MTIyZGI1OGMy%0ANDQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--ca1db3073c1f418d3903855bb812d4a8ffe21353
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01224)
+Rendered item/_image (0.00043)
+Rendered item/_pricing (0.00820)
+Rendered item/_book_other_details (0.00028)
+Rendered item/_editorial_review (0.00031)
+Rendered item/_pricing (0.00043)
+Completed in 0.21670 (4 reqs/sec) | Rendering: 0.04677 (21%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ItemController#test_show (for 192.168.2.162 at 2008-05-18 13:43:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmU5NmRkM2U4ZDkyYTk3MWIwN2I2MTIyZGI1OGMy%0ANDQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--ca1db3073c1f418d3903855bb812d4a8ffe21353
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.03268)
+Rendered item/_image (0.00040)
+Rendered item/_pricing (0.01665)
+Rendered item/_book_other_details (0.00028)
+Rendered item/_editorial_review (0.00358)
+Rendered item/_pricing (0.00051)
+Completed in 0.14193 (7 reqs/sec) | Rendering: 0.08362 (58%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:43:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.01636)
+Rendered item/_image (0.00041)
+Rendered item/_pricing (0.01036)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00022)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00043)
+Rendered item/_track (0.00021)
+Rendered item/_disc (0.00593)
+Rendered item/_music_other_details (0.01078)
+Rendered item/_editorial_review (0.00029)
+Rendered item/_editorial_review (0.00023)
+Rendered item/_pricing (0.00045)
+Completed in 1.14361 (0 reqs/sec) | Rendering: 0.17646 (15%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:44:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00633)
+Rendered item/_item (0.00772)
+Rendered item/_book_summary (0.00657)
+Rendered item/_item (0.00774)
+Rendered item/_book_summary (0.00594)
+Rendered item/_item (0.00712)
+Rendered item/_book_summary (0.01270)
+Rendered item/_item (0.01385)
+Rendered item/_book_summary (0.00584)
+Rendered item/_item (0.00706)
+Rendered item/_book_summary (0.00665)
+Rendered item/_item (0.00779)
+Rendered item/_book_summary (0.00575)
+Rendered item/_item (0.00693)
+Rendered item/_book_summary (0.00648)
+Rendered item/_item (0.00772)
+Rendered item/_book_summary (0.00655)
+Rendered item/_item (0.00773)
+Rendered item/_book_summary (0.00571)
+Rendered item/_item (0.00684)
+Completed in 1.42566 (0 reqs/sec) | Rendering: 0.16920 (11%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#show (for 127.0.0.1 at 2008-05-18 13:44:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"show", "asin"=>"B000002UAU", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_music_summary (0.01743)
+Rendered item/_image (0.00042)
+Rendered item/_pricing (0.01215)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00046)
+Rendered item/_track (0.00021)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_track (0.00020)
+Rendered item/_disc (0.00565)
+Rendered item/_music_other_details (0.01105)
+Rendered item/_editorial_review (0.00029)
+Rendered item/_editorial_review (0.00023)
+Rendered item/_pricing (0.00045)
+Completed in 0.88846 (1 reqs/sec) | Rendering: 0.07309 (8%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/B000002UAU]
+
+
+Processing ItemController#show (for 192.168.2.168 at 2008-05-18 13:44:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"show", "asin"=>"006091307X", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.02590)
+Rendered item/_image (0.00042)
+Rendered item/_pricing (0.02024)
+Rendered item/_book_other_details (0.00029)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00049)
+Completed in 0.88959 (1 reqs/sec) | Rendering: 0.07072 (7%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/show/006091307X]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:44:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00719)
+Rendered item/_item (0.00855)
+Rendered item/_book_summary (0.00684)
+Rendered item/_item (0.00805)
+Rendered item/_book_summary (0.00597)
+Rendered item/_item (0.00717)
+Rendered item/_book_summary (0.00596)
+Rendered item/_item (0.00709)
+Rendered item/_book_summary (0.00654)
+Rendered item/_item (0.00770)
+Rendered item/_book_summary (0.00604)
+Rendered item/_item (0.00720)
+Rendered item/_book_summary (0.00589)
+Rendered item/_item (0.00765)
+Rendered item/_book_summary (0.00592)
+Rendered item/_item (0.00708)
+Rendered item/_book_summary (0.00581)
+Rendered item/_item (0.00694)
+Rendered item/_book_summary (0.00683)
+Rendered item/_item (0.00821)
+Completed in 1.42408 (0 reqs/sec) | Rendering: 0.16015 (11%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:44:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.01696)
+Rendered item/_item (0.01837)
+Rendered item/_book_summary (0.00593)
+Rendered item/_item (0.00719)
+Rendered item/_book_summary (0.00617)
+Rendered item/_item (0.01766)
+Rendered item/_book_summary (0.02341)
+Rendered item/_item (0.02462)
+Rendered item/_book_summary (0.00915)
+Rendered item/_item (0.01040)
+Rendered item/_book_summary (0.00677)
+Rendered item/_item (0.00807)
+Rendered item/_book_summary (0.00713)
+Rendered item/_item (0.00832)
+Rendered item/_book_summary (0.00601)
+Rendered item/_item (0.00722)
+Rendered item/_book_summary (0.00591)
+Rendered item/_item (0.00704)
+Rendered item/_book_summary (0.00570)
+Rendered item/_item (0.00680)
+Completed in 1.56874 (0 reqs/sec) | Rendering: 0.27492 (17%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:46:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00874)
+Rendered item/_item (0.01018)
+Rendered item/_book_summary (0.00559)
+Rendered item/_item (0.00687)
+Rendered item/_book_summary (0.00745)
+Rendered item/_item (0.00867)
+Rendered item/_book_summary (0.00581)
+Rendered item/_item (0.00736)
+Rendered item/_book_summary (0.00701)
+Rendered item/_item (0.00830)
+Rendered item/_book_summary (0.00651)
+Rendered item/_item (0.00775)
+Rendered item/_book_summary (0.00802)
+Rendered item/_item (0.00926)
+Rendered item/_book_summary (0.00665)
+Rendered item/_item (0.00902)
+Rendered item/_book_summary (0.00708)
+Rendered item/_item (0.00853)
+Rendered item/_book_summary (0.00622)
+Rendered item/_item (0.00744)
+Completed in 1.19004 (0 reqs/sec) | Rendering: 0.17506 (14%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:46:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00357)
+Rendered item/_item (0.00455)
+Rendered item/_book_summary (0.00337)
+Rendered item/_item (0.00423)
+Rendered item/_book_summary (0.00354)
+Rendered item/_item (0.00444)
+Rendered item/_book_summary (0.00341)
+Rendered item/_item (0.00426)
+Rendered item/_book_summary (0.12414)
+Rendered item/_item (0.12506)
+Rendered item/_book_summary (0.00392)
+Rendered item/_item (0.00504)
+Rendered item/_book_summary (0.00469)
+Rendered item/_item (0.00574)
+Rendered item/_book_summary (0.00397)
+Rendered item/_item (0.00508)
+Rendered item/_book_summary (0.00397)
+Rendered item/_item (0.00501)
+Rendered item/_book_summary (0.00397)
+Rendered item/_item (0.00502)
+Completed in 0.31627 (3 reqs/sec) | Rendering: 0.21038 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:46:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00433)
+Rendered item/_item (0.00540)
+Rendered item/_book_summary (0.00416)
+Rendered item/_item (0.00702)
+Rendered item/_book_summary (0.00349)
+Rendered item/_item (0.00438)
+Rendered item/_book_summary (0.00342)
+Rendered item/_item (0.00430)
+Rendered item/_book_summary (0.00981)
+Rendered item/_item (0.01119)
+Rendered item/_book_summary (0.00346)
+Rendered item/_item (0.00442)
+Rendered item/_book_summary (0.00415)
+Rendered item/_item (0.00502)
+Rendered item/_book_summary (0.00346)
+Rendered item/_item (0.00436)
+Rendered item/_book_summary (0.00328)
+Rendered item/_item (0.00410)
+Rendered item/_book_summary (0.00349)
+Rendered item/_item (0.00473)
+Completed in 0.19484 (5 reqs/sec) | Rendering: 0.10016 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:47:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00470)
+Rendered item/_item (0.00586)
+Rendered item/_book_summary (0.00375)
+Rendered item/_item (0.00549)
+Rendered item/_book_summary (0.00383)
+Rendered item/_item (0.00517)
+Rendered item/_book_summary (0.00911)
+Rendered item/_item (0.01032)
+Rendered item/_book_summary (0.00461)
+Rendered item/_item (0.00575)
+Rendered item/_book_summary (0.00370)
+Rendered item/_item (0.00465)
+Rendered item/_book_summary (0.00370)
+Rendered item/_item (0.00466)
+Rendered item/_book_summary (0.00445)
+Rendered item/_item (0.00557)
+Rendered item/_book_summary (0.00373)
+Rendered item/_item (0.00490)
+Rendered item/_book_summary (0.00392)
+Rendered item/_item (0.00486)
+Completed in 0.27453 (3 reqs/sec) | Rendering: 0.10395 (37%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:47:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00632)
+Rendered item/_item (0.00765)
+Rendered item/_book_summary (0.11585)
+Rendered item/_item (0.11704)
+Rendered item/_book_summary (0.00762)
+Rendered item/_item (0.00959)
+Rendered item/_book_summary (0.00659)
+Rendered item/_item (0.00881)
+Rendered item/_book_summary (0.00653)
+Rendered item/_item (0.00790)
+Rendered item/_book_summary (0.00721)
+Rendered item/_item (0.00856)
+Rendered item/_book_summary (0.00696)
+Rendered item/_item (0.01009)
+Rendered item/_book_summary (0.00747)
+Rendered item/_item (0.00879)
+Rendered item/_book_summary (0.00668)
+Rendered item/_item (0.00869)
+Rendered item/_book_summary (0.00587)
+Rendered item/_item (0.00709)
+Completed in 1.28713 (0 reqs/sec) | Rendering: 0.27862 (21%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:47:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00372)
+Rendered item/_item (0.00473)
+Rendered item/_book_summary (0.00382)
+Rendered item/_item (0.00472)
+Rendered item/_book_summary (0.00345)
+Rendered item/_item (0.00432)
+Rendered item/_book_summary (0.00357)
+Rendered item/_item (0.00440)
+Rendered item/_book_summary (0.00942)
+Rendered item/_item (0.01032)
+Rendered item/_book_summary (0.00360)
+Rendered item/_item (0.00631)
+Rendered item/_book_summary (0.00725)
+Rendered item/_item (0.00857)
+Rendered item/_book_summary (0.00889)
+Rendered item/_item (0.00981)
+Rendered item/_book_summary (0.00327)
+Rendered item/_item (0.00420)
+Rendered item/_book_summary (0.00393)
+Rendered item/_item (0.00476)
+Completed in 0.17777 (5 reqs/sec) | Rendering: 0.10384 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:48:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00482)
+Rendered item/_item (0.00591)
+Rendered item/_book_summary (0.00355)
+Rendered item/_item (0.00448)
+Rendered item/_book_summary (0.00379)
+Rendered item/_item (0.01121)
+Rendered item/_book_summary (0.00452)
+Rendered item/_item (0.00545)
+Rendered item/_book_summary (0.00512)
+Rendered item/_item (0.00612)
+Rendered item/_book_summary (0.00378)
+Rendered item/_item (0.00514)
+Rendered item/_book_summary (0.00397)
+Rendered item/_item (0.00492)
+Rendered item/_book_summary (0.00368)
+Rendered item/_item (0.00474)
+Rendered item/_book_summary (0.00390)
+Rendered item/_item (0.00516)
+Rendered item/_book_summary (0.00353)
+Rendered item/_item (0.00442)
+Completed in 0.15816 (6 reqs/sec) | Rendering: 0.10569 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:49:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00405)
+Rendered item/_item (0.00510)
+Rendered item/_book_summary (0.00374)
+Rendered item/_item (0.00463)
+Rendered item/_book_summary (0.00346)
+Rendered item/_item (0.00434)
+Rendered item/_book_summary (0.00368)
+Rendered item/_item (0.00451)
+Rendered item/_book_summary (0.00366)
+Rendered item/_item (0.00451)
+Rendered item/_book_summary (0.00566)
+Rendered item/_item (0.00654)
+Rendered item/_book_summary (0.00391)
+Rendered item/_item (0.00492)
+Rendered item/_book_summary (0.03681)
+Rendered item/_item (0.12961)
+Rendered item/_book_summary (0.00379)
+Rendered item/_item (0.00534)
+Rendered item/_book_summary (0.00488)
+Rendered item/_item (0.00604)
+Completed in 0.27142 (3 reqs/sec) | Rendering: 0.21824 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:49:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00695)
+Rendered item/_item (0.00830)
+Rendered item/_book_summary (0.00618)
+Rendered item/_item (0.00736)
+Rendered item/_book_summary (0.00667)
+Rendered item/_item (0.00784)
+Rendered item/_book_summary (0.00576)
+Rendered item/_item (0.00695)
+Rendered item/_book_summary (0.00580)
+Rendered item/_item (0.00756)
+Rendered item/_book_summary (0.00686)
+Rendered item/_item (0.00817)
+Rendered item/_book_summary (0.00610)
+Rendered item/_item (0.00732)
+Rendered item/_book_summary (0.00609)
+Rendered item/_item (0.00725)
+Rendered item/_book_summary (0.00758)
+Rendered item/_item (0.00875)
+Rendered item/_book_summary (0.00556)
+Rendered item/_item (0.00670)
+Completed in 1.53531 (0 reqs/sec) | Rendering: 0.27281 (17%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:50:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00637)
+Rendered item/_item (0.00773)
+Rendered item/_book_summary (0.00650)
+Rendered item/_item (0.00915)
+Rendered item/_book_summary (0.02969)
+Rendered item/_item (0.03090)
+Rendered item/_book_summary (0.00816)
+Rendered item/_item (0.00948)
+Rendered item/_book_summary (0.00638)
+Rendered item/_item (0.00773)
+Rendered item/_book_summary (0.00593)
+Rendered item/_item (0.00749)
+Rendered item/_book_summary (0.00574)
+Rendered item/_item (0.00692)
+Rendered item/_book_summary (0.00645)
+Rendered item/_item (0.00759)
+Rendered item/_book_summary (0.00610)
+Rendered item/_item (0.00726)
+Rendered item/_book_summary (0.00560)
+Rendered item/_item (0.00669)
+Completed in 1.25336 (0 reqs/sec) | Rendering: 0.18610 (14%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:50:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00380)
+Rendered item/_item (0.00488)
+Rendered item/_book_summary (0.00400)
+Rendered item/_item (0.00529)
+Rendered item/_book_summary (0.00422)
+Rendered item/_item (0.00545)
+Rendered item/_book_summary (0.00355)
+Rendered item/_item (0.00443)
+Rendered item/_book_summary (0.00374)
+Rendered item/_item (0.00523)
+Rendered item/_book_summary (0.00434)
+Rendered item/_item (0.00535)
+Rendered item/_book_summary (0.00353)
+Rendered item/_item (0.00444)
+Rendered item/_book_summary (0.00357)
+Rendered item/_item (0.00498)
+Rendered item/_book_summary (0.00350)
+Rendered item/_item (0.00438)
+Rendered item/_book_summary (0.00422)
+Rendered item/_item (0.00512)
+Completed in 0.15333 (6 reqs/sec) | Rendering: 0.10131 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:50:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00725)
+Rendered item/_item (0.00875)
+Rendered item/_book_summary (0.00707)
+Rendered item/_item (0.00843)
+Rendered item/_book_summary (0.00827)
+Rendered item/_item (0.01081)
+Rendered item/_book_summary (0.00629)
+Rendered item/_item (0.00828)
+Rendered item/_book_summary (0.00687)
+Rendered item/_item (0.00813)
+Rendered item/_book_summary (0.00737)
+Rendered item/_item (0.00862)
+Rendered item/_book_summary (0.00874)
+Rendered item/_item (0.01208)
+Rendered item/_book_summary (0.00953)
+Rendered item/_item (0.01113)
+Rendered item/_book_summary (0.00676)
+Rendered item/_item (0.00815)
+Rendered item/_book_summary (0.00689)
+Rendered item/_item (0.01349)
+Completed in 1.67262 (0 reqs/sec) | Rendering: 0.29641 (17%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:50:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00425)
+Rendered item/_item (0.00589)
+Rendered item/_book_summary (0.00402)
+Rendered item/_item (0.00498)
+Rendered item/_book_summary (0.00356)
+Rendered item/_item (0.00447)
+Rendered item/_book_summary (0.00399)
+Rendered item/_item (0.00483)
+Rendered item/_book_summary (0.00368)
+Rendered item/_item (0.00456)
+Rendered item/_book_summary (0.00414)
+Rendered item/_item (0.00502)
+Rendered item/_book_summary (0.00539)
+Rendered item/_item (0.00631)
+Rendered item/_book_summary (0.00414)
+Rendered item/_item (0.00526)
+Rendered item/_book_summary (0.00335)
+Rendered item/_item (0.00428)
+Rendered item/_book_summary (0.12486)
+Rendered item/_item (0.12576)
+Completed in 0.28057 (3 reqs/sec) | Rendering: 0.22344 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:53:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00389)
+Rendered item/_item (0.00513)
+Rendered item/_book_summary (0.00456)
+Rendered item/_item (0.00600)
+Rendered item/_book_summary (0.00363)
+Rendered item/_item (0.00468)
+Rendered item/_book_summary (0.00444)
+Rendered item/_item (0.01137)
+Rendered item/_book_summary (0.00387)
+Rendered item/_item (0.00489)
+Rendered item/_book_summary (0.00395)
+Rendered item/_item (0.00484)
+Rendered item/_book_summary (0.00409)
+Rendered item/_item (0.00499)
+Rendered item/_book_summary (0.00580)
+Rendered item/_item (0.00675)
+Rendered item/_book_summary (0.00392)
+Rendered item/_item (0.00486)
+Rendered item/_book_summary (0.00352)
+Rendered item/_item (0.00443)
+Completed in 0.16866 (5 reqs/sec) | Rendering: 0.10264 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:53:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00652)
+Rendered item/_item (0.00789)
+Rendered item/_book_summary (0.00827)
+Rendered item/_item (0.00947)
+Rendered item/_book_summary (0.00611)
+Rendered item/_item (0.00747)
+Rendered item/_book_summary (0.00673)
+Rendered item/_item (0.00792)
+Rendered item/_book_summary (0.00601)
+Rendered item/_item (0.00725)
+Rendered item/_book_summary (0.00690)
+Rendered item/_item (0.00809)
+Rendered item/_book_summary (0.00607)
+Rendered item/_item (0.00872)
+Rendered item/_book_summary (0.00603)
+Rendered item/_item (0.00721)
+Rendered item/_book_summary (0.00769)
+Rendered item/_item (0.00900)
+Rendered item/_book_summary (0.01729)
+Rendered item/_item (0.01852)
+Completed in 1.30170 (0 reqs/sec) | Rendering: 0.19254 (14%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-18 13:53:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOThlMDIwMmFlMjkyY2E5NjMwMDU3YmQxNTQwMTg5%0AYTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--01c15f62bfa8d61ca1053a3303d9894bf6b133f2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00366)
+Rendered item/_item (0.00532)
+Rendered item/_book_summary (0.00347)
+Rendered item/_item (0.00508)
+Rendered item/_book_summary (0.00383)
+Rendered item/_item (0.00590)
+Rendered item/_book_summary (0.00356)
+Rendered item/_item (0.00444)
+Rendered item/_book_summary (0.00514)
+Rendered item/_item (0.12615)
+Rendered item/_book_summary (0.01099)
+Rendered item/_item (0.01227)
+Rendered item/_book_summary (0.00400)
+Rendered item/_item (0.00510)
+Rendered item/_book_summary (0.00474)
+Rendered item/_item (0.00579)
+Rendered item/_book_summary (0.00383)
+Rendered item/_item (0.00487)
+Rendered item/_book_summary (0.00402)
+Rendered item/_item (0.00504)
+Completed in 0.28298 (3 reqs/sec) | Rendering: 0.22607 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:53:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00648)
+Rendered item/_item (0.00782)
+Rendered item/_book_summary (0.00651)
+Rendered item/_item (0.00812)
+Rendered item/_book_summary (0.00591)
+Rendered item/_item (0.00707)
+Rendered item/_book_summary (0.00617)
+Rendered item/_item (0.00732)
+Rendered item/_book_summary (0.00634)
+Rendered item/_item (0.00752)
+Rendered item/_book_summary (0.00620)
+Rendered item/_item (0.00782)
+Rendered item/_book_summary (0.00615)
+Rendered item/_item (0.00753)
+Rendered item/_book_summary (0.00598)
+Rendered item/_item (0.00746)
+Rendered item/_book_summary (0.00757)
+Rendered item/_item (0.12222)
+Rendered item/_book_summary (0.00710)
+Rendered item/_item (0.00851)
+Completed in 1.36171 (0 reqs/sec) | Rendering: 0.28254 (20%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:54:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00671)
+Rendered item/_item (0.00867)
+Rendered item/_book_summary (0.00651)
+Rendered item/_item (0.00773)
+Rendered item/_book_summary (0.00602)
+Rendered item/_item (0.00717)
+Rendered item/_book_summary (0.00607)
+Rendered item/_item (0.00715)
+Rendered item/_book_summary (0.00654)
+Rendered item/_item (0.00788)
+Rendered item/_book_summary (0.00586)
+Rendered item/_item (0.00694)
+Rendered item/_book_summary (0.00570)
+Rendered item/_item (0.00725)
+Rendered item/_book_summary (0.00761)
+Rendered item/_item (0.00883)
+Rendered item/_book_summary (0.00582)
+Rendered item/_item (0.00703)
+Rendered item/_book_summary (0.00622)
+Rendered item/_item (0.00731)
+Completed in 1.32861 (0 reqs/sec) | Rendering: 0.28300 (21%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:55:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00658)
+Rendered item/_item (0.00784)
+Rendered item/_book_summary (0.00663)
+Rendered item/_item (0.00774)
+Rendered item/_book_summary (0.00595)
+Rendered item/_item (0.00711)
+Rendered item/_book_summary (0.00579)
+Rendered item/_item (0.00687)
+Rendered item/_book_summary (0.00652)
+Rendered item/_item (0.00759)
+Rendered item/_book_summary (0.00600)
+Rendered item/_item (0.00710)
+Rendered item/_book_summary (0.00571)
+Rendered item/_item (0.00677)
+Rendered item/_book_summary (0.00672)
+Rendered item/_item (0.00781)
+Rendered item/_book_summary (0.00582)
+Rendered item/_item (0.00694)
+Rendered item/_book_summary (0.00591)
+Rendered item/_item (0.00696)
+Completed in 1.28430 (0 reqs/sec) | Rendering: 0.16411 (12%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#search (for 192.168.2.168 at 2008-05-18 13:55:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDkyMGQ0YzMxZDYxZDJhMTI0ZTdmZDkxNmI4ZjI0%0ANjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--a2aa234047f8cf2fe8282f4f6ad6624d5d7b7f31
+  Parameters: {"action"=>"search", "controller"=>"item", "page"=>"1", "search_index"=>"Books", "keywords"=>"Thomas Pynchon"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00642)
+Rendered item/_item (0.00771)
+Rendered item/_book_summary (0.00696)
+Rendered item/_item (0.00838)
+Rendered item/_book_summary (0.00595)
+Rendered item/_item (0.00711)
+Rendered item/_book_summary (0.00609)
+Rendered item/_item (0.00718)
+Rendered item/_book_summary (0.00727)
+Rendered item/_item (0.00836)
+Rendered item/_book_summary (0.00591)
+Rendered item/_item (0.00704)
+Rendered item/_book_summary (0.00577)
+Rendered item/_item (0.00684)
+Rendered item/_book_summary (0.01248)
+Rendered item/_item (0.01424)
+Rendered item/_book_summary (0.00652)
+Rendered item/_item (0.00782)
+Rendered item/_book_summary (0.00621)
+Rendered item/_item (0.00731)
+Completed in 1.19093 (0 reqs/sec) | Rendering: 0.17405 (14%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item/search/Books/Thomas%20Pynchon]
+
+
+Processing ItemController#test_show (for 192.168.2.162 at 2008-05-18 13:56:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYmU5NmRkM2U4ZDkyYTk3MWIwN2I2MTIyZGI1OGMy%0ANDQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--ca1db3073c1f418d3903855bb812d4a8ffe21353
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01372)
+Rendered item/_image (0.00045)
+Rendered item/_pricing (0.00873)
+Rendered item/_book_other_details (0.00028)
+Rendered item/_editorial_review (0.00031)
+Rendered item/_pricing (0.00045)
+Completed in 0.23271 (4 reqs/sec) | Rendering: 0.04469 (19%) | DB: 0.00000 (0%) | 200 OK [http://192.168.3.166/item_test]
+  [4;36;1mSQL (0.000790)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000588)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000702)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000473)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006653)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003615)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002846)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003178)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+
+Processing ItemController#test_show (for 127.0.0.1 at 2008-05-19 08:12:00) [GET]
+  Session ID: b3c1acadaf6c80c8463b7ed0b989974b
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01221)
+Rendered item/_image (0.00099)
+Rendered item/_pricing (0.00878)
+Rendered item/_book_other_details (0.00071)
+Rendered item/_editorial_review (0.00122)
+Rendered item/_pricing (0.00043)
+Completed in 0.11354 (8 reqs/sec) | Rendering: 0.07298 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item_test]
+
+
+Processing ItemController#test_show (for 127.0.0.1 at 2008-05-19 08:14:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.02135)
+Rendered item/_image (0.00039)
+Rendered item/_pricing (0.00710)
+Rendered item/_book_other_details (0.00026)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00045)
+Completed in 0.12696 (7 reqs/sec) | Rendering: 0.05021 (39%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item_test]
+
+
+Processing ItemController#test_show (for 127.0.0.1 at 2008-05-19 08:14:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01429)
+Rendered item/_image (0.00040)
+Rendered item/_pricing (0.00730)
+Rendered item/_book_other_details (0.00026)
+Rendered item/_editorial_review (0.00029)
+Rendered item/_pricing (0.00042)
+Completed in 0.19540 (5 reqs/sec) | Rendering: 0.04125 (21%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item_test]
+
+
+Processing ItemController#test_show (for 127.0.0.1 at 2008-05-19 08:15:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.02032)
+Rendered item/_image (0.00092)
+Rendered item/_pricing (0.00706)
+Rendered item/_book_other_details (0.00025)
+Rendered item/_editorial_review (0.00034)
+Rendered item/_pricing (0.00042)
+Completed in 0.13461 (7 reqs/sec) | Rendering: 0.05546 (41%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item_test]
+
+
+Processing ItemController#test_show (for 127.0.0.1 at 2008-05-19 08:15:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01042)
+Rendered item/_image (0.00037)
+Rendered item/_pricing (0.00901)
+Rendered item/_book_other_details (0.00029)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00042)
+Completed in 0.11479 (8 reqs/sec) | Rendering: 0.04214 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item_test]
+
+
+Processing ItemController#test_show (for 127.0.0.1 at 2008-05-19 08:15:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_show", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/show
+Rendered item/_book_summary (0.01099)
+Rendered item/_image (0.00039)
+Rendered item/_pricing (0.00718)
+Rendered item/_book_other_details (0.00025)
+Rendered item/_editorial_review (0.00030)
+Rendered item/_pricing (0.00044)
+Completed in 0.20281 (4 reqs/sec) | Rendering: 0.03755 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item_test]
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-19 08:17:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00359)
+Rendered item/_item (0.00537)
+Rendered item/_book_summary (0.00328)
+Rendered item/_item (0.00405)
+Rendered item/_book_summary (0.00340)
+Rendered item/_item (0.00416)
+Rendered item/_book_summary (0.00331)
+Rendered item/_item (0.00405)
+Rendered item/_book_summary (0.00373)
+Rendered item/_item (0.00450)
+Rendered item/_book_summary (0.00341)
+Rendered item/_item (0.00417)
+Rendered item/_book_summary (0.00546)
+Rendered item/_item (0.00624)
+Rendered item/_book_summary (0.00981)
+Rendered item/_item (0.01064)
+Rendered item/_book_summary (0.00323)
+Rendered item/_item (0.00406)
+Rendered item/_book_summary (0.00737)
+Rendered item/_item (0.00818)
+Completed in 0.17801 (5 reqs/sec) | Rendering: 0.10884 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
