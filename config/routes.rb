@@ -32,13 +32,16 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'item_test',   :controller => 'item', :action => 'test_show'
   map.connect 'search_test', :controller => 'item', :action => 'test_search'
   
+  
   map.with_options :controller => 'item' do |item|
     item.show 'item/show/:asin', :action => 'show'
+    item.bestsellers 'item/bestsellers/:search_index', :action => 'search', :bestsellers => 'true'
     item.search 'item/search/:search_index/:keywords/:page', :action => 'search',
                                                              :defaults => {:page => '1'},
                                                              :keywords => /[^\/\?]*/
   end
-  
+  # TODO: is there a way to shortcut this, pointing to the same-ish route above?
+  map.home '/', :controller => 'item', :action => 'search', :search_index => 'Books', :bestsellers => 'true'
 #  map.search '/item/search/:search_index/:keywords/:page', :controller => 'item', 
 #                                                           :action => 'search', 
 #                                                           :defaults => {:page => '1'},

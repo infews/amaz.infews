@@ -149,9 +149,6 @@ describe '/item/show' do
     end
   end
   
-  it 'should show the list price if it is more than the amazon price'
-  it 'should not show the amazon price it is not less than the list price'
-  
   it 'should have each author linked to a search' do
     assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
     

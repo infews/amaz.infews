@@ -59,6 +59,21 @@ describe ItemController do
   end
   
   
+  it 'should get routed to a book bestseller search' do
+    params_from(:get,'/item/bestsellers/Books').should == {:controller => 'item',
+                                                           :action => 'search',
+                                                           :search_index => 'Books',
+                                                           :bestsellers => 'true'}
+  end
+
+
+  it 'should route / to the book bestsellers page' do
+    params_from(:get, '/').should == {:controller => 'item',
+                                      :action => 'search',
+                                      :search_index => 'Books',
+                                      :bestsellers => 'true'}
+  end
+  
   # Actions
   it 'should call Amazon with an ItemLookup properly when an asin is requested and instantiate an ItemPresenter' do
     response_xml = File.read('spec/response_xml/item_lookup_book.xml')
@@ -113,6 +128,17 @@ describe ItemController do
     assigns[:previous_keywords].should == 'Against the day'
     assigns[:previous_search_index].should == 'Books'    
   end
+
+  it 'should support a search for book bestsellers' do
+    #TODO: this should mock with the real bestseller results
+    response_xml = File.read('spec/response_xml/item_search_book_page_last.xml')
+    controller.aws_request.stub!(:fetch).and_return(response_xml)
+    get 'search', :search_index => 'Books', 
+                  :bestsellers => 'true'
+    assigns[:previous_search_index].should == 'Books'    
+  end
+  
+  
   
   it 'should tell the user that the item is not found'     
   it 'should redirect to an empty search page when an item is not found'
