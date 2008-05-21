@@ -1,20 +1,3 @@
-#  def self.bestsellers(options = {})
-#    
-#    Item.search(:searchindex => 'Books',
-#                :sort        => 'salesrank',
-#                :browsenode  => '1000',
-#                :itempage    => options[:page] || '1' )
-#  end
-#    Item.search(:searchindex => 'Music',
-#                :sort        => 'salesrank',
-#                :browsenode  => '301688',
-#                :itempage    => options[:page] || '1' )
-#
-#    Item.search(:searchindex => 'DVD',
-#                :sort        => 'salesrank',
-#                :browsenode  => '130',
-#                :itempage    => options[:page] || '1' )
-
 class ItemController < ApplicationController
   include ApplicationHelper #included for pluralize_with_delimiter
   
@@ -51,6 +34,20 @@ class ItemController < ApplicationController
     end
     
   end
+  
+  # TODO: this doesn't work on FF3b5 when not connected to WiFi!
+  def test_show
+    @item = ItemPresenter.new(Hpricot.parse(File.read('spec/response_xml/item_lookup_book.xml'))/:item)
+
+    render :action => 'show'
+  end
+  
+  def test_search
+    
+    @results = SearchResultsPresenter.new(AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_page_1.xml')))
+    
+    render :action => 'search'
+  end
 
   private
   
@@ -67,20 +64,6 @@ class ItemController < ApplicationController
       when 'DVD'   then '130'
       else ''
     end
-  end
-  
-  # TODO: this doesn't work on FF!
-  def test_show
-    @item = ItemPresenter.new(Hpricot.parse(File.read('spec/response_xml/item_lookup_book.xml'))/:item)
-
-    render :action => 'show'
-  end
-  
-  def test_search
-    
-    @results = SearchResultsPresenter.new(AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_page_1.xml')))
-    
-    render :action => 'search'
   end
   
 end

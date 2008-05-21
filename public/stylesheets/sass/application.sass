@@ -1,6 +1,9 @@
+.clear
+  :float clear
+
 body
   :font-family helvetica, arial, sans-serif
-#logo, #search_form
+#logo
   :border none
   :margin 0 auto
   :text-align center
@@ -10,3 +13,50 @@ body
 #powered
   :text-align right
   
+#messages
+  :border-bottom 1px solid #d9d9d9
+#results_count
+  :float left
+#results_pages
+  :float right
+.item
+  :border-bottom 1px solid #d9d9d9
+
+.summary
+  .title
+    :font-weight bold
+
+#page_nav
+  :width 100%
+  a
+    :text-decoration none
+  #prev
+    :float left
+    :text-align left
+    :width 20%
+  #next
+    :float right
+    :text-align right
+    :width 20%
+
+#item
+  #image
+    :float right
+  .label
+    :font-weight bold
+  .pricing 
+    .price a
+      :text-decoration none
+    .amazon_price
+      .price
+        :color #990000
+        :font-weight bold
+  .review
+    :margin-bottom 4px
+    :margin-top 4px
+    .source
+      :font italic bold
+.editorial_reviews
+  .source
+    :padding-top 8px
+    :padding-bottom 8px

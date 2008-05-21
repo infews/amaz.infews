@@ -52276,3 +52276,253 @@ Completed in 0.17801 (5 reqs/sec) | Rendering: 0.10884 (61%) | DB: 0.00000 (0%) 
   [4;36;1mSQL (0.002590)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
   [4;35;1mSQL (0.004040)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
   [4;36;1mSQL (0.002229)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-20 08:24:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+
+
+ActionController::UnknownAction (No action responded to test_search):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:697:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:678:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:677:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:123:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-1.8.2/lib/sass/plugin/rails.rb:19:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:388:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-20 08:25:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.01017)
+Rendered item/_item (0.01614)
+Rendered item/_book_summary (0.00580)
+Rendered item/_item (0.00707)
+Rendered item/_book_summary (0.00397)
+Rendered item/_item (0.00598)
+Rendered item/_book_summary (0.00434)
+Rendered item/_item (0.00521)
+Rendered item/_book_summary (0.00505)
+Rendered item/_item (0.00591)
+Rendered item/_book_summary (0.00347)
+Rendered item/_item (0.00443)
+Rendered item/_book_summary (0.00623)
+Rendered item/_item (0.00703)
+Rendered item/_book_summary (0.00951)
+Rendered item/_item (0.01038)
+Rendered item/_book_summary (0.00337)
+Rendered item/_item (0.00421)
+Rendered item/_book_summary (0.00341)
+Rendered item/_item (0.00431)
+Completed in 0.19760 (5 reqs/sec) | Rendering: 0.14148 (71%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-05-20 08:25:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"1211144120"=>nil}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/item.css" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1424:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+Rendering /home/dwf/workspace/amaz/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-20 08:28:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00408)
+Rendered item/_item (0.00527)
+Rendered item/_book_summary (0.00439)
+Rendered item/_item (0.00530)
+Rendered item/_book_summary (0.00766)
+Rendered item/_item (0.00858)
+Rendered item/_book_summary (0.00389)
+Rendered item/_item (0.00479)
+Rendered item/_book_summary (0.00380)
+Rendered item/_item (0.00467)
+Rendered item/_book_summary (0.00412)
+Rendered item/_item (0.00496)
+Rendered item/_book_summary (0.00388)
+Rendered item/_item (0.00475)
+Rendered item/_book_summary (0.00678)
+Rendered item/_item (0.00771)
+Rendered item/_book_summary (0.00809)
+Rendered item/_item (0.00935)
+Rendered item/_book_summary (0.00382)
+Rendered item/_item (0.00470)
+Completed in 0.46498 (2 reqs/sec) | Rendering: 0.11421 (24%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+  [4;36;1mSQL (0.000445)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000277)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000309)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000382)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.004724)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002304)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001786)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.003951)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+
+Processing ItemController#test_search (for 127.0.0.1 at 2008-05-20 08:32:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjMwOTYxNDI3ZGFiNTFkYTc2YjBkYzMyYTRkZDc4%0AZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--f9f7923afc8de76ee96d9333f9bcfed4da47ddf2
+  Parameters: {"action"=>"test_search", "controller"=>"item"}
+Rendering template within layouts/application
+Rendering item/search
+Rendered item/_book_summary (0.00545)
+Rendered item/_item (0.00642)
+Rendered item/_book_summary (0.00334)
+Rendered item/_item (0.00419)
+Rendered item/_book_summary (0.00338)
+Rendered item/_item (0.00415)
+Rendered item/_book_summary (0.00339)
+Rendered item/_item (0.00414)
+Rendered item/_book_summary (0.00356)
+Rendered item/_item (0.00434)
+Rendered item/_book_summary (0.00337)
+Rendered item/_item (0.00413)
+Rendered item/_book_summary (0.00338)
+Rendered item/_item (0.00415)
+Rendered item/_book_summary (0.00553)
+Rendered item/_item (0.00631)
+Rendered item/_book_summary (0.00319)
+Rendered item/_item (0.00397)
+Rendered item/_book_summary (0.00420)
+Rendered item/_item (0.00919)
+Completed in 0.14893 (6 reqs/sec) | Rendering: 0.09705 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/search_test]
+  [4;36;1mSQL (0.000517)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000533)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000709)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000197)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000473)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006784)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003628)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.003733)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002893)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000406)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000304)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000307)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000265)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.005271)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002901)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002371)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002408)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000398)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000332)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000328)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mPRAGMA index_list(items)[0m
+  [4;35;1mSQL (0.000302)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: items: DROP TABLE items[0m
+  [4;35;1mSQL (0.006908)[0m   [0mCREATE TABLE items ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "asin" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002388)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001886)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.004237)[0m   [0;1mUPDATE schema_info SET version = 1[0m
