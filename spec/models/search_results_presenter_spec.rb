@@ -4,6 +4,7 @@ describe SearchResultsPresenter do
   
   before :all do
     @book_keyword_search = AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_page_1.xml')) 
+    @book_bestsellers_search = AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_bestsellers.xml')) 
   end
   
   it 'should store the ItemPresenters from a response' do
@@ -67,6 +68,16 @@ describe SearchResultsPresenter do
     results = SearchResultsPresenter.new(@book_keyword_search)
     
     results.keywords.should == 'harry potter' 
+  end
+  
+  it 'should tell that it is a bestseller search' do
+    results = SearchResultsPresenter.new(@book_bestsellers_search)
+    results.bestseller_search?.should == true
+  end
+  
+  it 'should tell that it is NOT a bestseller search' do
+    results = SearchResultsPresenter.new(@book_keyword_search)
+    results.bestseller_search?.should == false
   end
   
 end

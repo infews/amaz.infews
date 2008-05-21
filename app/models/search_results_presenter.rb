@@ -3,14 +3,21 @@ class SearchResultsPresenter < AwsItemPresenter
   attr_reader :doc
   attr_reader :items
   
+  attr_from_xml :browse_node, '//items/request/itemsearchrequest/browsenode'
+  attr_from_xml :keywords, '//items/request/itemsearchrequest/keywords'  
+  attr_from_xml :search_index, '//items/request/itemsearchrequest/searchindex'
   attr_from_xml :total_pages, '//items/totalpages'
   attr_from_xml :total_results, '//items/totalresults'
-  attr_from_xml :search_index, '//items/request/itemsearchrequest/searchindex'
-  attr_from_xml :keywords, '//items/request/itemsearchrequest/keywords'  
   
   def initialize(response)
     @doc = response.doc
     @items = response.items.collect {|i| ItemPresenter.new(i)}    
+  end
+  
+  def bestseller_search?
+    return true if self.search_index == 'Books' && self.browse_node == '1000'
+    
+    false
   end
   
   def page

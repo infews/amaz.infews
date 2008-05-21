@@ -130,8 +130,7 @@ describe ItemController do
   end
 
   it 'should support a search for book bestsellers' do
-    #TODO: this should mock with the real bestseller results
-    response_xml = File.read('spec/response_xml/item_search_book_page_last.xml')
+    response_xml = File.read('spec/response_xml/item_search_book_bestsellers.xml')
     controller.aws_request.stub!(:fetch).and_return(response_xml)
     get 'search', :search_index => 'Books', 
                   :bestsellers => 'true'

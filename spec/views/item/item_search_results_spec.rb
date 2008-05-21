@@ -3,6 +3,7 @@ require File.dirname(__FILE__) + '/../../spec_helper'
 describe '/item/search' do
   before :all do
     @book_keyword_search = AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_keyword.xml')) 
+    @book_bestsellers_search = AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_bestsellers.xml')) 
   end
   
   it 'should tell the user what the search terms were' do
@@ -125,5 +126,24 @@ describe '/item/search' do
         without_tag('a')
       end
     end
-  end  
+  end
+
+  it 'should render bestsellers results just like normal search results' do
+    assigns[:results] = SearchResultsPresenter.new(@book_bestsellers_search)
+    params[:search] = 'Books'
+    params[:keywords] = nil
+    params[:page] = 1
+    
+    render 'item/search'
+    
+    response.should have_tag('div#page_nav') do
+      with_tag('div#prev') do
+        without_tag('a')
+      end
+      with_tag('div#next') do
+        with_tag('a')
+      end
+    end
+  end
+  
 end
