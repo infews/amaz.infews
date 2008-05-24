@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../../spec_helper'
 
-describe '/item/show' do
+describe '/item/show', 'for a DVD' do
   before :all do
     @lookup_response_dvd = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_dvd_2.xml')) 
   end
@@ -93,4 +93,19 @@ describe '/item/show' do
     end
 
   end
+  
+  it 'should have the asepct ratio if present' do
+    assigns[:item] = ItemPresenter.new(@lookup_response_dvd.items.first)
+
+    render '/item/show'
+      
+    response.should have_tag('div#rating_and_rank') do
+      with_tag('div#rank') do
+        with_tag('span.label', 'Amazon Sales Rank:')
+        with_tag('span.rank', '654 in Movies & TV')
+      end
+    end
+
+  end
+  
 end

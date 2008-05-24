@@ -1,11 +1,21 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-describe ItemHelper do
+describe ItemHelper, '#other_page_of_results' do
   
-  #Delete this example and add some real ones or delete this file
-  it "should be included in the object returned by #helper" do
-    included_modules = (class << helper; self; end).send :included_modules
-    included_modules.should include(ItemHelper)
+  it 'should make a URL for another page of bestseller search results' do
+    results = mock('results')
+    results.stub!(:bestseller_search?).and_return(true)
+    results.stub!(:search_index).and_return('Books')
+    
+    other_page_of_results(results, '1').should == '/item/bestsellers/Books/1'
   end
-
+  
+  it 'should make a URL for another page of search results' do
+    results = mock('results')
+    results.stub!(:bestseller_search?).and_return(false)
+    results.stub!(:search_index).and_return('Books')
+    results.stub!(:keywords).and_return('foo bar')
+    
+    other_page_of_results(results, '3').should == '/item/search/Books/foo%20bar/3'
+  end
 end

@@ -17,7 +17,6 @@ class ItemPresenter < AwsItemPresenter
   attr_from_xml :studio, '/itemattributes/studio'
   attr_from_xml :title, '/itemattributes/title'
   
-  
   attr_array_from_xml :actors
   attr_array_from_xml :artists
   attr_array_from_xml :authors
@@ -73,6 +72,15 @@ class ItemPresenter < AwsItemPresenter
   rescue
     nil
   end
+  
+  def rank_group
+    case self.product_group
+      when 'Book' then 'Books'
+      when 'DVD'  then 'Movies & TV'
+      else self.product_group
+    end
+  end
+  
   
   def summary_partial
     "#{product_group.downcase}_summary"

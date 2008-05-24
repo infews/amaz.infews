@@ -9,10 +9,12 @@
       .count= "(#{pluralize_with_delimiter(@item.number_of_reviews, 'customer review') })" unless @item.number_of_reviews.nil?
     #rank
       %span.label Amazon Sales Rank:
-      %span.rank= number_with_delimiter @item.sales_rank
+      %span.rank= "#{number_with_delimiter(@item.sales_rank)} in #{@item.rank_group}"
   = render :partial => @item.other_details_partial, :locals => {:item => @item}
   - unless @item.editorial_reviews.nil?
     = render :partial => 'editorial_review', :collection =>  @item.editorial_reviews
     = render :partial => 'pricing', :locals => {:location => 'bottom'}
-#disclaimer
-  %a{:name => 'disclaimer'}= AmazonAWS::DISCLAIMER
+  #disclaimer
+    %a{:name => 'disclaimer'}= AmazonAWS::DISCLAIMER
+  - unless @item.detail_page_url.nil?
+    .at_amazon= link_to "View this at Amazon.com", @item.detail_page_url

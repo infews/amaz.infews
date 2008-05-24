@@ -1,4 +1,5 @@
 class SearchResultsPresenter < AwsItemPresenter
+  include ActionView::Helpers::NumberHelper # included for number_with_delimiter  
   
   attr_reader :doc
   attr_reader :items
@@ -37,7 +38,7 @@ class SearchResultsPresenter < AwsItemPresenter
   end
 
   def page_info
-    @page_info ||= "page #{page} of #{total_pages}"
+    @page_info ||= "page #{page} of #{number_with_delimiter(total_pages)}"
   end
      
 end

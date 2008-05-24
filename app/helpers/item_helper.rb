@@ -12,14 +12,10 @@ module ItemHelper
   
   def other_page_of_results(results, page)
     if results.bestseller_search?
-      bestsellers_path(:search_index => results.search_index, 
-                       :page => page)
+      bestsellers_path(results.search_index, page)
     else
-      search_path(:search_index => results.search_index, 
-                  :keywords => results.keywords, 
-                  :bestseller => results.bestseller_search?,
-                  :page => page)
-    end    
+      search_path(results.search_index, results.keywords, page)
+    end
   end
   
 end

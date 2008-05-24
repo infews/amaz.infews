@@ -196,5 +196,11 @@ describe ItemPresenter do
     @cd_2.other_details_partial.should == 'music_other_details'
     @dvd_2.other_details_partial.should == 'dvd_other_details'
   end
+
+  it 'should report the sales rank group' do
+    @book.rank_group.should == 'Books'
+    @cd_2.rank_group.should == 'Music'
+    @dvd_2.rank_group.should == 'Movies & TV'    
+  end
   
 end

@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../../spec_helper'
 
-describe '/item/show' do
+describe '/item/show', 'for a book' do
   before :all do
     @lookup_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml')) 
   end
@@ -30,18 +30,6 @@ describe '/item/show' do
     end
   end
 
-# TODO: is this testable with rspec?  should it even be tested?
-#   
-#  it 'should not hyperlink the title' do
-#    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml'))
-#    @item = ItemPresenter.new(aws_response.items.first)
-#    assigns[:item] = @item    
-#
-#    render '/item/show'
-#      
-#    response.should_not have_tag('a', 'Against the Day')
-#  end
-  
   it 'should show the image if one is present' do
     assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
  
@@ -76,7 +64,7 @@ describe '/item/show' do
     end    
   end
   
-  it 'should show the sales rank' do
+  it 'should show the sales rank with rank group' do
     assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
     
     render '/item/show'
@@ -84,7 +72,7 @@ describe '/item/show' do
     response.should have_tag('div#rating_and_rank') do
       with_tag('div#rank') do
         with_tag('span.label', 'Amazon Sales Rank:')
-        with_tag('span.rank', '26,771')
+        with_tag('span.rank', '26,771 in Books')
       end
     end
     

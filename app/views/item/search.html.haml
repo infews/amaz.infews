@@ -1,6 +1,6 @@
 #messages
   #search_message= @results.message
-  #results_count= "Found #{pluralize(@results.total_results, 'item')}"
+  #results_count= "Found #{pluralize_with_delimiter(@results.total_results, 'item')}"
   #results_pages= @results.page_info
   .clear &nbsp;
 #items
@@ -10,4 +10,4 @@
     = @results.first_page? ? "&nbsp;" : link_to('<<', previous_page_of(@results))
   #next
     = @results.last_page? ? "&nbsp;" : link_to('>>', next_page_of(@results))
-  .clear
+  

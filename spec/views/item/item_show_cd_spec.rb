@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../../spec_helper'
 
-describe '/item/show' do
+describe '/item/show', 'for a CD' do
   before :all do
     @lookup_response_single_disc = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_cd_2.xml')) 
     @lookup_response_two_disc = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_cd.xml')) 
@@ -58,5 +58,19 @@ describe '/item/show' do
       end      
     end
   end
-  
+
+  it 'should show the sales rank with rank group' do
+    assigns[:item] = ItemPresenter.new(@lookup_response_two_disc.items.first)
+    
+    render '/item/show'
+      
+    response.should have_tag('div#rating_and_rank') do
+      with_tag('div#rank') do
+        with_tag('span.label', 'Amazon Sales Rank:')
+        with_tag('span.rank', '173 in Music')
+      end
+    end
+    
+  end
+
 end

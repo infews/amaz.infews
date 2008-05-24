@@ -1,5 +1,4 @@
 class ItemController < ApplicationController
-  include ApplicationHelper #included for pluralize_with_delimiter
   
   def show
     first_item = aws_item_lookup(:asin => params[:asin]).items.first
@@ -17,13 +16,13 @@ class ItemController < ApplicationController
     options = {:search_index => params[:search_index],
                :page         => params[:page] || '1'}
              
-    if params[:bestsellers]
-      options.merge(:sort => 'salesrank',
-                    :browsenode => ItemController.bestseller_browse_node_for(params[:search_index]))
+    if params['bestsellers'] || params[:bestsellers]
+      options.merge!(:sort => 'salesrank',
+                    :browse_node => ItemController.bestseller_browse_node_for(params[:search_index]))
     else
-      options.merge(:keywords => params[:search_index])
+      options.merge!(:keywords => params[:search_index])
     end
-    
+
     aws_response = aws_item_search(options)
     
     # TODO: handle bad results from amazon                              
