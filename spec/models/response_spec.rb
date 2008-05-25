@@ -13,11 +13,18 @@ describe AmazonAWS::Response do
   it 'should return an array of <item>-rooted doc nodes from #items' do
     response = AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_keyword.xml'))
     items = response.items
-    items.length.should == 10
     items.is_a?(Array).should == true
+    items.length.should == 10
          
     items[0]%'item/asin'.should == '0743289358'
     items[1]%'item/salesrank'.should == '5483'
+  end
+  
+  it 'should return an array of <cartitem>-rooted doc nodes from a Cart API call' do
+    response = AmazonAWS::Response.new(File.read('spec/response_xml/cart_create_2_items.xml'))
+    cart_items = response.cart_items
+    cart_items.is_a?(Array).should == true
+    cart_items.length.should == 2   
   end
   
 end

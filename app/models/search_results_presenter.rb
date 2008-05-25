@@ -1,4 +1,4 @@
-class SearchResultsPresenter < AwsItemPresenter
+class SearchResultsPresenter < AwsPresenter
   include ActionView::Helpers::NumberHelper # included for number_with_delimiter  
   
   attr_reader :doc

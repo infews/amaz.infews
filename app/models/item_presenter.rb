@@ -1,8 +1,6 @@
 require 'htmlentities'
 
-class ItemPresenter < AwsItemPresenter
-  
-  attr_reader :doc
+class ItemPresenter < AwsPresenter
   
   attr_from_xml :asin, '//asin'
   attr_from_xml :aspect_ratio, '/itemattributes/aspectratio'
@@ -81,7 +79,6 @@ class ItemPresenter < AwsItemPresenter
     end
   end
   
-  
   def summary_partial
     "#{product_group.downcase}_summary"
   end
@@ -90,14 +87,4 @@ class ItemPresenter < AwsItemPresenter
     "#{product_group.downcase}_other_details"
   end
   
-  private
-  
-  def get_price(xpath)
-    doc_node = @doc%xpath
-    return nil if doc_node.nil?
-    
-    {:amount    => (doc_node/'amount').innerHTML.to_i,
-     :formatted => (doc_node/'/formattedprice').innerHTML}
-  end
-    
 end

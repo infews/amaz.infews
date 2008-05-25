@@ -14,6 +14,12 @@ module AmazonAWS
         array << item_node
       end
     end
+    
+    def cart_items
+      @doc/'//cart/cartitems/cartitem'.inject([]) do |array, item_node|
+        array << item_node
+      end
+    end
   end
   
 end
