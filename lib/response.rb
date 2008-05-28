@@ -16,7 +16,7 @@ module AmazonAWS
     end
     
     def cart_items
-      @doc/'//cart/cartitems/cartitem'.inject([]) do |array, item_node|
+      @doc/'cart/cartitems/cartitem'.inject([]) do |array, item_node|
         array << item_node
       end
     end

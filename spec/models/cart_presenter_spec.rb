@@ -29,4 +29,20 @@ describe CartPresenter do
   it 'should return an array of cart items' do
     @cart.items.length.should == 2
   end
+  
+  it 'should return another array of cart items' do
+    response = AmazonAWS::Response.new(File.read('spec/response_xml/cart_add_cart_B.xml'))
+    @cart = CartPresenter.new(response)
+    @cart.items.length.should == 3
+  end
+  
+  it 'should provide exercisable CartItemPresenters' do
+    response = AmazonAWS::Response.new(File.read('spec/response_xml/cart_add_cart_B.xml'))
+    @cart = CartPresenter.new(response)
+
+    @cart.items[0].title.should == 'The Wind-Up Bird Chronicle: A Novel'
+    @cart.items[1].asin.should == '0143112562'
+    @cart.items[2].cart_item_id.should == 'U2J1V0QO630ZEK'
+  end
+  
 end
