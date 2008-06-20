@@ -1,5 +1,7 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
+# TODO: stub out the calls to the library instead of stubbing out fetch
+
 describe ItemController, '#show' do
   before :each do
     class << controller

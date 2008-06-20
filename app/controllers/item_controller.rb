@@ -18,9 +18,9 @@ class ItemController < ApplicationController
              
     if params['bestsellers'] || params[:bestsellers]
       options.merge!(:sort => 'salesrank',
-                    :browse_node => ItemController.bestseller_browse_node_for(params[:search_index]))
+                     :browse_node => ItemController.bestseller_browse_node_for(params[:search_index]))
     else
-      options.merge!(:keywords => params[:search_index])
+      options.merge!(:keywords => params[:keywords])
     end
 
     aws_response = aws_item_search(options)
