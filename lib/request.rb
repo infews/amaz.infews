@@ -40,7 +40,7 @@ module AmazonAWS
     # the cart with quantity of 1.
     def add_to_cart(options)
       get_response_with '&Operation=CartAdd' +
-                        "&CartId=#{options[:aws_cart_id]}&HMAC=#{options[:hmac]}" +
+                        "&CartId=#{options[:cart_id]}&HMAC=#{options[:hmac]}" +
                         cart_params_for(options[:asin])
     end
 
@@ -48,7 +48,7 @@ module AmazonAWS
     # cartid and HMAC returned from a previous CartCreate call.
     def clear_cart(options)    
       get_response_with '&Operation=CartClear' +
-                        "&CartId=#{options[:aws_cart_id]}&HMAC=#{options[:hmac]}"
+                        "&CartId=#{options[:cart_id]}&HMAC=#{options[:hmac]}"
     end
 
     # Call CartCreate via REST.
@@ -64,7 +64,7 @@ module AmazonAWS
     # cartid and HMAC returned from a previous CartCreate call.
     def get_cart(options)      
       get_response_with '&Operation=CartGet' +
-                        "&CartId=#{options[:aws_cart_id]}&HMAC=#{options[:hmac]}"
+                        "&CartId=#{options[:cart_id]}&HMAC=#{options[:hmac]}"
     end  
 
     # Call CartModify via REST. Requires a options[:aws_cart_id] and options[:hmac] to be set to the 
@@ -75,7 +75,7 @@ module AmazonAWS
     def modify_cart(options)
       # TODO: consider supporting multiple item updates
       get_response_with '&Operation=CartModify' + 
-                        "&CartId=#{options[:aws_cart_id]}&HMAC=#{options[:hmac]}" +
+                        "&CartId=#{options[:cart_id]}&HMAC=#{options[:hmac]}" +
                         "&Item.1.CartItemId=#{options[:cart_item_id]}" +
                         "&Item.1.Quantity=#{options[:quantity]}"
     end

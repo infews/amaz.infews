@@ -17,15 +17,11 @@ class CartPresenter < AwsPresenter
   end
 
   def errors
-    @error_node = @doc%'errors'
+    @error_node ||= @doc%'errors'
     return nil if @error_node.nil?
     
     @errors ||= {:code    => (@error_node/'error/code').innerHTML,
                  :message => (@error_node/'error/message').innerHTML}
-  end
-  
-  def valid?
-    errors ? false : true
   end
   
 end

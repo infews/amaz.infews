@@ -54,18 +54,4 @@ describe CartPresenter do
                             :message => 'Your request contains an invalid AssociateTag, CartId and HMAC combination. Please verify the AssociateTag, CartId, HMAC and retry. Remember that all Cart operations must pass in the CartId and HMAC that were returned to you during the CartCreate operation.'}
   end
   
-  it 'should report if a cart is valid' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/cart_add_cart_B.xml'))
-    @cart = CartPresenter.new(aws_response)
-
-    @cart.should be_valid
-  end
-  
-  it 'should report if a cart is invalid' do
-    aws_response = AmazonAWS::Response.new(File.read('spec/response_xml/cart_get_cart_bad_cart.xml'))
-    @cart = CartPresenter.new(aws_response)
-
-    @cart.should_not be_valid    
-  end
-  
 end

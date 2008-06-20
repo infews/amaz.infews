@@ -29,7 +29,7 @@ describe AmazonAWS do
           '&Operation=CartClear&CartId=12&HMAC=ABC'
     @client.aws_request.stub!(:fetch).with(url).and_return('ok')
     
-    @client.aws_clear_cart(:aws_cart_id => '12', :hmac => 'ABC')
+    @client.aws_clear_cart(:cart_id => '12', :hmac => 'ABC')
   end
   
   it 'should call CartAdd to add one item with the correct URL' do
@@ -39,7 +39,7 @@ describe AmazonAWS do
           '&Item.1.ASIN=12345678&Item.1.Quantity=1'
     @client.aws_request.stub!(:fetch).with(url).and_return('ok')
   
-    @client.aws_add_to_cart(:aws_cart_id => '12', 
+    @client.aws_add_to_cart(:cart_id => '12', 
                                    :hmac => 'ABC',
                                    :asin => ['12345678'])
   end
@@ -52,7 +52,7 @@ describe AmazonAWS do
           '&Item.2.ASIN=abcdefgh&Item.2.Quantity=1'
     @client.aws_request.stub!(:fetch).with(url).and_return('ok')
   
-    @client.aws_add_to_cart(:aws_cart_id => '12', 
+    @client.aws_add_to_cart(:cart_id => '12', 
                             :hmac => 'ABC',
                             :asin => ['12345678', 'abcdefgh'])
   end
@@ -85,7 +85,7 @@ describe AmazonAWS do
           '&Operation=CartGet&CartId=12&HMAC=ABC'
     @client.aws_request.stub!(:fetch).with(url).and_return('ok')
   
-    @client.aws_get_cart(:aws_cart_id => '12', 
+    @client.aws_get_cart(:cart_id => '12', 
                                 :hmac => 'ABC')
   end
 
@@ -96,7 +96,7 @@ describe AmazonAWS do
           '&Item.1.CartItemId=1&Item.1.Quantity=2'    
     @client.aws_request.stub!(:fetch).with(url).and_return('ok')
 
-    @client.aws_modify_cart(:aws_cart_id  => '12', 
+    @client.aws_modify_cart(:cart_id  => '12', 
                             :hmac         => 'ABC',
                             :cart_item_id => 1,
                             :quantity     => 2)
