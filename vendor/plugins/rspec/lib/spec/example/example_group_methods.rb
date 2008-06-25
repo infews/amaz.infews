@@ -3,6 +3,8 @@ module Spec
 
     module ExampleGroupMethods
       class << self
+        attr_accessor :matcher_class
+
         def description_text(*args)
           args.inject("") do |result, arg|
             result << " " unless (result == "" || arg.to_s =~ /^(\s|\.|#)/)
@@ -119,8 +121,8 @@ module Spec
 
       def run
         examples = examples_to_run
+        reporter.add_example_group(self) unless examples_to_run.empty?
         return true if examples.empty?
-        reporter.add_example_group(self)
         return dry_run(examples) if dry_run?
 
         plugin_mock_framework
@@ -159,10 +161,12 @@ module Spec
         @description_text = ExampleGroupMethods.description_text(*args)
         @spec_path = File.expand_path(options[:spec_path]) if options[:spec_path]
         if described_type.class == Module
-          include described_type
+          @described_module = described_type
         end
         self
       end
+      
+      attr_reader :described_module
 
       def examples #:nodoc:
         examples = example_objects.dup
@@ -256,7 +260,7 @@ module Spec
       end
 
       def registration_backtrace
-        eval("caller", registration_binding_block.binding)
+        eval("caller", registration_binding_block)
       end
 
       def run_before_each(example)
@@ -320,7 +324,8 @@ module Spec
         all_examples = examples
         return all_examples unless specified_examples?
         all_examples.reject do |example|
-          matcher = ExampleMatcher.new(description.to_s, example.description)
+          matcher = ExampleGroupMethods.matcher_class.
+            new(description.to_s, example.description)
           !matcher.matches?(specified_examples)
         end
       end
@@ -393,6 +398,7 @@ module Spec
         case scope
         when :each; before_each_parts
         when :all; before_all_parts
+        when :suite; rspec_options.before_suite_parts
         end
       end
 
@@ -400,6 +406,7 @@ module Spec
         case scope
         when :each; after_each_parts
         when :all; after_all_parts
+        when :suite; rspec_options.after_suite_parts
         end
       end
 
