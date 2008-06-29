@@ -27,8 +27,8 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
 
   config.gem 'haml', :version => '2.0.0'
-  config.gem 'htmlentities', :version => '4.0.0'
   config.gem "hpricot", :version => '0.6'
+  config.gem 'htmlentities', :version => '4.0.0'
   
   
   
