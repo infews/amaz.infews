@@ -2,6 +2,7 @@
   = render :partial => @item.summary_partial, :locals => {:item => @item}
   = render :partial => 'image' unless @item.image.nil?
   = render :partial => 'pricing', :locals => {:location => 'top'}
+  .buy= link_to 'Buy', cart_add_path(@item)
   #rating_and_rank
     #rating
       #stars

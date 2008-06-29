@@ -101,7 +101,7 @@ module AmazonAWS
       sorted_options.each do |pair|
         key   = pair[0]
         value = pair[1]
-        RAILS_DEFAULT_LOGGER.info("k: #{key}, v: #{value}")
+        #RAILS_DEFAULT_LOGGER.info("k: #{key}, v: #{value}")
         params << 
           case key              
             when :actor

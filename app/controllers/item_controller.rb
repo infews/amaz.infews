@@ -1,8 +1,16 @@
+=begin
+AWS.InvalidParameterValue
+AWS.ECommerceService.ItemNotAccessible
+AWS.ECommerceService.NoExactMatches
+=end
+
 class ItemController < ApplicationController
   
   def show
-    first_item = aws_item_lookup(:asin => params[:asin]).items.first
-    @item = ItemPresenter.new(first_item) unless first_item.nil?
+    aws_response = aws_item_lookup(:asin => params[:asin])
+    # set flash
+    redirect_to '/' and return if aws_response.errors || aws_response.items.nil?
+    @item = ItemPresenter.new(aws_response.items.first)
     
     # TODO: if @item.nil? then we need to flash and redirect to search
     respond_to do |format|
@@ -25,9 +33,8 @@ class ItemController < ApplicationController
 
     aws_response = aws_item_search(options)
     
-    # TODO: handle bad results from amazon                              
     @results = SearchResultsPresenter.new(aws_response)
-    # TODO: if @item.nil? then we need to flash and redirect to search
+    # TODO: flash for no results
     respond_to do |format|
       format.html
     end
@@ -55,7 +62,8 @@ class ItemController < ApplicationController
      ['Music', 'Music'  ],
      ['DVDs',  'DVD' ]]
   end
-  
+
+  # TODO: this belongs in AmazonAWS
   def self.bestseller_browse_node_for(search_index)
     case search_index
       when 'Books' then '1000'

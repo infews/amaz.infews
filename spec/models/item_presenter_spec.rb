@@ -203,4 +203,10 @@ describe ItemPresenter do
     @dvd_2.rank_group.should == 'Movies & TV'    
   end
   
+  describe '#to_param' do
+    it 'should return its ASIN from #to_param' do
+      @book.to_param.should == '0143112562'
+    end
+  end
+  
 end

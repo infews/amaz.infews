@@ -43,6 +43,14 @@ ActionController::Routing::Routes.draw do |map|
                                                              :defaults => {:page => '1'},
                                                              :keywords => /[^\/\?]*/
   end
+  
+  map.with_options :controller => 'cart' do |cart|
+    cart.cart_clear 'cart/clear', :action => 'clear'
+    cart.cart 'cart', :action => 'show'
+    cart.cart_add 'cart/add/:asin', :action => 'add'
+    cart.cart_update 'cart/update/:cart_item_id/:quantity', :action => 'update'
+  end
+  
   # TODO: is there a way to shortcut this, pointing to the same-ish route above?
   map.home '/', :controller => 'item', :action => 'search', :search_index => 'Books', :bestsellers => 'true'
   

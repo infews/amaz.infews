@@ -1,5 +1,8 @@
 require File.dirname(__FILE__) + '/../../spec_helper'
 
+#TODO: move these from using actual presenters to using mocks?  Yes, it's more setup
+#      but isn't it more explicit?  Discuss.
+
 describe '/item/show', 'for a book' do
   before :all do
     @lookup_response = AmazonAWS::Response.new(File.read('spec/response_xml/item_lookup_book.xml')) 
@@ -76,6 +79,16 @@ describe '/item/show', 'for a book' do
       end
     end
     
+  end
+  
+  it 'should have a buy link' do
+    assigns[:item] = ItemPresenter.new(@lookup_response.items.first)
+    
+    render '/item/show'
+
+    response.should have_tag('div.buy') do
+      with_tag('a[href=/cart/add/0143112562]', 'Buy')
+    end
   end
   
   it 'should show the disclaimer at the bottom of the page' do

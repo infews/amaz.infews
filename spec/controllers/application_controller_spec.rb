@@ -23,10 +23,10 @@ describe ApplicationController, 'routing' do
 
   it 'should get routed from /item/search?keywords=foo&search=book' do
     params_from(:post, "/item/search/Books/J%20K%20Rowling").should == {:controller => 'item', 
-                                                            :action => 'search',
-                                                            :search_index => 'Books',
-                                                            :keywords => 'J K Rowling',
-                                                            :page => '1'}
+                                                                        :action => 'search',
+                                                                        :search_index => 'Books',
+                                                                        :keywords => 'J K Rowling',
+                                                                        :page => '1'}
   end
 
   it "should route to /item/search/Books/foo%20bar/3" do 
@@ -69,5 +69,10 @@ describe ApplicationController, 'routing' do
                                       :search_index => 'Books',
                                       :bestsellers => 'true'}
   end
+
+  it 'should route cart_add_path to CartController#add'
+  it 'should route cart_update_path to CartController#update'
+  it 'should route cart_clear_path to CartController#clear'
+  it 'should route cart_path to CartController#show'
   
 end

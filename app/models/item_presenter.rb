@@ -87,4 +87,8 @@ class ItemPresenter < AwsPresenter
     "#{product_group.downcase}_other_details"
   end
   
+  def to_param
+    asin
+  end
+  
 end

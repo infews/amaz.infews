@@ -20,6 +20,15 @@ module AmazonAWS
         array << item_node
       end
     end
+    
+    def errors
+      @errors_node ||= @doc/'request/errors/error'
+      
+      return nil if @errors_node.empty?
+        
+      @errors ||= {:code => (@errors_node/:code).innerHTML, 
+                   :message => (@errors_node/:message).innerHTML}
+    end
   end
   
 end
