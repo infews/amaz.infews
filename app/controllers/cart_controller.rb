@@ -12,9 +12,10 @@ class CartController < ApplicationController
                    end
     @cart = CartPresenter.new(aws_response)    
     
-    save_cart_in_session and return unless @cart.errors
+    handle_errors and return if @cart.errors
 
-    handle_errors
+    save_cart_in_session
+    render :action => 'show'
   end
 
   def update
@@ -25,9 +26,13 @@ class CartController < ApplicationController
                                    :cart_item_id => params[:cart_item_id])
     @cart = CartPresenter.new(aws_response)
     
-    save_cart_in_session and return unless @cart.errors
+    # TODO: need to test drive this case; if there are no items left 
+    redirect_to(:action => 'clear') and return if @cart.items.nil?
     
-    handle_errors
+    handle_errors and return if @cart.errors
+
+    save_cart_in_session
+    render :action => 'show'
   end
 
   def clear
@@ -48,9 +53,16 @@ class CartController < ApplicationController
                                 :hmac    => session[:cart][:hmac])
     @cart = CartPresenter.new(aws_response)
     
-    save_cart_in_session and return unless @cart.errors
+    handle_errors and return if @cart.errors
     
-    handle_errors
+    save_cart_in_session    
+  end
+  
+  def test_show
+    session[:cart] = {:cart_id => '104-9487830-8806330',
+                      :hmac => 'Ze%2B9VNGLN3MRlgl2go%2FxH8aoiMY%3D' }
+    @cart = CartPresenter.new(AmazonAWS::Response.new(File.read('spec/response_xml/cart_get_cart_B.xml')))
+    render :action => 'show'
   end
   
   protected

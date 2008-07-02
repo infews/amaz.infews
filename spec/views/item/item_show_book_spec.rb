@@ -145,6 +145,7 @@ describe '/item/show', 'for a book' do
     assigns[:item] = ItemPresenter.new(aws_response.items.first)
  
     render '/item/show'
+   
     response.should have_tag('#item') do
       without_tag('img.item')
     end

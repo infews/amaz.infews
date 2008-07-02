@@ -1,0 +1,9 @@
+.item
+  .title= link_to item.title, show_path(item.asin)
+  .amount= item.item_total[:formatted]
+  .actions
+    = link_to '+1', cart_update_path(item.cart_item_id, item.quantity.to_i + 1)
+    |
+    = link_to '-1', cart_update_path(item.cart_item_id, item.quantity.to_i - 1)
+    |
+    = link_to 'remove', cart_update_path(item.cart_item_id, '0')

@@ -1,0 +1,10 @@
+.message Your Amazon.com Cart
+
+= render :partial => 'item', :collection => @cart.items
+.cart_subtotal
+  %span.subtotal Cart Subtotal
+  %span.amount= @cart.subtotal[:formatted]
+.clear_cart
+  = link_to 'Empty cart', cart_clear_path
+.purchase_link
+  = link_to 'Buy at Amazon.com', @cart.purchase_url

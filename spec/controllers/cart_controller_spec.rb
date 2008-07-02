@@ -14,6 +14,7 @@ describe CartController do
         CartPresenter.stub!(:new).and_return(cart)
 
         get :add, :asin => '0143112562'            
+        response.should render_template('show')
       end
 
       it 'should initialize a CartPresenter from the Amazon aws_response' do
@@ -25,6 +26,7 @@ describe CartController do
         CartPresenter.should_receive(:new).and_return(cart)
 
         get :add, :asin => '0143112562'      
+        response.should render_template('show')
       end
 
       it 'should store a new cart in the session if one was created' do
@@ -38,6 +40,7 @@ describe CartController do
         get :add, :asin => '0143112562'      
 
         session[:cart].should == {:cart_id => '102-3956189-4078545', :hmac => '102-3956189-4078545'}        
+        response.should render_template('show')
       end
 
       it 'should add a new cart item to an existing cart' do
@@ -55,6 +58,7 @@ describe CartController do
 
         session[:cart].should == {:cart_id => '104-9487830-8806330', :hmac => 'Ze%2B9VNGLN3MRlgl2go%2FxH8aoiMY%3D'}
         assigns[:cart].should_not be_nil
+        response.should render_template('show')
       end
     end
     
@@ -229,6 +233,7 @@ describe CartController do
                      :hmac => session[:cart][:hmac]}
       controller.should_receive(:aws_modify_cart).with(aws_options).once.and_return('aws_response')
       cart = mock('cart_presenter', {:errors => nil,
+                                     :items => '',
                                      :cart_id => session[:cart][:cart_id],
                                      :url_encoded_hmac => session[:cart][:hmac]})
       
@@ -238,6 +243,26 @@ describe CartController do
       
       session[:cart].should == {:cart_id => '104-9487830-8806330', :hmac => 'Ze%2B9VNGLN3MRlgl2go%2FxH8aoiMY%3D'}
       assigns[:cart].should_not be_nil
+      response.should render_template('show')
+    end
+
+    it 'should redirect to / if the last item was removed from the cart' do
+      session[:cart] = {:cart_id => '104-9487830-8806330', :hmac => 'Ze%2B9VNGLN3MRlgl2go%2FxH8aoiMY%3D'}        
+      aws_options = {:cart_item_id => 'U2B36R1SQQ0LPY',
+                     :quantity => '0',
+                     :cart_id => session[:cart][:cart_id], 
+                     :hmac => session[:cart][:hmac]}
+      controller.should_receive(:aws_modify_cart).with(aws_options).once.and_return('aws_response')
+      cart = mock('cart_presenter', {:errors => nil,
+                                     :items => nil,
+                                     :cart_id => session[:cart][:cart_id],
+                                     :url_encoded_hmac => session[:cart][:hmac]})
+      
+      CartPresenter.stub!(:new).and_return(cart)
+
+      get :update, :cart_item_id => 'U2B36R1SQQ0LPY', :quantity => '0'
+      
+      response.should redirect_to(:action => 'clear')
     end
     
   end
