@@ -4,7 +4,9 @@
 .cart_subtotal
   %span.subtotal Cart Subtotal
   %span.amount= @cart.subtotal[:formatted]
-.clear_cart
-  = link_to 'Empty cart', cart_clear_path
+.clear &nbsp;
 .purchase_link
   = link_to 'Buy at Amazon.com', @cart.purchase_url
+.clear &nbsp;
+.clear_cart
+  = link_to 'Empty cart', cart_clear_path

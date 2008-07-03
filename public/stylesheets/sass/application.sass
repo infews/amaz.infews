@@ -1,3 +1,4 @@
+// define that grey as a symbol up here
 .clear
   :float clear
 
@@ -8,29 +9,35 @@ body
   :margin 0 auto
   :text-align center
   :width 100%
-#search_form
-  :margin-top 8px
+#form_wrapper
   :width 100%
-  .label_wrapper
-    :height 100%
-    :width 50%
-    :float left
+  input#go
+    :width 100%
+  .text_wrapper
+    :height 30px
+    :width 100%
     #text_label
-      :padding 8px
+      :float left
+      :padding 4px
       :text-align right
-    #type_label 
-      :padding 8px
-      :text-align right
-  .field_wrapper
-    :height 100%
-    :width 50%
-    :float right
+      :width 48%
     #text_field
-      :padding 8px
+      :float right
+      :padding 4px
       :text-align left
+      :width 48%
+  .type_wrapper
+    :height 30px
+    :width 100%
+    #type_label 
+      :float left
+      :padding 4px
+      :text-align right
+      :width 48%
     #type_field
-      :padding 8px
-      :text-align left
+      :float right
+      :padding 4px
+      :width 48%
 
 #powered
   :float right
@@ -86,3 +93,18 @@ body
     :padding-bottom 8px
 
 // Cart Views
+.cart_item
+  :border-bottom 1px solid #d9d9d9
+  :width 100%
+  .title
+    :float left
+  .amount
+    :float right
+  .actions
+    :float right
+.cart_subtotal
+  :float right
+.clear_cart
+  :float left
+.purchase_link
+  :float right

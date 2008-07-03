@@ -11,16 +11,21 @@
       =# link_to image_tag('header_amaz.gif', :alt => 'amaz.infews'), :controller => 'search'
       = image_tag('header_amaz.gif', :alt => 'amaz.infews')
     = yield
+    .clear &nbsp;
     %a{:name => '#search_form'}
-    - form_tag('/item/search') do
-      #search_form
-        .label_wrapper
-          #text_label Search for
-          #type_label in          
-        .field_wrapper
+    #form_wrapper
+      - form_tag('/item/search') do
+        .text_wrapper
+          #text_label
+            %label Search for
           #text_field= text_field_tag(:keywords, @previous_keywords, {:size => '10'}) 
+        /.clear &nbsp;
+        .type_wrapper 
+          #type_label
+            %label in          
           #type_field= select_tag(:search_index, options_for_select(ItemController.search_types, @previous_search_index))         
-      = submit_tag('Go')
+        = submit_tag('Go', :id => 'go')
+    .clear &nbsp;
     #powered
       powered by    
       = image_tag('footer_infews.gif', :align => 'right')
