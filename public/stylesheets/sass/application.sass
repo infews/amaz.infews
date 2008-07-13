@@ -12,6 +12,8 @@ body
   :width 100%
 input#go
   :width 100%
+form.search_form
+  :margin-top 8px
 table#search
   :width 100%
   td#text_label
@@ -87,26 +89,21 @@ table#search
   .actions
     :float right
 .cart_actions
-  :float left
+  :float right
 .cart_item
-  :border-bottom 1px solid #d9d9d9
-  :height 50px
   :width 100%
-  .left
-    :width 75%
+  .title 
     :float left
-    .title 
-      :float left
-    .quantity
-      :float left
-      :margin-left 4px
-  .right
-    :width 25%
+  .quantity
+    :margin-left 4px
+  .amount
     :float right
-    .amount
-      :float right
   .actions
+    :border-bottom 1px solid #d9d9d9
     :float right
+    :padding 4px 0px
+    :text-align right
+    :width 100%
     a
       :text-decoration none
 .cart_subtotal

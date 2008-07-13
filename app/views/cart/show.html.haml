@@ -2,16 +2,17 @@
   .message
     Your Amazon.com Cart
   .actions
-    = link_to 'Checkout', @cart.purchase_url
-    |
     = link_to 'Shop', :anchor => 'search_form'
+    |
+    = link_to 'Checkout', @cart.purchase_url
   &nbsp;
-= render :partial => 'item', :collection => @cart.items
+=render :partial => 'item', :collection => @cart.items
+.clear
 .cart_subtotal
   %span.subtotal Cart Subtotal:
   %span.amount= @cart.subtotal[:formatted]
 .clear &nbsp;
 .cart_actions
-  = link_to 'Checkout', @cart.purchase_url
-  |
   = link_to 'Empty Cart', cart_clear_path
+  |
+  = link_to 'Checkout', @cart.purchase_url

@@ -7,3 +7,4 @@
     .amazon_price
       %span.label Amazon Price:
       %span.price= (@item.amazon_price[:formatted] + link_to('*', :anchor => 'disclaimer')) 
+  .buy= link_to 'Buy', cart_add_path(@item)
