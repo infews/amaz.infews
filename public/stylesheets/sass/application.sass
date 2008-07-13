@@ -1,7 +1,8 @@
 // define that grey as a symbol up here
 .clear
   :float clear
-
+img
+  :border none
 body
   :font-family helvetica, arial, sans-serif
 #logo
@@ -9,36 +10,20 @@ body
   :margin 0 auto
   :text-align center
   :width 100%
-#form_wrapper
+input#go
   :width 100%
-  input#go
-    :width 100%
-  .text_wrapper
-    :height 30px
-    :width 100%
-    #text_label
-      :float left
-      :padding 4px
-      :text-align right
-      :width 48%
-    #text_field
-      :float right
-      :padding 4px
-      :text-align left
-      :width 48%
-  .type_wrapper
-    :height 30px
-    :width 100%
-    #type_label 
-      :float left
-      :padding 4px
-      :text-align right
-      :width 48%
-    #type_field
-      :float right
-      :padding 4px
-      :width 48%
-
+table#search
+  :width 100%
+  td#text_label
+    :text-align right
+    :width 50%
+  td#text_field
+    :text-align left
+    :width 50%
+  td#type_label 
+    :text-align right
+  td#type_field
+    :text-align left
 #powered
   :float right
   :text-align right
@@ -93,19 +78,37 @@ body
     :padding-bottom 8px
 
 // Cart Views
-.cart_message
+.cart_header
   :border-bottom 1px solid #d9d9d9
   :margin-bottom 15px
+  :padding-bottom 4px
+  .message
+    :float left
+  .actions
+    :float right
+.cart_actions
+  :float left
 .cart_item
   :border-bottom 1px solid #d9d9d9
   :height 50px
   :width 100%
-  .title
+  .left
+    :width 75%
     :float left
-  .amount
+    .title 
+      :float left
+    .quantity
+      :float left
+      :margin-left 4px
+  .right
+    :width 25%
     :float right
+    .amount
+      :float right
   .actions
     :float right
+    a
+      :text-decoration none
 .cart_subtotal
   :float right
 .note

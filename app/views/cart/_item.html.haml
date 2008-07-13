@@ -1,11 +1,13 @@
 .cart_item
-  .title= link_to item.title, show_path(item.asin)
-  .amount= item.item_total[:formatted]
-  .clear &nbsp;
+  .left
+    .title= link_to item.title, show_path(item.asin)
+    .quantity= quantity_text(item)
+  .right
+    .amount= item.item_total[:formatted]
+    .clear &nbsp;
   .actions
-    = link_to '+1', cart_update_path(item.cart_item_id, item.quantity.to_i + 1)
-    |
-    = link_to '-1', cart_update_path(item.cart_item_id, item.quantity.to_i - 1)
-    |
-    = link_to 'remove', cart_update_path(item.cart_item_id, '0')
+    %button{:class => 'plus_one'}= link_to '+', cart_update_path(item.cart_item_id, item.quantity.to_i + 1)
+    - unless item.quantity == '1'
+      %button{:class => 'minus_one'}= link_to '&ndash;', cart_update_path(item.cart_item_id, item.quantity.to_i - 1)
+    %button{:class => 'delete'}= link_to 'del', cart_update_path(item.cart_item_id, '0')
 .clear &nbsp;

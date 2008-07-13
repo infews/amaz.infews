@@ -27,7 +27,7 @@ class CartController < ApplicationController
     @cart = CartPresenter.new(aws_response)
     
     # TODO: need to test drive this case; if there are no items left 
-    redirect_to(:action => 'clear') and return if @cart.items.nil?
+    redirect_to(:action => 'clear') and return if @cart.items.empty?
     
     handle_errors and return if @cart.errors
 

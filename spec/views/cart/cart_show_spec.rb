@@ -10,7 +10,9 @@ describe '/cart/show' do
     
     render '/cart/show'
     
-    response.should have_tag('div.message', 'Your Amazon.com Cart')
+    response.should have_tag('div.cart_header') do
+      with_tag('div.message', 'Your Amazon.com Cart')
+    end
   end
   
   it 'should show all of the cart\'s items with titles linked to each\'s details page' do
@@ -18,15 +20,17 @@ describe '/cart/show' do
     
     render '/cart/show'
 
-    response.should have_tag('div.item') do
+    response.should have_tag('div.cart_item') do
       with_tag('div.title') do
         with_tag('a[href=/item/show/0143112562]', 'Against the Day')
       end
     end
 
-    response.should have_tag('div.item') do
-      with_tag('div.title') do
-        with_tag('a[href=/item/show/B00001ZWUS]', 'Saving Private Ryan (Special Limited Edition)')
+    response.should have_tag('div.cart_item') do
+      with_tag('div.left') do
+        with_tag('div.title') do
+          with_tag('a[href=/item/show/B00001ZWUS]', 'Saving Private Ryan (Special Limited Edition)')
+        end
       end
     end
 
@@ -37,12 +41,16 @@ describe '/cart/show' do
     
     render '/cart/show'
 
-    response.should have_tag('div.item') do
-      with_tag('div.amount', '$24.48')
+    response.should have_tag('div.cart_item') do
+      with_tag('div.right') do
+        with_tag('div.amount', '$24.48')
+      end
     end
 
-    response.should have_tag('div.item') do
-      with_tag('div.amount', '$10.99')
+    response.should have_tag('div.cart_item') do
+      with_tag('div.right') do
+        with_tag('div.amount', '$10.99')
+      end
     end
     
   end
@@ -52,11 +60,11 @@ describe '/cart/show' do
     
     render '/cart/show'
 
-    response.should have_tag('div.item') do
+    response.should have_tag('div.cart_item') do
       with_tag('div.actions') do
-        with_tag('a[href=/cart/update/UZ505BDU01ZH0/3]', '+1')
-        with_tag('a[href=/cart/update/UZ505BDU01ZH0/1]', '-1')
-        with_tag('a[href=/cart/update/UZ505BDU01ZH0/0]', 'remove')
+        with_tag('a[href=/cart/update/UZ505BDU01ZH0/3]', '+')
+        with_tag('a[href=/cart/update/UZ505BDU01ZH0/1]', '&ndash;')
+        with_tag('a[href=/cart/update/UZ505BDU01ZH0/0]', 'del')
       end
     end
   end
@@ -66,8 +74,8 @@ describe '/cart/show' do
     
     render '/cart/show'
 
-    response.should have_tag('div.clear_cart') do
-      with_tag('a[href=/cart/clear]', 'Empty cart')
+    response.should have_tag('div.cart_actions') do
+      with_tag('a[href=/cart/clear]', 'Empty Cart')
     end
     
   end
@@ -78,7 +86,7 @@ describe '/cart/show' do
     render '/cart/show'
 
     response.should have_tag('div.cart_subtotal') do
-      with_tag('span.subtotal', 'Cart Subtotal')
+      with_tag('span.subtotal', 'Cart Subtotal:')
       with_tag('span.amount', '$35.47')
     end
 
@@ -89,8 +97,8 @@ describe '/cart/show' do
     
     render '/cart/show'
     
-    response.should have_tag('div.purchase_link') do
-      with_tag('a', 'Buy at Amazon.com')
+    response.should have_tag('div.cart_actions') do
+      with_tag('a', 'Checkout')
     end
     
   end

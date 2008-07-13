@@ -1,12 +1,17 @@
-.cart_message Your Amazon.com Cart
-
+.cart_header
+  .message
+    Your Amazon.com Cart
+  .actions
+    = link_to 'Checkout', @cart.purchase_url
+    |
+    = link_to 'Shop', :anchor => 'search_form'
+  &nbsp;
 = render :partial => 'item', :collection => @cart.items
 .cart_subtotal
-  %span.subtotal Cart Subtotal
+  %span.subtotal Cart Subtotal:
   %span.amount= @cart.subtotal[:formatted]
 .clear &nbsp;
 .cart_actions
-  = link_to 'Buy at Amazon.com', @cart.purchase_url
+  = link_to 'Checkout', @cart.purchase_url
   |
-  = link_to 'Empty cart', cart_clear_path
-.note Note: All shipping and handling charges will be added after you login to Amazon.com
+  = link_to 'Empty Cart', cart_clear_path

@@ -228,18 +228,18 @@ describe CartController do
     it 'should update the quantity of an existing cart item in a cart' do
       session[:cart] = {:cart_id => '104-9487830-8806330', :hmac => 'Ze%2B9VNGLN3MRlgl2go%2FxH8aoiMY%3D'}        
       aws_options = {:cart_item_id => 'U2B36R1SQQ0LPY',
-                     :quantity => '0',
+                     :quantity => '2',
                      :cart_id => session[:cart][:cart_id], 
                      :hmac => session[:cart][:hmac]}
       controller.should_receive(:aws_modify_cart).with(aws_options).once.and_return('aws_response')
       cart = mock('cart_presenter', {:errors => nil,
-                                     :items => '',
+                                     :items => 'items',
                                      :cart_id => session[:cart][:cart_id],
                                      :url_encoded_hmac => session[:cart][:hmac]})
       
       CartPresenter.stub!(:new).and_return(cart)
       
-      get :update, :cart_item_id => 'U2B36R1SQQ0LPY', :quantity => '0'
+      get :update, :cart_item_id => 'U2B36R1SQQ0LPY', :quantity => '2'
       
       session[:cart].should == {:cart_id => '104-9487830-8806330', :hmac => 'Ze%2B9VNGLN3MRlgl2go%2FxH8aoiMY%3D'}
       assigns[:cart].should_not be_nil
@@ -254,7 +254,7 @@ describe CartController do
                      :hmac => session[:cart][:hmac]}
       controller.should_receive(:aws_modify_cart).with(aws_options).once.and_return('aws_response')
       cart = mock('cart_presenter', {:errors => nil,
-                                     :items => nil,
+                                     :items => [],
                                      :cart_id => session[:cart][:cart_id],
                                      :url_encoded_hmac => session[:cart][:hmac]})
       
@@ -290,6 +290,7 @@ describe CartController do
   end
   
   describe '#show' do
+    # TODO: mock these out
     before :all do
       @get_cart_doc = Hpricot.parse(File.open('spec/response_xml/cart_get_cart_B.xml'))
       @bad_cart_doc = Hpricot.parse(File.open('spec/response_xml/cart_get_cart_bad_cart.xml'))

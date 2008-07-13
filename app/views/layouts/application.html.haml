@@ -13,19 +13,15 @@
     = yield
     .clear &nbsp;
     %a{:name => '#search_form'}
-    #form_wrapper
-      - form_tag('/item/search') do
-        .text_wrapper
-          #text_label
-            %label Search for
-          #text_field= text_field_tag(:keywords, @previous_keywords, {:size => '10'}) 
-        /.clear &nbsp;
-        .type_wrapper 
-          #type_label
-            %label in          
-          #type_field= select_tag(:search_index, options_for_select(ItemController.search_types, @previous_search_index))         
-        = submit_tag('Go', :id => 'go')
-    .clear &nbsp;
+    - form_tag('/item/search') do
+      %table#search
+        %tr
+          %td#text_label Search for
+          %td#text_field= text_field_tag(:keywords, @previous_keywords, {:size => '10'}) 
+        %tr
+          %td#type_label in
+          %td#type_field= select_tag(:search_index, options_for_select(ItemController.search_types, @previous_search_index))         
+    = submit_tag('Go', :id => 'go')
     #powered
       powered by    
       = image_tag('footer_infews.gif', :align => 'right')
