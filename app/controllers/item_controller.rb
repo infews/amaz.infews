@@ -41,15 +41,13 @@ class ItemController < ApplicationController
     
   end
   
-  # TODO: this doesn't work on FF3b5 when not connected to WiFi!
   def test_show
     @item = ItemPresenter.new(Hpricot.parse(File.read('spec/response_xml/item_lookup_book.xml'))/:item)
 
     render :action => 'show'
   end
   
-  def test_search
-    
+  def test_search    
     @results = SearchResultsPresenter.new(AmazonAWS::Response.new(File.read('spec/response_xml/item_search_book_page_1.xml')))
     
     render :action => 'search'

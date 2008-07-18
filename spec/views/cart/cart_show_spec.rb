@@ -27,10 +27,8 @@ describe '/cart/show' do
     end
 
     response.should have_tag('div.cart_item') do
-      with_tag('div.left') do
-        with_tag('div.title') do
-          with_tag('a[href=/item/show/B00001ZWUS]', 'Saving Private Ryan (Special Limited Edition)')
-        end
+      with_tag('div.title') do
+        with_tag('a[href=/item/show/B00001ZWUS]', 'Saving Private Ryan (Special Limited Edition)')
       end
     end
 
@@ -42,15 +40,11 @@ describe '/cart/show' do
     render '/cart/show'
 
     response.should have_tag('div.cart_item') do
-      with_tag('div.right') do
-        with_tag('div.amount', '$24.48')
-      end
+      with_tag('div.amount', '$24.48')
     end
 
     response.should have_tag('div.cart_item') do
-      with_tag('div.right') do
-        with_tag('div.amount', '$10.99')
-      end
+      with_tag('div.amount', '$10.99')
     end
     
   end
