@@ -1,12 +1,10 @@
-set :application, "amaz.infews"
-set :repository,  "set your repository location here"
+default_run_options[:pty] = true
 
-# If you aren't deploying to /u/apps/#{application} on the target
-# servers (which is the default), you can specify the actual location
-# via the :deploy_to variable:
-# set :deploy_to, "/var/www/#{application}"
-
-set :scm, :git
+set :application, 'amaz.infews'
+set :repository,  'git@github.com:infews/amaz.infews.git'
+set :scm, "git"
+set :scm_passphrase, 'scotch4code' #This is your custom users password
+set :user, 'infews'
 
 role :app, "infews-prod1"
 role :web, "infews-prod1"
