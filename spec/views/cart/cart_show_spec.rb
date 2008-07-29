@@ -56,9 +56,9 @@ describe '/cart/show' do
 
     response.should have_tag('div.cart_item') do
       with_tag('div.actions') do
-        with_tag('a[href=/cart/update/UZ505BDU01ZH0/3]', '+')
-        with_tag('a[href=/cart/update/UZ505BDU01ZH0/1]', '&ndash;')
-        with_tag('a[href=/cart/update/UZ505BDU01ZH0/0]', 'del')
+        with_tag('a[href=/cart/update/UZ505BDU01ZH0/3]')
+        with_tag('a[href=/cart/update/UZ505BDU01ZH0/1]')
+        with_tag('a[href=/cart/update/UZ505BDU01ZH0/0]')
       end
     end
   end

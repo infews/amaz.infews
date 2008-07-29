@@ -32,6 +32,20 @@ describe ItemController do
   
   describe '#search' do
 
+    it 'should redirect to the book bestsellers search when the search term is empty' do
+      search_options = {:page => '1',
+                        :browse_node => '1000',
+                        :sort => 'salesrank',
+                        :search_index => 'Books'}
+      controller.should_receive(:aws_item_search).with(search_options).once.and_return('aws_response')
+      items = mock('item_presenters_array', :size => 4)
+      search = mock('search_results_presenter', {:items => items})
+      SearchResultsPresenter.stub!(:new).and_return(search)
+
+      get 'search', :search_index => 'Books',
+                    :keywords => ''
+    end
+
     it 'should call Amazon with a book keyword search' do
       search_options = {:keywords => 'Against the Day',
                         :page => '1',

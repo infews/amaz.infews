@@ -73,6 +73,7 @@ describe SearchResultsPresenter do
   it 'should tell that it is a bestseller search' do
     results = SearchResultsPresenter.new(@book_bestsellers_search)
     results.bestseller_search?.should == true
+    results.message.should == 'Current Bestsellers in Books'
   end
   
   it 'should tell that it is NOT a bestseller search' do

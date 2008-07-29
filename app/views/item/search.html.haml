@@ -7,7 +7,7 @@
   = render :partial => 'item', :collection => @results.items
 #page_nav
   #prev
-    = @results.first_page? ? "&nbsp;" : content_tag(:button, link_to('<<', previous_page_of(@results)))
+    = @results.first_page? ? "&nbsp;" : link_to('<< Prev', previous_page_of(@results))
   #next
-    = @results.last_page? ? "&nbsp;" : content_tag(:button, link_to('>>', next_page_of(@results)))
+    = @results.last_page? ? "&nbsp;" : link_to('Next >>', next_page_of(@results))
   

@@ -18,13 +18,15 @@ class ItemController < ApplicationController
     end
   end
   
-  def search
+  def search    
+    params[:bestsellers] = 'true' if params[:keywords].blank?
+
     @previous_search_index = params[:search_index]
     @previous_keywords     = params[:keywords]
     options = {:search_index => params[:search_index],
                :page         => params[:page] || '1'}
              
-    if params['bestsellers'] || params[:bestsellers]
+    if params[:bestsellers]
       options.merge!(:sort => 'salesrank',
                      :browse_node => ItemController.bestseller_browse_node_for(params[:search_index]))
     else

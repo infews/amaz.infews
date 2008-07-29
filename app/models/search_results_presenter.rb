@@ -34,6 +34,7 @@ class SearchResultsPresenter < AwsPresenter
   end
   
   def message
+    @message = 'Current Bestsellers in Books' if bestseller_search?
     @message ||= "Searching #{get('//items/request/itemsearchrequest/searchindex')} for \"#{get('//items/request/itemsearchrequest/keywords')}\""
   end
 

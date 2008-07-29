@@ -45,6 +45,7 @@ button
   :border-bottom 1px solid #d9d9d9
 
 .summary
+  :padding 8px 0px
   .title
     :font-weight bold
 
@@ -74,15 +75,20 @@ button
       .price
         :color #990000
         :font-weight bold
-  .review
-    :margin-bottom 4px
-    :margin-top 4px
-    .source
-      :font italic bold
-.editorial_reviews
-  .source
-    :padding-top 8px
+  #rating_and_rank
+    :border-bottom 1px solid #d9d9d9
     :padding-bottom 8px
+  .reviews
+    :border-bottom 1px solid #d9d9d9
+    :margin-bottom 8px
+    :padding 8px 0px
+    .review
+      :padding 8px 0px
+      .source
+        :font-style italic
+        :font-weight bold
+  #disclaimer
+    :font-style italic
 
 // Cart Views
 .cart_header
@@ -99,6 +105,8 @@ button
   :width 100%
   .title 
     :float left
+    a
+      :font-weight bold
   .quantity
     :margin-left 4px
   .amount
