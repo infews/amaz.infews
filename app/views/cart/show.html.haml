@@ -16,3 +16,7 @@
   = link_to 'Empty Cart', cart_clear_path
   |
   = link_to 'Checkout', @cart.purchase_url
+
+- content_for :disclaimer do
+  #disclaimer
+    %a{:name => 'disclaimer'}= AmazonAWS::DISCLAIMER

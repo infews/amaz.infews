@@ -4,7 +4,7 @@ default_run_options[:pty] = true
 set :application, 'amaz.infews'
 set :repository,  'git@github.com:infews/amaz.infews.git'
 set :scm, "git"
-set :scm_passphrase, 'scotch4code' #This is your custom users password
+set :scm_passphrase, 'scotch4code'
 set :user, 'infews'
 set :use_sudo, true
 

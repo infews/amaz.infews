@@ -24,4 +24,5 @@ describe ItemHelper, '#other_page_of_results' do
     
     helper.other_page_of_results(results, '3').should == '/item/search/Books/foo%20bar/3'
   end
+
 end

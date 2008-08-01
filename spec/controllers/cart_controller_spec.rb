@@ -60,6 +60,10 @@ describe CartController do
         assigns[:cart].should_not be_nil
         response.should render_template('show')
       end
+
+      it 'should increase the quantity of an item that is already in the cart when the user attempts to add it (again)'
+      # need to capture this as a response and then handle it
+
     end
     
     describe 'error paths' do

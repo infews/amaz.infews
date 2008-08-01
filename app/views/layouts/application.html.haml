@@ -20,8 +20,9 @@
           %td#text_field= text_field_tag(:keywords, @previous_keywords, {:size => '10'}) 
         %tr
           %td#type_label in
-          %td#type_field= select_tag(:search_index, options_for_select(ItemController.search_types, @previous_search_index))         
-      = submit_tag('Go', :id => 'go')
+          %td#type_field= select_tag(:search_index, options_for_select(ItemController.search_types, @previous_search_index))
+      #go_wrapper= submit_tag('Go', :id => 'go')
     #powered
       powered by    
       = image_tag('footer_infews.gif', :align => 'right')
+    = yield :disclaimer

@@ -10,8 +10,11 @@ body
   :margin 0 auto
   :text-align center
   :width 100%
-input#go
+#go_wrapper
+  :text-align center
   :width 100%
+  input#go
+    :width 100%
 form.search_form
   :margin-top 8px
 table#search
@@ -30,11 +33,6 @@ table#search
   :float right
   :text-align right
 
-button
-  a
-    :text_decoration none
-    :color black
-  
 #messages
   :border-bottom 1px solid #d9d9d9
 #results_count
@@ -66,15 +64,20 @@ button
 #item
   #image
     :float right
+    :margin-top 8px
   .label
     :font-weight bold
-  .pricing 
+  .pricing
+    :margin-top 8px
     .price a
       :text-decoration none
     .amazon_price
       .price
         :color #990000
         :font-weight bold
+    .list_price
+      .price
+        :text-decoration line-through
   #rating_and_rank
     :border-bottom 1px solid #d9d9d9
     :padding-bottom 8px
@@ -87,13 +90,15 @@ button
       .source
         :font-style italic
         :font-weight bold
-  #disclaimer
-    :font-style italic
+#disclaimer
+  :font-style italic
+  :margin-top 12px
+  :width 75%
 
 // Cart Views
 .cart_header
   :border-bottom 1px solid #d9d9d9
-  :margin-bottom 15px
+//  :margin-bottom 15px
   :padding-bottom 4px
   .message
     :float left
@@ -102,6 +107,7 @@ button
 .cart_actions
   :float right
 .cart_item
+  :margin-top 8px
   :width 100%
   .title 
     :float left
