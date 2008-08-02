@@ -1,6 +1,6 @@
 .cart_item
   .title
-    = link_to item.title, show_path(item.asin)
+    %span= link_to item.title, show_path(item.asin)
     %span.quantity= quantity_text(item)
   .amount= item.item_total[:formatted]
   .clear &nbsp;
