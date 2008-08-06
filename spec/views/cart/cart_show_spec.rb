@@ -11,7 +11,7 @@ describe '/cart/show' do
     render '/cart/show'
     
     response.should have_tag('div.cart_header') do
-      with_tag('div.message', 'Your Amazon.com Cart')
+      with_tag('div.message', 'Your Cart')
     end
   end
   

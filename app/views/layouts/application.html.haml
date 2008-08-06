@@ -26,3 +26,7 @@
       powered by    
       = image_tag('footer_infews.gif', :align => 'right')
     = yield :disclaimer
+  / TODO: get the new code! Is this the right way to determine if we're in PRODUCTION?
+  - if ApplicationController::RAILS_ENV_PRODUCTION
+    = javascript_tag nil, :src => 'http://www.google-analytics.com/ga.js'
+    = javascript_tag 'var pageTracker = _gat._getTracker("UA-952772-3"); pageTracker._trackPageview();'
