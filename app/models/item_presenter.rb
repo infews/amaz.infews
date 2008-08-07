@@ -71,27 +71,6 @@ class ItemPresenter < AwsPresenter
     nil
   end
 
-  def prices
-    @prices ||= []
-    if @prices.empty?
-      return @prices if amazon_price.nil?
-
-      ap = OpenStruct.new(:price_type => 'amazon', :amount => amazon_price[:formatted])
-      lp = OpenStruct.new(:price_type => 'list', :amount => list_price[:formatted]) unless list_price.nil?
-
-      if lp.nil?
-        @prices << ap
-      elsif amazon_price[:amount] < list_price[:amount]
-        @prices << lp
-        @prices << ap
-      else
-        @prices << lp
-      end
-
-    end
-    @prices
-  end
-
   def rank_group
     case self.product_group
       when 'Book' then 'Books'

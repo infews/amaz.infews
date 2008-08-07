@@ -206,50 +206,6 @@ describe ItemPresenter do
     @dvd_2.rank_group.should == 'Movies & TV'    
   end
 
-  it 'should report an empty array if there is no price information' do
-    item = mock('item')
-    doc = mock('doc')
-    item_presenter = ItemPresenter.new(doc)
-    item_presenter.stub!(:get_price).with('//itemattributes/listprice').and_return(nil)
-    item_presenter.stub!(:get_price).with('//offers/offer/offerlisting/price').and_return(nil)
-
-    item_presenter.prices.should == []
-  end
-
-  it 'should report an empty array if there is no amazon price information' do
-    item = mock('item')
-    doc = mock('doc')
-    item_presenter = ItemPresenter.new(doc)
-    item_presenter.stub!(:get_price).with('//itemattributes/listprice').and_return({:amount => 1198, :formatted => '$11.98'})
-    item_presenter.stub!(:get_price).with('//offers/offer/offerlisting/price').and_return(nil)
-
-    item_presenter.prices.should == []
-  end
-
-  it 'should report only the list price if the list price is not less than the amazon price' do
-    list_price = OpenStruct.new({:price_type => 'list', :amount => '$11.98'})
-
-    doc = mock('doc')
-
-    item_presenter = ItemPresenter.new(doc)
-    item_presenter.stub!(:get_price).with('//itemattributes/listprice').and_return({:amount => 1198, :formatted => '$11.98'})
-    item_presenter.stub!(:get_price).with('//offers/offer/offerlisting/price').and_return({:amount => 1198, :formatted => '$11.98'})
-
-    item_presenter.prices.should == [list_price]
-  end
-
-  it 'should report both prices if the list price is greater than the amazon price' do
-    list_price = OpenStruct.new({:price_type => 'list', :amount => '$11.98'})
-    amazon_price = OpenStruct.new({:price_type => 'amazon', :amount => '$9.99'})
-    item = mock('item')
-    doc = mock('doc')
-    item_presenter = ItemPresenter.new(doc)
-    item_presenter.stub!(:get_price).with('//itemattributes/listprice').and_return({:amount => 1198, :formatted => '$11.98'})
-    item_presenter.stub!(:get_price).with('//offers/offer/offerlisting/price').and_return({:amount => 999, :formatted => '$9.99'})
-
-    item_presenter.prices.should == [list_price, amazon_price]
-  end
-
   describe '#to_param' do
     it 'should return its ASIN from #to_param' do
       @book.to_param.should == '0143112562'

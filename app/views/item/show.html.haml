@@ -1,7 +1,7 @@
 #item
   = render :partial => @item.summary_partial, :locals => {:item => @item}
   = render :partial => 'image' unless @item.image.nil?
-  = render :partial => 'pricing', :locals => {:location => 'top'} unless @item.prices.empty?
+  = render :partial => 'pricing', :locals => {:location => 'top'}
   #rating_and_rank
     #rating
       #stars
@@ -14,7 +14,7 @@
   - unless @item.editorial_reviews.nil?
     .reviews
       = render :partial => 'editorial_review', :collection =>  @item.editorial_reviews
-    = render :partial => 'pricing', :locals => {:location => 'bottom'} unless @item.prices.empty?
+    = render :partial => 'pricing', :locals => {:location => 'bottom'}
   - unless @item.detail_page_url.nil?
     .at_amazon= link_to "View this at Amazon.com", @item.detail_page_url
 

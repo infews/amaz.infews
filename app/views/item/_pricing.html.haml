@@ -1,6 +1,10 @@
-%div{:class => "pricing #{location}"}
-  - @item.prices.each do |price|
-    %div{:class => "#{price.price_type}_price"}
-      %span.label= "#{price.price_type.to_s.capitalize} Price:"
-      %span.price= price.amount
-  .buy= link_to 'Buy', cart_add_path(@item)
+- unless @item.amazon_price.nil?
+  - show_amazon_price = (@item.list_price[:amount] > @item.amazon_price[:amount])
+  %div{:class => "pricing #{location}"}
+    %div{:class => "#{show_amazon_price ? 'list_price' : 'only_price'}"}
+      %span.label= "List Price:"
+      %span.price= @item.list_price[:formatted]
+    .amazon_price
+      %span.label= "Amazon Price:"
+      %span.price= @item.amazon_price[:formatted]
+    .buy= link_to 'Buy', cart_add_path(@item)
