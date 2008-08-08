@@ -1,4 +1,4 @@
-ExceptionNotifier.exception_recipients = %w(dwfrank@infe.ws)
+ExceptionNotifier.exception_recipients = %w(crash@infe.ws)
 
 ActionMailer::Base.smtp_settings = { :address => 'smtp.gmail.com',
                                      :port => "587",

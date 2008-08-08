@@ -193,11 +193,29 @@ describe ItemPresenter do
     @cd_2.summary_partial.should == 'music_summary'
     @dvd_2.summary_partial.should == 'dvd_summary'
   end
+
+  it 'should default to the book summary partial' do
+    doc = mock('doc')
+    element = mock('element', :innerHTML => 'EBook')
+    doc.should_receive(:%).with('/itemattributes/productgroup').and_return(element)
+    item = ItemPresenter.new(doc)
+
+    item.summary_partial.should == 'book_summary'
+  end
   
   it 'should return the correct other details partial name' do
     @book.other_details_partial.should == 'book_other_details'
     @cd_2.other_details_partial.should == 'music_other_details'
     @dvd_2.other_details_partial.should == 'dvd_other_details'
+  end
+
+  it 'should default to the book summary partial' do
+    doc = mock('doc')
+    element = mock('element', :innerHTML => 'EBook')
+    doc.should_receive(:%).with('/itemattributes/productgroup').and_return(element)
+    item = ItemPresenter.new(doc)
+
+    item.other_details_partial.should == 'book_other_details'
   end
 
   it 'should report the sales rank group' do

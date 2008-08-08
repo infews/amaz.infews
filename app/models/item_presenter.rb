@@ -80,11 +80,19 @@ class ItemPresenter < AwsPresenter
   end
   
   def summary_partial
-    "#{product_group.downcase}_summary"
+    if ['Book', 'Music', 'DVD'].include?(product_group)
+      "#{product_group.downcase}_summary"
+    else
+      "book_summary"
+    end
   end
   
   def other_details_partial
-    "#{product_group.downcase}_other_details"
+    if ['Book', 'Music', 'DVD'].include?(product_group)
+      "#{product_group.downcase}_other_details"
+    else
+      "book_other_details"
+    end
   end
   
   def to_param
