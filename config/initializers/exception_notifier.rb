@@ -1,5 +1,3 @@
-require 'smtp_tls'
-
 ExceptionNotifier.exception_recipients = %w(dwfrank@infe.ws)
 
 ActionMailer::Base.smtp_settings = { :address => 'smtp.gmail.com',
