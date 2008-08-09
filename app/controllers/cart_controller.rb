@@ -1,5 +1,7 @@
 class CartController < ApplicationController
 
+  before_filter :find_cart, :except => [:add, :test_show]
+
   def add
     redirect_to '/' and return if params[:asin].nil?
     
@@ -19,7 +21,6 @@ class CartController < ApplicationController
   end
 
   def update
-    # TODO: protect against nil carts & incomplete params
     aws_response = aws_modify_cart(:cart_id      => session[:cart][:cart_id],
                                    :hmac         => session[:cart][:hmac],
                                    :quantity     => params[:quantity],
@@ -66,6 +67,14 @@ class CartController < ApplicationController
   end
   
   protected
+
+  def find_cart
+    if session[:cart].blank? || session[:cart][:cart_id].blank? || session[:cart][:hmac].blank?
+      flash[:error] = "Unable to find that cart"
+      redirect_to '/'
+      return false
+    end
+  end
   
   def save_cart_in_session
     session[:cart] = {:cart_id => @cart.cart_id, :hmac => @cart.url_encoded_hmac}                                   
