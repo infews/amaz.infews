@@ -25,4 +25,12 @@ describe ItemHelper, '#other_page_of_results' do
     helper.other_page_of_results(results, '3').should == '/item/search/Books/foo%20bar/3'
   end
 
+  it 'should route search_path with escaped params' do
+    class << helper
+      public(:search_path)
+    end
+
+    helper.search_path(:search_index => 'Books',
+                           :keywords => CGI::escape('ISO/TC 22/SC 3')).should == '/item/search/Books/ISO%252FTC+22%252FSC+3'
+  end
 end

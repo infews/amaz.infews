@@ -22,7 +22,7 @@ class ItemController < ApplicationController
     params[:bestsellers] = 'true' if params[:keywords].blank?
 
     @previous_search_index = params[:search_index]
-    @previous_keywords     = params[:keywords]
+    @previous_keywords     = params[:keywords].blank? ? '' : CGI::unescape(params[:keywords])
     options = {:search_index => params[:search_index],
                :page         => params[:page] || '1'}
              
