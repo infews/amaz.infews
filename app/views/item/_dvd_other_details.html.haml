@@ -5,11 +5,11 @@
 - unless item.directors.empty?
   .directors
     %span.label Directed by
-    = item.directors.collect{|d| link_to(d, search_path(:search_index => 'DVD', :keywords => d))}.to_sentence
+    = item.directors.collect{|d| link_to(d, search_path(:search_index => 'DVD', :keywords => CGI::escape(d)))}.to_sentence
 - unless item.actors.empty?
   .actors
     %span.label Starring
-    = item.actors.collect{|a| link_to(a, search_path(:search_index => 'DVD', :keywords => a))}.to_sentence
+    = item.actors.collect{|a| link_to(a, search_path(:search_index => 'DVD', :keywords => CGI::esacpe(a)))}.to_sentence
 - unless item.formats.empty?
   .formats
     %span.label Formats:
