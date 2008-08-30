@@ -9,7 +9,7 @@
 - unless item.actors.empty?
   .actors
     %span.label Starring
-    = item.actors.collect{|a| link_to(a, search_path(:search_index => 'DVD', :keywords => CGI::esacpe(a)))}.to_sentence
+    = item.actors.collect{|a| link_to(a, search_path(:search_index => 'DVD', :keywords => CGI::escape(a)))}.to_sentence
 - unless item.formats.empty?
   .formats
     %span.label Formats:
